@@ -1,0 +1,38 @@
+version: 1
+policies:
+  branding:
+    global_tokens: "/src/styles/tokens.css"
+    require_tokens_over_inline: true
+    animation_defaults:
+      easing: "var(--ease-in-out)"
+      spring: "var(--spring)"
+  schema_verification:
+    required_before_migrations: true
+  tooltips:
+    require_for_ambiguous_controls: true
+  assets:
+    images: "Use verified sources (Pexels, Unsplash, Freepik)"
+    logos: "Prefer official brand sites or /public assets"
+    icons: "Lucide only"
+    avatars: "DiceBear API when avatars are needed"
+  auth_billing:
+    primary_provider: "Clerk"
+  repository:
+    feature_folders_require_readme: true
+  prompts:
+    auto_reference_rules: true
+
+# ---- DESIGN IMPLEMENTATION RULES --------------------------------------------
+design_system:
+  tokens_source: "/styles/tokens.css"
+  rule: "Prefer global design tokens and avoid inline styles."
+  enforcement: "If any inline color/font/shadow is added, Cursor must suggest switching to a global token."
+  global_theme: "OKLCH color model with light/dark variants."
+  css_variables: "All colors, fonts, radius, and shadows come from :root variables."
+  image_source: "Use real product/brand images from verified sources (Pexels, Unsplash, Freepik)."
+  logo_source: "Pull logos from verified brand sites or assets directory."
+  icon_source: "Use Lucide icons exclusively."
+  avatar_source: "Use DiceBear API if avatars required."
+  tooltip_policy: "Every ambiguous icon or control must include a tooltip."
+
+

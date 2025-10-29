@@ -1,0 +1,43 @@
+/* Global Design Tokens (OKLCH) */
+:root {
+  /* Brand scale (example defaults; adjust as brand evolves) */
+  --brand-50: 97% 0.02 250;
+  --brand-500: 65% 0.12 250;
+  --brand-950: 20% 0.05 250;
+
+  /* Semantic colors */
+  --bg: 98% 0.01 255;
+  --fg: 20% 0.02 255;
+
+  /* Fonts */
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Geist", system-ui, sans-serif;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px oklch(80% 0 0 / 0.04);
+  --shadow-md: 0 8px 24px oklch(60% 0 0 / 0.10);
+  --shadow-lg: 0 16px 48px oklch(50% 0 0 / 0.14);
+
+  /* Spacing (example subset) */
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem;  /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem;    /* 16px */
+
+  /* Animation */
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --spring: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.dark {
+  --bg: 15% 0.01 255;
+  --fg: 96% 0.02 255;
+}
+
+
