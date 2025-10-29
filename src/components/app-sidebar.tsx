@@ -15,41 +15,26 @@ import {
 } from "lucide-react"
 import { useUser } from "@clerk/nextjs"
 
+import { NavDocuments } from "@/components/nav-documents"
 import { NavMain } from "@/components/nav-main"
-import { NavProjects } from "@/components/nav-projects"
+import { NavSecondary } from "@/components/nav-secondary"
 import { NavUser } from "@/components/nav-user"
 import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
   SidebarHeader,
-  SidebarRail,
+  SidebarMenu,
+  SidebarMenuButton,
+  SidebarMenuItem,
 } from "@/components/ui/sidebar"
 
-type NavItem = {
-  title: string
-  url: string
-  icon?: React.ElementType
-  isActive?: boolean
-  items?: {
-    title: string
-    url: string
-  }[]
-}
-
-type Project = {
-  name: string
-  url: string
-  icon: React.ElementType
-}
-
-function getNavItems(role: 'admin' | 'employee' | null): NavItem[] {
-  const baseItems: NavItem[] = [
+function getNavItems(role: 'admin' | 'employee' | null) {
+  const baseItems = [
     {
       title: "Dashboard",
       url: role === 'admin' ? "/admin/dashboard" : "/employee/dashboard",
       icon: LayoutDashboard,
-      isActive: true,
     },
     {
       title: "Tasks",
@@ -78,7 +63,6 @@ function getNavItems(role: 'admin' | 'employee' | null): NavItem[] {
     },
   ]
 
-  // Admin-only items
   if (role === 'admin') {
     return [
       ...baseItems,
@@ -96,14 +80,6 @@ function getNavItems(role: 'admin' | 'employee' | null): NavItem[] {
             title: "Employees",
             url: "/admin/team/employees",
           },
-          {
-            title: "Departments",
-            url: "/admin/team/departments",
-          },
-          {
-            title: "Roles & Permissions",
-            url: "/admin/team/permissions",
-          },
         ],
       },
       {
@@ -115,80 +91,24 @@ function getNavItems(role: 'admin' | 'employee' | null): NavItem[] {
         title: "Reports",
         url: "/admin/reports",
         icon: FileText,
-        items: [
-          {
-            title: "Sales Reports",
-            url: "/admin/reports/sales",
-          },
-          {
-            title: "Performance",
-            url: "/admin/reports/performance",
-          },
-          {
-            title: "Analytics",
-            url: "/admin/reports/analytics",
-          },
-        ],
-      },
-      {
-        title: "Settings",
-        url: "/admin/settings",
-        icon: Settings,
-        items: [
-          {
-            title: "General",
-            url: "/admin/settings/general",
-          },
-          {
-            title: "Integrations",
-            url: "/admin/settings/integrations",
-          },
-          {
-            title: "Security",
-            url: "/admin/settings/security",
-          },
-        ],
       },
     ]
   }
 
-  // Employee items
-  return [
-    ...baseItems,
-    {
-      title: "Settings",
-      url: "/employee/settings",
-      icon: Settings,
-      items: [
-        {
-          title: "Profile",
-          url: "/employee/settings/profile",
-        },
-        {
-          title: "Preferences",
-          url: "/employee/settings/preferences",
-        },
-      ],
-    },
-  ]
+  return baseItems
 }
 
-function getProjects(role: 'admin' | 'employee' | null): Project[] {
+function getDocuments(role: 'admin' | 'employee' | null) {
   if (role === 'admin') {
     return [
       {
-        name: "Sales Pipeline",
-        url: "/admin/projects/sales",
-        icon: BarChart3,
+        name: "Team Directory",
+        url: "/admin/team/employees",
+        icon: Users,
       },
       {
-        name: "Customer Support",
-        url: "/admin/projects/support",
-        icon: MessageSquare,
-      },
-      {
-        name: "Marketing",
-        url: "/admin/projects/marketing",
+        name: "Reports",
+        url: "/admin/reports",
         icon: FileText,
       },
     ]
@@ -196,9 +116,19 @@ function getProjects(role: 'admin' | 'employee' | null): Project[] {
 
   return [
     {
-      name: "My Projects",
-      url: "/employee/projects",
-      icon: Briefcase,
+      name: "My Documents",
+      url: "/employee/documents",
+      icon: FileText,
+    },
+  ]
+}
+
+function getNavSecondary(role: 'admin' | 'employee' | null) {
+  return [
+    {
+      title: "Settings",
+      url: role === 'admin' ? "/admin/settings" : "/employee/settings",
+      icon: Settings,
     },
   ]
 }
@@ -208,7 +138,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const role = (user?.publicMetadata?.role as 'admin' | 'employee') ?? 'employee'
   
   const navItems = React.useMemo(() => getNavItems(role), [role])
-  const projects = React.useMemo(() => getProjects(role), [role])
+  const documents = React.useMemo(() => getDocuments(role), [role])
+  const navSecondary = React.useMemo(() => getNavSecondary(role), [role])
 
   const userData = React.useMemo(() => {
     if (!user) {
@@ -227,26 +158,30 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   }, [user])
 
   return (
-    <Sidebar collapsible="icon" {...props}>
+    <Sidebar collapsible="offcanvas" {...props}>
       <SidebarHeader>
-        <div className="px-2 py-1">
-          <div className="flex items-center gap-2">
-            <Shield className="h-5 w-5 text-primary" />
-            <span className="font-semibold text-sm">CRM System</span>
-          </div>
-          {role === 'admin' && (
-            <span className="text-xs text-muted-foreground mt-1 block">Admin Portal</span>
-          )}
-        </div>
+        <SidebarMenu>
+          <SidebarMenuItem>
+            <SidebarMenuButton
+              asChild
+              className="data-[slot=sidebar-menu-button]:!p-1.5"
+            >
+              <a href="/">
+                <Shield className="!size-5" />
+                <span className="text-base font-semibold">CRM System</span>
+              </a>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+        </SidebarMenu>
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={navItems} />
-        <NavProjects projects={projects} />
+        <NavDocuments items={documents} />
+        <NavSecondary items={navSecondary} className="mt-auto" />
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={userData} />
       </SidebarFooter>
-      <SidebarRail />
     </Sidebar>
   )
 }

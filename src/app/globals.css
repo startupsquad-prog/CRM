@@ -120,3 +120,54 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Fix Clerk components z-index and prevent leakage */
+[data-slot="sidebar-container"] {
+  overflow: visible !important;
+  z-index: 10;
+}
+
+[data-slot="sidebar-footer"] {
+  position: relative;
+  z-index: 20;
+  overflow: visible;
+}
+
+/* Ensure Clerk UserButton popover appears above everything */
+.cl-userButtonPopoverCard,
+.cl-userButtonPopoverCard[data-state],
+.cl-userButtonPopoverContent {
+  z-index: 9999 !important;
+}
+
+.cl-userButtonPopoverRoot {
+  z-index: 9999 !important;
+}
+
+/* Prevent text/content leakage from sidebar */
+[data-slot="sidebar-content"] {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+[data-slot="sidebar-inner"] {
+  position: relative;
+  overflow: visible;
+}
+
+/* Ensure sidebar doesn't leak content but allows popovers */
+[data-sidebar="sidebar"] {
+  position: relative;
+}
+
+/* Fix dashboard content overflow */
+[data-slot="sidebar-inset"] {
+  position: relative;
+  overflow: visible;
+  z-index: 1;
+}
+
+/* Ensure proper stacking context */
+body {
+  isolation: isolate;
+}
