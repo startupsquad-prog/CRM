@@ -3,6 +3,14 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "@/styles/tokens.css";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
+import {
+  ClerkProvider,
+  SignInButton,
+  SignUpButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from "@clerk/nextjs";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,12 +33,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ThemeProvider>
-          {children}
-        </ThemeProvider>
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en" suppressHydrationWarning>
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning>
+          <ThemeProvider>
+            <SignedOut>
+              <header className="border-b">
+                <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+                  <div className="flex gap-4">
+                    <SignInButton />
+                    <SignUpButton />
+                  </div>
+                </div>
+              </header>
+            </SignedOut>
+            {children}
+          </ThemeProvider>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

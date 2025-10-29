@@ -1,10 +1,20 @@
-export default function DashboardPage() {
-  return (
-    <main className="container mx-auto px-4 py-10">
-      <h1 className="text-2xl font-semibold">Dashboard</h1>
-      <p className="mt-2 text-muted-foreground">Protected area placeholder.</p>
-    </main>
-  );
+import { redirect } from "next/navigation"
+import { auth } from "@clerk/nextjs/server"
+import { getUserRole } from "@/lib/clerk-auth"
+
+export default async function DashboardPage() {
+  const { userId } = await auth()
+  
+  if (!userId) {
+    redirect('/marketing')
+  }
+
+  const role = await getUserRole()
+  
+  // Redirect based on role
+  if (role === 'admin') {
+    redirect('/admin/dashboard')
+  }
+  
+  redirect('/employee/dashboard')
 }
-
-
