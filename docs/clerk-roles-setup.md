@@ -76,3 +76,4 @@ const user = await clerkClient.users.createUser({
 - The `requireAdmin()` function in `src/lib/clerk-auth.ts` ensures admin-only routes are protected
 - Roles are stored in Clerk's public metadata, which is safe for client-side access but validated server-side
 
+

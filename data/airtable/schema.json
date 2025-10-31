@@ -1,0 +1,654 @@
+{
+  "appId": "appx4nbOGbF7wkJ0V",
+  "tables": [
+    {
+      "id": "tblwQNcyhLvBrPH1L",
+      "name": "Leads",
+      "fields": [
+        {
+          "id": "Lead ID",
+          "name": "Lead ID",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Source",
+          "name": "Source",
+          "type": "multipleSelects"
+        },
+        {
+          "id": "Stage",
+          "name": "Stage",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Created On",
+          "name": "Created On",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Lead Age (Days)",
+          "name": "Lead Age (Days)",
+          "type": "number"
+        },
+        {
+          "id": "Full Name",
+          "name": "Full Name",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Phone Number",
+          "name": "Phone Number",
+          "type": "singleLineText"
+        },
+        {
+          "id": "WhatsApp",
+          "name": "WhatsApp",
+          "type": "url"
+        },
+        {
+          "id": "ID",
+          "name": "ID",
+          "type": "number"
+        },
+        {
+          "id": "Open Whatsapp",
+          "name": "Open Whatsapp",
+          "type": "unknown"
+        },
+        {
+          "id": "Created",
+          "name": "Created",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Whatsapp Number",
+          "name": "Whatsapp Number",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Welcome Message Status ",
+          "name": "Welcome Message Status ",
+          "type": "singleLineText"
+        }
+      ],
+      "recordCount": 18
+    },
+    {
+      "id": "tblKQj1OwKMDVMWC1",
+      "name": "Products",
+      "fields": [
+        {
+          "id": "SKU/Model No.",
+          "name": "SKU/Model No.",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Product Name",
+          "name": "Product Name",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Category",
+          "name": "Category",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Product Images - Raw",
+          "name": "Product Images - Raw",
+          "type": "multipleRecordLinks"
+        },
+        {
+          "id": "Current Market Price (India)",
+          "name": "Current Market Price (India)",
+          "type": "number"
+        },
+        {
+          "id": "Minimum Order Quantity",
+          "name": "Minimum Order Quantity",
+          "type": "number"
+        },
+        {
+          "id": "# of Leads",
+          "name": "# of Leads",
+          "type": "number"
+        },
+        {
+          "id": "# of Quotations",
+          "name": "# of Quotations",
+          "type": "number"
+        },
+        {
+          "id": "# of Orders",
+          "name": "# of Orders",
+          "type": "number"
+        },
+        {
+          "id": "Product Summary (AI)",
+          "name": "Product Summary (AI)",
+          "type": "unknown"
+        },
+        {
+          "id": "Market Price Research (AI)",
+          "name": "Market Price Research (AI)",
+          "type": "unknown"
+        },
+        {
+          "id": "Sub Category",
+          "name": "Sub Category",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Packing Details - Raw",
+          "name": "Packing Details - Raw",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Features - Raw",
+          "name": "Features - Raw",
+          "type": "multipleLineText"
+        },
+        {
+          "id": "Price - Raw",
+          "name": "Price - Raw",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Packing Details",
+          "name": "Packing Details",
+          "type": "unknown"
+        },
+        {
+          "id": "Features",
+          "name": "Features",
+          "type": "unknown"
+        },
+        {
+          "id": "Cost Price",
+          "name": "Cost Price",
+          "type": "unknown"
+        },
+        {
+          "id": "Summary (Product Image)",
+          "name": "Summary (Product Image)",
+          "type": "unknown"
+        },
+        {
+          "id": "Available Variants - (AI)",
+          "name": "Available Variants - (AI)",
+          "type": "unknown"
+        },
+        {
+          "id": "Alibaba URL",
+          "name": "Alibaba URL",
+          "type": "url"
+        },
+        {
+          "id": "Listing URL",
+          "name": "Listing URL",
+          "type": "url"
+        },
+        {
+          "id": "Alibaba Images",
+          "name": "Alibaba Images",
+          "type": "multipleRecordLinks"
+        },
+        {
+          "id": "Variants",
+          "name": "Variants",
+          "type": "multipleSelects"
+        },
+        {
+          "id": "Alibaba",
+          "name": "Alibaba",
+          "type": "unknown"
+        },
+        {
+          "id": "Olldeals",
+          "name": "Olldeals",
+          "type": "unknown"
+        }
+      ],
+      "recordCount": 21
+    },
+    {
+      "id": "tbl3imcRaJth1KlaS",
+      "name": "Quotations",
+      "fields": [
+        {
+          "id": "Quotation ID",
+          "name": "Quotation ID",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Client",
+          "name": "Client",
+          "type": "multipleSelects"
+        },
+        {
+          "id": "Total Cost",
+          "name": "Total Cost",
+          "type": "number"
+        },
+        {
+          "id": "Status",
+          "name": "Status",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Quotation Date",
+          "name": "Quotation Date",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Expiry Date",
+          "name": "Expiry Date",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Client City",
+          "name": "Client City",
+          "type": "multipleSelects"
+        },
+        {
+          "id": "Days Until Expiry",
+          "name": "Days Until Expiry",
+          "type": "number"
+        },
+        {
+          "id": "Is Expired?",
+          "name": "Is Expired?",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Quotation Summary (AI)",
+          "name": "Quotation Summary (AI)",
+          "type": "unknown"
+        },
+        {
+          "id": "Deal Win Probability (AI)",
+          "name": "Deal Win Probability (AI)",
+          "type": "unknown"
+        },
+        {
+          "id": "GST",
+          "name": "GST",
+          "type": "number"
+        }
+      ],
+      "recordCount": 69
+    },
+    {
+      "id": "tblsvHDHNlWG0zmx0",
+      "name": "Team",
+      "fields": [
+        {
+          "id": "Name",
+          "name": "Name",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Role",
+          "name": "Role",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Email",
+          "name": "Email",
+          "type": "email"
+        },
+        {
+          "id": "Phone",
+          "name": "Phone",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Active",
+          "name": "Active",
+          "type": "checkbox"
+        },
+        {
+          "id": "# Leads Assigned",
+          "name": "# Leads Assigned",
+          "type": "number"
+        },
+        {
+          "id": "# Orders Generated",
+          "name": "# Orders Generated",
+          "type": "number"
+        },
+        {
+          "id": "Total Order Value Generated",
+          "name": "Total Order Value Generated",
+          "type": "number"
+        },
+        {
+          "id": "Quotations Generated",
+          "name": "Quotations Generated",
+          "type": "multipleSelects"
+        },
+        {
+          "id": "Slack",
+          "name": "Slack",
+          "type": "unknown"
+        },
+        {
+          "id": "Whatsapp",
+          "name": "Whatsapp",
+          "type": "unknown"
+        },
+        {
+          "id": "Transactions",
+          "name": "Transactions",
+          "type": "multipleSelects"
+        }
+      ],
+      "recordCount": 6
+    },
+    {
+      "id": "tbl2TEQifkZFxuO0q",
+      "name": "Message Templates",
+      "fields": [
+        {
+          "id": "Title",
+          "name": "Title",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Type",
+          "name": "Type",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Body",
+          "name": "Body",
+          "type": "multipleLineText"
+        },
+        {
+          "id": "Category",
+          "name": "Category",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Body Word Count",
+          "name": "Body Word Count",
+          "type": "number"
+        },
+        {
+          "id": "Related Marketing Assets",
+          "name": "Related Marketing Assets",
+          "type": "multipleSelects"
+        }
+      ],
+      "recordCount": 15
+    },
+    {
+      "id": "tblmP2WYWkbSmllAK",
+      "name": "Clients",
+      "fields": [
+        {
+          "id": "Client ID",
+          "name": "Client ID",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Client Name",
+          "name": "Client Name",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Contact Details",
+          "name": "Contact Details",
+          "type": "singleLineText"
+        },
+        {
+          "id": "City",
+          "name": "City",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Client Type",
+          "name": "Client Type",
+          "type": "singleLineText"
+        },
+        {
+          "id": "GST Number",
+          "name": "GST Number",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Quotations",
+          "name": "Quotations",
+          "type": "multipleSelects"
+        },
+        {
+          "id": "Total Order Value",
+          "name": "Total Order Value",
+          "type": "number"
+        },
+        {
+          "id": "Number of Leads",
+          "name": "Number of Leads",
+          "type": "number"
+        },
+        {
+          "id": "Number of Quotations",
+          "name": "Number of Quotations",
+          "type": "number"
+        },
+        {
+          "id": "Number of Orders",
+          "name": "Number of Orders",
+          "type": "number"
+        },
+        {
+          "id": "Payments",
+          "name": "Payments",
+          "type": "multipleSelects"
+        },
+        {
+          "id": "Shipping Address",
+          "name": "Shipping Address",
+          "type": "singleLineText"
+        }
+      ],
+      "recordCount": 6
+    },
+    {
+      "id": "tblzadFRU2j3Xykra",
+      "name": "Resources/Assets",
+      "fields": [
+        {
+          "id": "Title",
+          "name": "Title",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Templates",
+          "name": "Templates",
+          "type": "multipleSelects"
+        },
+        {
+          "id": "Placement",
+          "name": "Placement",
+          "type": "singleLineText"
+        }
+      ],
+      "recordCount": 11
+    },
+    {
+      "id": "tbl5XvWQzsLt8YBq3",
+      "name": "Orders",
+      "fields": [],
+      "recordCount": 0
+    },
+    {
+      "id": "tblxeIAJMNBBGQIkL",
+      "name": "Transactions",
+      "fields": [
+        {
+          "id": "Payment ID",
+          "name": "Payment ID",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Client",
+          "name": "Client",
+          "type": "multipleSelects"
+        },
+        {
+          "id": "Payment Date",
+          "name": "Payment Date",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Amount",
+          "name": "Amount",
+          "type": "number"
+        },
+        {
+          "id": "Payment Mode",
+          "name": "Payment Mode",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Payment Status",
+          "name": "Payment Status",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Proof of Payment",
+          "name": "Proof of Payment",
+          "type": "multipleRecordLinks"
+        },
+        {
+          "id": "Recorded By",
+          "name": "Recorded By",
+          "type": "multipleSelects"
+        },
+        {
+          "id": "Is Final Payment? (Formula)",
+          "name": "Is Final Payment? (Formula)",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Payment Risk Assessment (AI)",
+          "name": "Payment Risk Assessment (AI)",
+          "type": "unknown"
+        }
+      ],
+      "recordCount": 6
+    },
+    {
+      "id": "tblvu82uQ1zLGbcnV",
+      "name": "Freight",
+      "fields": [
+        {
+          "id": "Freight ID",
+          "name": "Freight ID",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Mode",
+          "name": "Mode",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Partner",
+          "name": "Partner",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Status",
+          "name": "Status",
+          "type": "singleLineText"
+        },
+        {
+          "id": "ETA",
+          "name": "ETA",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Dispatch Date",
+          "name": "Dispatch Date",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Container Number",
+          "name": "Container Number",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Order Count",
+          "name": "Order Count",
+          "type": "number"
+        },
+        {
+          "id": "Freight Summary (AI)",
+          "name": "Freight Summary (AI)",
+          "type": "unknown"
+        },
+        {
+          "id": "Required Docs Checklist (AI)",
+          "name": "Required Docs Checklist (AI)",
+          "type": "unknown"
+        },
+        {
+          "id": "Tracking Number",
+          "name": "Tracking Number",
+          "type": "singleLineText"
+        }
+      ],
+      "recordCount": 4
+    },
+    {
+      "id": "tblTBLBaly0kdAWtk",
+      "name": "Employee Client FAQ",
+      "fields": [
+        {
+          "id": "Client Question (Customer Puchega)",
+          "name": "Client Question (Customer Puchega)",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Category",
+          "name": "Category",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Employee Answer (Response Summary)",
+          "name": "Employee Answer (Response Summary)",
+          "type": "multipleLineText"
+        },
+        {
+          "id": "Language",
+          "name": "Language",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Priority / Relevance",
+          "name": "Priority / Relevance",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Last Updated",
+          "name": "Last Updated",
+          "type": "singleLineText"
+        },
+        {
+          "id": "Tags",
+          "name": "Tags",
+          "type": "multipleSelects"
+        },
+        {
+          "id": "Status",
+          "name": "Status",
+          "type": "singleLineText"
+        }
+      ],
+      "recordCount": 25
+    }
+  ],
+  "totalTables": 11,
+  "totalRecords": 181,
+  "fetchedAt": "2025-10-31T11:57:11.591Z"
+}

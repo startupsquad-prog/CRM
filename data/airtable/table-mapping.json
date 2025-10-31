@@ -1,0 +1,50 @@
+{
+  "appId": "appx4nbOGbF7wkJ0V",
+  "tables": [
+    {
+      "id": "tblwQNcyhLvBrPH1L",
+      "name": "Leads"
+    },
+    {
+      "id": "tblKQj1OwKMDVMWC1",
+      "name": "Products"
+    },
+    {
+      "id": "tbl3imcRaJth1KlaS",
+      "name": "Quotations"
+    },
+    {
+      "id": "tblsvHDHNlWG0zmx0",
+      "name": "Team"
+    },
+    {
+      "id": "tbl2TEQifkZFxuO0q",
+      "name": "Message Templates"
+    },
+    {
+      "id": "tblmP2WYWkbSmllAK",
+      "name": "Clients"
+    },
+    {
+      "id": "tblzadFRU2j3Xykra",
+      "name": "Resources/Assets"
+    },
+    {
+      "id": "tbl5XvWQzsLt8YBq3",
+      "name": "Orders"
+    },
+    {
+      "id": "tblxeIAJMNBBGQIkL",
+      "name": "Transactions"
+    },
+    {
+      "id": "tblvu82uQ1zLGbcnV",
+      "name": "Freight"
+    },
+    {
+      "id": "tblTBLBaly0kdAWtk",
+      "name": "Employee Client FAQ"
+    }
+  ],
+  "fetchedAt": "2025-10-31T11:57:11.595Z"
+}

@@ -8,17 +8,27 @@ import {
   FileText,
   Settings,
   BarChart3,
-  Calendar,
+  Phone,
+  Package,
+  BookOpen,
+  User,
+  Receipt,
   MessageSquare,
-  Briefcase,
   Shield,
+  TrendingUp,
+  Users2,
+  Award,
+  PieChart,
+  ShoppingBag,
 } from "lucide-react"
 import { useUser } from "@clerk/nextjs"
 
-import { NavDocuments } from "@/components/nav-documents"
-import { NavMain } from "@/components/nav-main"
+import { NavMain, type NavGroup, type NavItem } from "@/components/nav-main"
 import { NavSecondary } from "@/components/nav-secondary"
 import { NavUser } from "@/components/nav-user"
+import { NavLeadsCounter } from "@/components/nav-leads-counter"
+import { NavCounter } from "@/components/nav-counter"
+import Link from "next/link"
 import {
   Sidebar,
   SidebarContent,
@@ -29,98 +39,178 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
 
-function getNavItems(role: 'admin' | 'employee' | null) {
-  const baseItems = [
+function getEmployeeNavGroups(): NavGroup[] {
+  return [
     {
-      title: "Dashboard",
-      url: role === 'admin' ? "/admin/dashboard" : "/employee/dashboard",
-      icon: LayoutDashboard,
-    },
-    {
-      title: "Tasks",
-      url: role === 'admin' ? "/admin/tasks" : "/employee/tasks",
-      icon: Briefcase,
+      label: "Navigation",
       items: [
         {
-          title: "My Tasks",
-          url: role === 'admin' ? "/admin/tasks" : "/employee/tasks",
-        },
-        {
-          title: "Completed",
-          url: role === 'admin' ? "/admin/tasks/completed" : "/employee/tasks/completed",
+          title: "Home",
+          url: "/employee/dashboard",
+          icon: LayoutDashboard,
         },
       ],
     },
     {
-      title: "Calendar",
-      url: role === 'admin' ? "/admin/calendar" : "/employee/calendar",
-      icon: Calendar,
+      label: "Sales & Leads",
+      items: [
+        {
+          title: "My Leads",
+          url: "/employee/leads",
+          icon: TrendingUp,
+          badge: <NavLeadsCounter />,
+        },
+        {
+          title: "My Calls",
+          url: "/employee/calls",
+          icon: Phone,
+          badge: <NavCounter apiPath="/api/calls/count" />,
+        },
+        {
+          title: "Quotations",
+          url: "/employee/quotations",
+          icon: Receipt,
+          badge: <NavCounter apiPath="/api/quotations/count" />,
+        },
+        {
+          title: "Orders",
+          url: "/employee/orders",
+          icon: ShoppingBag,
+        },
+      ],
     },
     {
-      title: "Messages",
-      url: role === 'admin' ? "/admin/messages" : "/employee/messages",
-      icon: MessageSquare,
+      label: "Import Operations",
+      items: [
+        {
+          title: "Collections",
+          url: "/employee/collections",
+          icon: Package,
+        },
+        {
+          title: "Products",
+          url: "/employee/products",
+          icon: ShoppingBag,
+          badge: <NavCounter apiPath="/api/products/count" />,
+        },
+        {
+          title: "Marketing Assets",
+          url: "/employee/marketing-assets",
+          icon: Package,
+          badge: <NavCounter apiPath="/api/marketing-assets/count" />,
+        },
+        {
+          title: "Knowledge Base",
+          url: "/employee/knowledge-base",
+          icon: BookOpen,
+          badge: <NavCounter apiPath="/api/knowledge-base/count" />,
+        },
+        {
+          title: "Messaging Templates",
+          url: "/employee/messaging-templates",
+          icon: MessageSquare,
+          badge: <NavCounter apiPath="/api/messaging-templates/count" />,
+        },
+      ],
+    },
+    {
+      label: "Account",
+      items: [
+        {
+          title: "Team",
+          url: "/employee/team",
+          icon: Users,
+        },
+        {
+          title: "My Profile",
+          url: "/employee/profile",
+          icon: User,
+        },
+      ],
     },
   ]
-
-  if (role === 'admin') {
-    return [
-      ...baseItems,
-      {
-        title: "Analytics",
-        url: "/admin/analytics",
-        icon: BarChart3,
-      },
-      {
-        title: "Team Management",
-        url: "/admin/team",
-        icon: Users,
-        items: [
-          {
-            title: "Employees",
-            url: "/admin/team/employees",
-          },
-        ],
-      },
-      {
-        title: "Companies",
-        url: "/admin/companies",
-        icon: Building2,
-      },
-      {
-        title: "Reports",
-        url: "/admin/reports",
-        icon: FileText,
-      },
-    ]
-  }
-
-  return baseItems
 }
 
-function getDocuments(role: 'admin' | 'employee' | null) {
-  if (role === 'admin') {
-    return [
-      {
-        name: "Team Directory",
-        url: "/admin/team/employees",
-        icon: Users,
-      },
-      {
-        name: "Reports",
-        url: "/admin/reports",
-        icon: FileText,
-      },
-    ]
-  }
-
-  return [
+function getAdminNavGroups(): NavGroup[] {
+  const employeeGroups = getEmployeeNavGroups()
+  
+  // Add admin-specific groups
+  const adminGroups: NavGroup[] = [
+    ...employeeGroups,
     {
-      name: "My Documents",
-      url: "/employee/documents",
-      icon: FileText,
+      label: "Management",
+      items: [
+        {
+          title: "User Management",
+          url: "/admin/users",
+          icon: Shield,
+          items: [
+            { title: "All Users", url: "/admin/users" },
+            { title: "Groups", url: "/admin/users/groups" },
+            { title: "Roles & Permissions", url: "/admin/users/roles" },
+          ],
+        },
+        {
+          title: "Team Management",
+          url: "/admin/team",
+          icon: Users2,
+          items: [
+            { title: "Employees", url: "/admin/team/employees" },
+            { title: "Departments", url: "/admin/team/departments" },
+            { title: "Roles & Permissions", url: "/admin/team/permissions" },
+          ],
+        },
+        {
+          title: "Leads Overview",
+          url: "/admin/leads-overview",
+          icon: BarChart3,
+          items: [
+            { title: "All Leads", url: "/admin/leads-overview" },
+            { title: "Lead Distribution", url: "/admin/leads-overview/distribution" },
+            { title: "Lead Analytics", url: "/admin/leads-overview/analytics" },
+            { title: "Assignment Rules", url: "/admin/leads-overview/rules" },
+          ],
+        },
+        {
+          title: "Analytics",
+          url: "/admin/analytics",
+          icon: PieChart,
+        },
+        {
+          title: "Reports & Metrics",
+          url: "/admin/reports",
+          icon: FileText,
+        },
+        {
+          title: "Competitor Analysis",
+          url: "/admin/competitors",
+          icon: Award,
+        },
+        {
+          title: "Suppliers & Factories",
+          url: "/admin/suppliers",
+          icon: Building2,
+        },
+        {
+          title: "After-Sales Tickets",
+          url: "/admin/tickets",
+          icon: MessageSquare,
+        },
+        {
+          title: "Companies",
+          url: "/admin/companies",
+          icon: Building2,
+        },
+        {
+          title: "System Settings",
+          url: "/admin/settings",
+          icon: Settings,
+        },
+      ],
     },
   ]
+
+  return adminGroups
 }
 
 function getNavSecondary(role: 'admin' | 'employee' | null) {
@@ -137,8 +227,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const { user } = useUser()
   const role = (user?.publicMetadata?.role as 'admin' | 'employee') ?? 'employee'
   
-  const navItems = React.useMemo(() => getNavItems(role), [role])
-  const documents = React.useMemo(() => getDocuments(role), [role])
+  const navGroups = React.useMemo(() => {
+    return role === 'admin' ? getAdminNavGroups() : getEmployeeNavGroups()
+  }, [role])
+  
   const navSecondary = React.useMemo(() => getNavSecondary(role), [role])
 
   const userData = React.useMemo(() => {
@@ -166,17 +258,16 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               asChild
               className="data-[slot=sidebar-menu-button]:!p-1.5"
             >
-              <a href="/">
+              <Link href={role === 'admin' ? "/admin/dashboard" : "/employee/dashboard"}>
                 <Shield className="!size-5" />
-                <span className="text-base font-semibold">CRM System</span>
-              </a>
+                <span className="text-base font-semibold">OLLDeals Import Portal</span>
+              </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>
       <SidebarContent>
-        <NavMain items={navItems} />
-        <NavDocuments items={documents} />
+        <NavMain groups={navGroups} />
         <NavSecondary items={navSecondary} className="mt-auto" />
       </SidebarContent>
       <SidebarFooter>

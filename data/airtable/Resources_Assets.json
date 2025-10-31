@@ -1,0 +1,149 @@
+{
+  "table": "Resources/Assets",
+  "schema": {
+    "id": "tblzadFRU2j3Xykra",
+    "name": "Resources/Assets",
+    "fields": [
+      {
+        "id": "Title",
+        "name": "Title",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Templates",
+        "name": "Templates",
+        "type": "multipleSelects"
+      },
+      {
+        "id": "Placement",
+        "name": "Placement",
+        "type": "singleLineText"
+      }
+    ],
+    "recordCount": 11
+  },
+  "records": [
+    {
+      "id": "rec4bRqRAeL9BNyc9",
+      "fields": {
+        "Title": "Bank Details",
+        "Templates": [
+          "recpgtvUynu2emOCD"
+        ],
+        "Placement": "Client DM"
+      },
+      "createdTime": "2025-10-27T07:59:39.000Z"
+    },
+    {
+      "id": "rec9ntnSMsT27K4sN",
+      "fields": {
+        "Title": "Calling Script - First Touch",
+        "Templates": [
+          "recgYu9NFg4ScedhF"
+        ],
+        "Placement": "Calling Script"
+      },
+      "createdTime": "2025-10-27T07:59:39.000Z"
+    },
+    {
+      "id": "recMYchaGkTTGUZXn",
+      "fields": {
+        "Title": "Product Catalog PDF",
+        "Templates": [
+          "recIJDN4hm6xu94DX"
+        ],
+        "Placement": "Client DM"
+      },
+      "createdTime": "2025-10-27T07:59:39.000Z"
+    },
+    {
+      "id": "recNhLHlK9Ltf62oN",
+      "fields": {
+        "Title": "Quotation Template Editable PDF",
+        "Templates": [
+          "recR2PboSawJjy8fI"
+        ],
+        "Placement": "Client DM"
+      },
+      "createdTime": "2025-10-27T07:59:39.000Z"
+    },
+    {
+      "id": "recVj9ccKpKJzpD4t",
+      "fields": {
+        "Title": "Razorpay Custom Payment Link Generaor",
+        "Templates": [
+          "recWYad5SWrRfnPg6"
+        ],
+        "Placement": "Client DM"
+      },
+      "createdTime": "2025-10-27T07:59:39.000Z"
+    },
+    {
+      "id": "recYYtuTbozXmo8UX",
+      "fields": {
+        "Title": "General Videos",
+        "Templates": [
+          "reclOtsBHAinlprEn"
+        ],
+        "Placement": "Client DM"
+      },
+      "createdTime": "2025-10-27T07:59:39.000Z"
+    },
+    {
+      "id": "recZEHTn0hIqyeZKQ",
+      "fields": {
+        "Title": "Company Profile Deck",
+        "Templates": [
+          "receoWepAEYEskGJJ"
+        ],
+        "Placement": "Client DM"
+      },
+      "createdTime": "2025-10-27T07:59:39.000Z"
+    },
+    {
+      "id": "recbxqYJ3VFMEuoVf",
+      "fields": {
+        "Title": "Collection Website",
+        "Placement": "Client DM"
+      },
+      "createdTime": "2025-10-27T09:02:51.000Z"
+    },
+    {
+      "id": "rece19RR038vQD7Bp",
+      "fields": {
+        "Title": "Service Form Link",
+        "File Type": "Form",
+        "URL/Text": "https://suprans1.odoo.com/import",
+        "Templates": [
+          "recgYu9NFg4ScedhF"
+        ],
+        "Placement": "Client DM"
+      },
+      "createdTime": "2025-10-27T07:59:39.000Z"
+    },
+    {
+      "id": "recsImJXUJ70PzYwh",
+      "fields": {
+        "Title": "Welcome PDF",
+        "File Type": "Link",
+        "Templates": [
+          "reclOtsBHAinlprEn"
+        ],
+        "Placement": "N/A"
+      },
+      "createdTime": "2025-10-27T07:59:39.000Z"
+    },
+    {
+      "id": "recwPg2fZn8o1Jj3C",
+      "fields": {
+        "Title": "Offer Poster",
+        "Templates": [
+          "rec1j8JUD23fWx8kG"
+        ],
+        "Placement": "Whatsapp Status"
+      },
+      "createdTime": "2025-10-27T07:59:39.000Z"
+    }
+  ],
+  "fetchedAt": "2025-10-31T11:57:04.914Z"
+}

@@ -1,0 +1,176 @@
+{
+  "table": "Freight",
+  "schema": {
+    "id": "tblvu82uQ1zLGbcnV",
+    "name": "Freight",
+    "fields": [
+      {
+        "id": "Freight ID",
+        "name": "Freight ID",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Mode",
+        "name": "Mode",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Partner",
+        "name": "Partner",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Status",
+        "name": "Status",
+        "type": "singleLineText"
+      },
+      {
+        "id": "ETA",
+        "name": "ETA",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Dispatch Date",
+        "name": "Dispatch Date",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Container Number",
+        "name": "Container Number",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Order Count",
+        "name": "Order Count",
+        "type": "number"
+      },
+      {
+        "id": "Freight Summary (AI)",
+        "name": "Freight Summary (AI)",
+        "type": "unknown"
+      },
+      {
+        "id": "Required Docs Checklist (AI)",
+        "name": "Required Docs Checklist (AI)",
+        "type": "unknown"
+      },
+      {
+        "id": "Tracking Number",
+        "name": "Tracking Number",
+        "type": "singleLineText"
+      }
+    ],
+    "recordCount": 4
+  },
+  "records": [
+    {
+      "id": "rec0Dq7WLpT7R8KX2",
+      "fields": {
+        "Freight ID": "FRG-20251003-AIR-01",
+        "Mode": "Air",
+        "Partner": "Allen",
+        "Status": "Delivered",
+        "ETA": "2025-10-24",
+        "Dispatch Date": "2025-10-20",
+        "Container Number": "AWB99887766",
+        "Order Count": 0,
+        "Freight Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": "3 orders delivered via Allen Air. ETA was 2025-10-24. Airway Bill: AWB99887766.",
+          "isStale": false
+        },
+        "Required Docs Checklist (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": "Airway Bill, Delivery Receipt uploaded. No pending docs.",
+          "isStale": false
+        },
+        "Tracking Number": "TRK567891234"
+      },
+      "createdTime": "2025-10-23T11:16:13.000Z"
+    },
+    {
+      "id": "recEKfIvDNgNtaLL8",
+      "fields": {
+        "Freight ID": "FRG-20251001-FCL-01",
+        "Mode": "FCL",
+        "Partner": "IFC",
+        "Status": "InTransit",
+        "ETA": "2025-11-05",
+        "Dispatch Date": "2025-10-22",
+        "Container Number": "CNU1234567",
+        "Order Count": 0,
+        "Freight Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": "2 orders in transit via IFC FCL. ETA: 2025-11-05. Container: CNU1234567.",
+          "isStale": false
+        },
+        "Required Docs Checklist (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": "Bill of Lading, Packing List uploaded. Customs Invoice pending.",
+          "isStale": false
+        },
+        "Tracking Number": "TRK123456789"
+      },
+      "createdTime": "2025-10-23T11:16:13.000Z"
+    },
+    {
+      "id": "recGRjQLpe1JmUsvQ",
+      "fields": {
+        "Freight ID": "FRG-20251004-FCL-02",
+        "Mode": "FCL",
+        "Partner": "IFC",
+        "Status": "InTransit",
+        "ETA": "2025-11-10",
+        "Dispatch Date": "2025-10-23",
+        "Container Number": "CNU3456789",
+        "Order Count": 0,
+        "Freight Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": "1 order in transit via IFC FCL. ETA: 2025-11-10. Container: CNU3456789.",
+          "isStale": false
+        },
+        "Required Docs Checklist (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": "Bill of Lading uploaded. Awaiting Packing List and Customs Invoice.",
+          "isStale": false
+        },
+        "Tracking Number": "TRK112233445"
+      },
+      "createdTime": "2025-10-23T11:16:13.000Z"
+    },
+    {
+      "id": "recnLCnVH4YaskjDX",
+      "fields": {
+        "Freight ID": "FRG-20251002-LCL-01",
+        "Mode": "LCL",
+        "Partner": "JFC",
+        "Status": "Cleared",
+        "ETA": "2025-10-28",
+        "Dispatch Date": "2025-10-18",
+        "Container Number": "CNU2345678",
+        "Order Count": 0,
+        "Freight Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": "1 order cleared at port with JFC LCL. ETA: 2025-10-28. Container: CNU2345678.",
+          "isStale": false
+        },
+        "Required Docs Checklist (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": "Bill of Lading, Packing List, Customs Invoice all uploaded.",
+          "isStale": false
+        },
+        "Tracking Number": "TRK987654321"
+      },
+      "createdTime": "2025-10-23T11:16:13.000Z"
+    }
+  ],
+  "fetchedAt": "2025-10-31T11:57:10.097Z"
+}

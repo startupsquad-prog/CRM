@@ -1,0 +1,701 @@
+{
+  "table": "Leads",
+  "schema": {
+    "id": "tblwQNcyhLvBrPH1L",
+    "name": "Leads",
+    "fields": [
+      {
+        "id": "Lead ID",
+        "name": "Lead ID",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Source",
+        "name": "Source",
+        "type": "multipleSelects"
+      },
+      {
+        "id": "Stage",
+        "name": "Stage",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Created On",
+        "name": "Created On",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Lead Age (Days)",
+        "name": "Lead Age (Days)",
+        "type": "number"
+      },
+      {
+        "id": "Full Name",
+        "name": "Full Name",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Phone Number",
+        "name": "Phone Number",
+        "type": "singleLineText"
+      },
+      {
+        "id": "WhatsApp",
+        "name": "WhatsApp",
+        "type": "url"
+      },
+      {
+        "id": "ID",
+        "name": "ID",
+        "type": "number"
+      },
+      {
+        "id": "Open Whatsapp",
+        "name": "Open Whatsapp",
+        "type": "unknown"
+      },
+      {
+        "id": "Created",
+        "name": "Created",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Whatsapp Number",
+        "name": "Whatsapp Number",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Welcome Message Status ",
+        "name": "Welcome Message Status ",
+        "type": "singleLineText"
+      }
+    ],
+    "recordCount": 18
+  },
+  "records": [
+    {
+      "id": "rec0UJ8aNiNz9xmOD",
+      "fields": {
+        "Lead ID": "LD-0025",
+        "Source": [
+          "Website"
+        ],
+        "Stage": "🟢 New Lead",
+        "Created On": "2025-10-29T12:12:31.000Z",
+        "Lead Age (Days)": 1,
+        "Full Name": "tinkuu",
+        "Phone Number": "(981) 285-2757",
+        "WhatsApp": "https://wa.me/9812852757",
+        "ID": 25,
+        "Open Whatsapp": {
+          "label": "Open Whatsapp",
+          "url": "https://wa.me/9812852757"
+        },
+        "Created": "2025-10-29",
+        "Whatsapp Number": "+919812852757",
+        "Welcome Message Status ": "Not Sent"
+      },
+      "createdTime": "2025-10-29T12:12:31.000Z"
+    },
+    {
+      "id": "rec10iTRauP5N02j3",
+      "fields": {
+        "Lead ID": "LD-0022",
+        "Source": [
+          "Website"
+        ],
+        "Stage": "🟢 New Lead",
+        "Created On": "2025-10-29T12:05:28.000Z",
+        "Lead Age (Days)": 1,
+        "Full Name": "dddd",
+        "Email Address": "sahil@startupsquad.in",
+        "Phone Number": "(981) 285-2757",
+        "WhatsApp": "https://wa.me/9812852757",
+        "ID": 22,
+        "Product Inquiry": [
+          "3d Printer"
+        ],
+        "Quantity (Approx.)": 10,
+        "Open Whatsapp": {
+          "label": "Open Whatsapp",
+          "url": "https://wa.me/9812852757"
+        },
+        "Created": "2025-10-29",
+        "Whatsapp Number": "+919812852757",
+        "Welcome Message Status ": "Not Sent"
+      },
+      "createdTime": "2025-10-29T12:05:28.000Z"
+    },
+    {
+      "id": "rec2QBvu3ZjviimYS",
+      "fields": {
+        "Lead ID": "LD-0026",
+        "Source": [
+          "Website"
+        ],
+        "Stage": "🟢 New Lead",
+        "Created On": "2025-10-29T12:13:17.000Z",
+        "Lead Age (Days)": 1,
+        "Full Name": "f",
+        "Phone Number": "(981) 285-2757",
+        "WhatsApp": "https://wa.me/9812852757",
+        "ID": 26,
+        "Open Whatsapp": {
+          "label": "Open Whatsapp",
+          "url": "https://wa.me/9812852757"
+        },
+        "Created": "2025-10-29",
+        "Whatsapp Number": "+919812852757",
+        "Welcome Message Status ": "Not Sent"
+      },
+      "createdTime": "2025-10-29T12:13:17.000Z"
+    },
+    {
+      "id": "rec3rnXsTya6lACiC",
+      "fields": {
+        "Lead ID": "LD-0016",
+        "Source": [
+          "Website"
+        ],
+        "Stage": "🟢 New Lead",
+        "Created On": "2025-10-29T07:16:16.000Z",
+        "Lead Age (Days)": 1,
+        "Full Name": "sahil",
+        "Email Address": "asd@gmail.com",
+        "Phone Number": "(981) 285-2757",
+        "WhatsApp": "https://wa.me/9812852757",
+        "ID": 16,
+        "Product Inquiry": [
+          "Premium Massager Chair ( Trending🔥)"
+        ],
+        "Open Whatsapp": {
+          "label": "Open Whatsapp",
+          "url": "https://wa.me/9812852757"
+        },
+        "Created": "2025-10-29",
+        "Whatsapp Number": "+919812852757",
+        "Welcome Message Status ": "Sent "
+      },
+      "createdTime": "2025-10-29T07:16:16.000Z"
+    },
+    {
+      "id": "rec3tkDKavVQ5zkNa",
+      "fields": {
+        "Lead ID": "LD-0024",
+        "Source": [
+          "Website"
+        ],
+        "Stage": "🟢 New Lead",
+        "Created On": "2025-10-29T12:10:56.000Z",
+        "Lead Age (Days)": 1,
+        "Full Name": "TINKU JIYA ",
+        "Email Address": "MOHMAYA@gmail.com",
+        "Phone Number": "(981) 285-2757",
+        "WhatsApp": "https://wa.me/9812852757",
+        "ID": 24,
+        "Product Inquiry": [
+          "3d Printer"
+        ],
+        "Quantity (Approx.)": 45,
+        "Open Whatsapp": {
+          "label": "Open Whatsapp",
+          "url": "https://wa.me/9812852757"
+        },
+        "Created": "2025-10-29",
+        "Whatsapp Number": "+919812852757",
+        "Welcome Message Status ": "Not Sent"
+      },
+      "createdTime": "2025-10-29T12:10:56.000Z"
+    },
+    {
+      "id": "rec41gEBij64ayVpX",
+      "fields": {
+        "Lead ID": "LD-0030",
+        "Source": [
+          "Website"
+        ],
+        "Stage": "🟢 New Lead",
+        "Created On": "2025-10-29T14:37:10.000Z",
+        "Lead Age (Days)": 1,
+        "Full Name": "Rakib ",
+        "Email Address": "rakibroy653@gmail.com",
+        "Phone Number": "(936) 533-3601",
+        "WhatsApp": "https://wa.me/9365333601",
+        "ID": 30,
+        "Product Inquiry": [
+          "Premium Massager Chair ( Trending🔥)"
+        ],
+        "Quantity (Approx.)": 200,
+        "Open Whatsapp": {
+          "label": "Open Whatsapp",
+          "url": "https://wa.me/9365333601"
+        },
+        "Created": "2025-10-29",
+        "Whatsapp Number": "+919365333601",
+        "Welcome Message Status ": "Not Sent"
+      },
+      "createdTime": "2025-10-29T14:37:10.000Z"
+    },
+    {
+      "id": "rec589an0LmfL5tSX",
+      "fields": {
+        "Lead ID": "LD-0029",
+        "Source": [
+          "Website"
+        ],
+        "Stage": "🟢 New Lead",
+        "Created On": "2025-10-29T12:34:46.000Z",
+        "Lead Age (Days)": 1,
+        "Full Name": "sahil",
+        "Phone Number": "(798) 850-4159",
+        "WhatsApp": "https://wa.me/7988504159",
+        "ID": 29,
+        "Product Inquiry": [
+          "3d Printer"
+        ],
+        "Open Whatsapp": {
+          "label": "Open Whatsapp",
+          "url": "https://wa.me/7988504159"
+        },
+        "Created": "2025-10-29",
+        "Whatsapp Number": "+917988504159",
+        "Welcome Message Status ": "Not Sent"
+      },
+      "createdTime": "2025-10-29T12:34:46.000Z"
+    },
+    {
+      "id": "rec8xNwaJXVRBBSR0",
+      "fields": {
+        "Lead ID": "LD-0028",
+        "Source": [
+          "Website"
+        ],
+        "Stage": "🟢 New Lead",
+        "Created On": "2025-10-29T12:16:52.000Z",
+        "Lead Age (Days)": 1,
+        "Full Name": "sahil",
+        "Phone Number": "(981) 285-2757",
+        "WhatsApp": "https://wa.me/9812852757",
+        "ID": 28,
+        "Open Whatsapp": {
+          "label": "Open Whatsapp",
+          "url": "https://wa.me/9812852757"
+        },
+        "Created": "2025-10-29",
+        "Whatsapp Number": "+919812852757",
+        "Welcome Message Status ": "Not Sent"
+      },
+      "createdTime": "2025-10-29T12:16:52.000Z"
+    },
+    {
+      "id": "recCrT7rgDWVXYw38",
+      "fields": {
+        "Lead ID": "LD-0008",
+        "Source": [
+          "Website"
+        ],
+        "Stage": "🟢 New Lead",
+        "Created On": "2025-10-27T11:45:19.000Z",
+        "Lead Age (Days)": 3,
+        "Full Name": "Sahil",
+        "Email Address": "sahil@startupsquad.in",
+        "Phone Number": "(798) 850-4159",
+        "WhatsApp": "https://wa.me/7988504159",
+        "ID": 8,
+        "Product Inquiry": [
+          "Premium Massager Chair ( Trending🔥)"
+        ],
+        "Quantity (Approx.)": 10,
+        "Open Whatsapp": {
+          "label": "Open Whatsapp",
+          "url": "https://wa.me/7988504159"
+        },
+        "Created": "2025-10-27",
+        "Whatsapp Number": "+917988504159",
+        "Welcome Message Status ": "Sent "
+      },
+      "createdTime": "2025-10-27T11:45:19.000Z"
+    },
+    {
+      "id": "recKqQleCnkPdbSwH",
+      "fields": {
+        "Lead ID": "LD-0023",
+        "Source": [
+          "Website"
+        ],
+        "Stage": "🟢 New Lead",
+        "Created On": "2025-10-29T12:08:50.000Z",
+        "Lead Age (Days)": 1,
+        "Full Name": "lailaa",
+        "Email Address": "sahil@startupsquad.in",
+        "Phone Number": "(981) 285-2757",
+        "WhatsApp": "https://wa.me/9812852757",
+        "ID": 23,
+        "Product Inquiry": [
+          "Action Figurines"
+        ],
+        "Quantity (Approx.)": 45,
+        "Open Whatsapp": {
+          "label": "Open Whatsapp",
+          "url": "https://wa.me/9812852757"
+        },
+        "Created": "2025-10-29",
+        "Whatsapp Number": "+919812852757",
+        "Welcome Message Status ": "Not Sent"
+      },
+      "createdTime": "2025-10-29T12:08:50.000Z"
+    },
+    {
+      "id": "recXFtNgip6azhVBX",
+      "fields": {
+        "Lead ID": "LD-0021",
+        "Source": [
+          "Website"
+        ],
+        "Stage": "🟢 New Lead",
+        "Created On": "2025-10-29T11:34:36.000Z",
+        "Lead Age (Days)": 1,
+        "Full Name": "Sahil",
+        "Email Address": "sahil@startupsquad.in",
+        "Phone Number": "(981) 285-2757",
+        "WhatsApp": "https://wa.me/9812852757",
+        "ID": 21,
+        "Product Inquiry": [
+          "Premium Massager Chair ( Trending🔥)"
+        ],
+        "Quantity (Approx.)": 10,
+        "Open Whatsapp": {
+          "label": "Open Whatsapp",
+          "url": "https://wa.me/9812852757"
+        },
+        "Created": "2025-10-29",
+        "Whatsapp Number": "+919812852757",
+        "Welcome Message Status ": "Sent "
+      },
+      "createdTime": "2025-10-29T11:34:36.000Z"
+    },
+    {
+      "id": "recYwSl51fCsQr5G5",
+      "fields": {
+        "Lead ID": "LD-0004",
+        "Stage": "🟢 New Lead",
+        "Product": [
+          "recXCGRqsvThVdpaR"
+        ],
+        "Assigned To": [
+          "recj2Y5qMJpkjnpjV"
+        ],
+        "Created On": "2025-10-23T11:16:13.000Z",
+        "Notes": "Negotiating DDP pricing for tech gadgets. Client requested revised quotation with updated freight terms.",
+        "Lead Age (Days)": 7,
+        "Product Image (from Product)": [
+          {
+            "id": "attdyxtheXpBYgl7V",
+            "width": 247,
+            "height": 267,
+            "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/FNJE7PRi6QV8Tg89qBsYSg/lIsWKXwIPwA6RSnY9oqh4LY97YErYN8Cn7hfJw2Ekep7Z4tP7kv9nEG9-46LEkrE71_9BoGArvPJEGC1hgFzkIY0XphfeUJ4ju_0a2R09hailWcQ_-5PQXljgVJgD2n2xLZI-XKuVoNmAyb8YJCdgw/amynnBwFdqUM03A0sYl560KLvGjyTjFswASJfVXbMrQ",
+            "filename": "image.png",
+            "size": 68393,
+            "type": "image/png",
+            "thumbnails": {
+              "small": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/3wXgWDXiN16u-SKnDXEX8w/qXoKpJC5_Hc5X5u6melxvYj1ugvalet0fw4HpMjNhYLTdpzuxuOpuO-Wln3vasMuOImwxExIWgGXF_qv12T3RPDtIfQTYQXYTGUa-5WxQlYSQ2Ya8u9KdQACRQaLCJiMXfk9GHWGEu569pwzKpC5hw/IuSRXs1vhVfoe1ljYKhswmbvXyZmXexDqaZBJsFYQ3A",
+                "width": 33,
+                "height": 36
+              },
+              "large": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/9T0tF7U6LttFIlsvgvE6YA/ltQSkdpMStZPxe9vFYJptjp0YUs6Vk5U1V5Sit3PNXzY4Jek0zSJu3ORspbsuo3ivG8zQ66Rkac2ORIeKIGWPiM001-bktTz68KPjGwad8cuDdoZVOD0xR4zMHvg2rVvklX8UvjJtpR3ev2itKoWOA/hO6a9CE-GJBXrF1pYDQ_Fo1VxyPytALt__X6rqOGe2o",
+                "width": 247,
+                "height": 267
+              },
+              "full": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/6FKihYi4zNGekz4KRHrpwQ/Cz9kMmRfZqAhRkQbMxnyQoFPoA2pr45-g85rylU1r4hjry8_gzkwAsLhonNBSPtL-DG6tyE9qZoR8jhPv7lj-Lox3twWI2SaAYk_5t5swC8RGIH2GMY6ZmbPFdl-BULriTl5qcPlW4jrsEgQaQ_T7w/ze6jzlh-cjW3BP3toLSlAr2aCu1g6l_gRQklUoUbnVQ",
+                "width": 247,
+                "height": 267
+              }
+            }
+          },
+          {
+            "id": "attDfhUBLYetrFA75",
+            "width": 247,
+            "height": 260,
+            "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/M3lUnaemAqwCzlND2CG3XQ/JL8JnVebyJqF1qV7jGwL3RRegWly_mG7EeuHJkkutpIHzwYm_Y-du7INcenFpm5vXnuPu2vRo5sSI5rYD4QSW-tc3Knk7HzCDAKCD6NXDtfPCM7n1m48zbAEeQ1DZgoEN9sqAGfvMHH7RuJZfU-R8g/XqEt-1ZQTNH3g0dM-AlcA6y0QKu4pjfedp35SZsQxcQ",
+            "filename": "image.png",
+            "size": 61968,
+            "type": "image/png",
+            "thumbnails": {
+              "small": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/j3FI-4FuSOxAub73jFT-qw/jwmsygcDd0cNk9z45fPzUeT6cYxmb3XYJ3kJZSlkHXfH4fd9dMq6EGet6JaDNPDQsf8lD56YTcqWLg-l-iz1Q2OD1HgdCEsULMGASR1bYu1rceJjq-zr_476T4YNmgiz7yY-IzwaqL27eZY-erNpSA/nZTB5nt6VB__07XGC86bl6gNj2NtV-9BGR8lvn7RzAs",
+                "width": 34,
+                "height": 36
+              },
+              "large": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/Zahc1hSsEL-eD7jTaydh_w/s9d8ZWOdajIJ6tk3HnjSC7slb9BZRRN5y1NyL9wq1Dwkn-6Fw3VDGqkP9pBmy2Pgf5sGoa2fRLLXcT05gLz5p1qsxQk2uEAL0u1gCVJg4NnHdD_l9boBKdtvPXNImDlN_jsVz9832nEDbJyYqIybNg/LJbqd-FoHoOzOYhPzAVAZFyvXstXCKsOCibKcWA4Cbs",
+                "width": 247,
+                "height": 260
+              },
+              "full": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/uFd30hf2iYhsthLGgw9G5Q/W8WtJQDk1e_u9416VhlkT9g0at9Kck-5YxCx-6EAUlfqtZ8vvX0P2X9dmLil-yOT6kxK7VBsxv8uOHqXxmv72Ggt6eOU2yPvMrrVfQbgrJLcSURHrKQ_4AgYsnJwVcH2_0wvZ0rnfBudbg7x58lnzQ/ZbZMMcvo37H-dGyvAhDDrs2y5ZAQOE8BowAufDlWIgo",
+                "width": 247,
+                "height": 260
+              }
+            }
+          },
+          {
+            "id": "attq6GKL6x9YTjhjh",
+            "width": 246,
+            "height": 246,
+            "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/E2VsDsaFn_unflqmJZ6qcg/feTQxrVSx26NG91daLjKbNHFlQLOd3U7OQTmoALRSDQI-yf5k4Wl23f8lu_tGkdHCHqAtYF9ywZbGWEBrAtqkTnjkgYyg53-JUnCzcjc4Yb-g87ZC6WT9NTDJlDEWKdduWW1c2tTkEV1XlF0wqGi5Q/nAVZGYcvLRTojlEFkGm_BbWi6IfHdGYiYYd0OKoVxOg",
+            "filename": "image.png",
+            "size": 70202,
+            "type": "image/png",
+            "thumbnails": {
+              "small": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/yL2ZbcIvbzCxoKxEXlGOHA/FHIn3-X227zbQn0Ft7fP8qREsMAGjJC1rCRnUXBIijIEHjNYZb4jdq0rtWAGCjClYfZh_c4QsOh14ZT8MTX-X2UoS3iF5vkKBptcCMJ0-5qHJUZomWkJ4sXgNUCZsFbKIoRllWMltzrU4BFCaqYclg/zGYv31a_4Wv50zKXv65Xe6sNIiiqaJKV6XPjhwptaWw",
+                "width": 36,
+                "height": 36
+              },
+              "large": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/R3smoPzfO62M8WtrDrSgPw/ZnvW-k0eostN-TiayuoQlNrh2TcLeKG2iFTWHkVO4phqnqhg4HwKlo3iKvMfz-_EJji-bmJhRLARRPbRjuRUHiTiXdyktOjtdeHMHkDilm8P99WBbUjg_xVE5KAEKXqdJrI3HtKrhKnXYNdt9g8KWg/UjFuZykMTAHmuy91ei3gqzm3Yq7-wH61KQ6gxvUqScc",
+                "width": 246,
+                "height": 246
+              },
+              "full": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/Mi5BY0lESmmBD2-gYvYbtA/dd0OSRmuJLGYPel76chsvwhu3js0J1bvmxqEMAd3wrm0FS4UUqgwewDwT_fiOSk4mpM9V5YJrSFcxUo3a_FwWFXo3yX3ajnDO5-BcKwV6E2W8hKfx2XUHmWylnIh80zRsmtEP_V-A2nKyooP3qYpLA/medZC5Xqk4AtJ3ZDMuB5xszkpHTQAMENR8hqVEVLKPE",
+                "width": 246,
+                "height": 246
+              }
+            }
+          }
+        ],
+        "Full Name": "Vikram Singh",
+        "Email Address": "lakshay@startupsquad.in",
+        "ID": 4,
+        "Open Whatsapp": {
+          "label": "Open Whatsapp",
+          "url": ""
+        },
+        "Created": "2025-10-23",
+        "Whatsapp Number": "+91"
+      },
+      "createdTime": "2025-10-23T11:16:13.000Z"
+    },
+    {
+      "id": "recd0jGQIygi6eB0N",
+      "fields": {
+        "Lead ID": "LD-0003",
+        "Stage": "🟢 New Lead",
+        "Product": [
+          "recARs5wIDP74IlDz"
+        ],
+        "Assigned To": [
+          "rechb21zGsrnPN2CP"
+        ],
+        "Created On": "2025-10-23T11:16:13.000Z",
+        "Notes": "Met at Mumbai Expo. Requested decor product samples and MOQ details.",
+        "Lead Age (Days)": 7,
+        "Product Image (from Product)": [
+          {
+            "id": "attB5BuhTbM2Q3KB2",
+            "width": 181,
+            "height": 218,
+            "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/x-L8IQKDYf8VQxcuLs2gOA/hv-rXuV72bpqF8iCHtJ9uv64flbhqhHTROzTCqxyD8fl3tDvmUGGMGR6e1_BObfKEuc7bXag4DamBdWE7LIoT4Lh1IAucyXWTeBu5jhI7o3tN_wVQoS3wCmiGWImSHOMRSiOqCqA-2maUEnISscO_A/M0KEFyxjvOg_2VNTAlv34ATb_F3eka63KWeAiJ9CTBk",
+            "filename": "image.png",
+            "size": 36759,
+            "type": "image/png",
+            "thumbnails": {
+              "small": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/ihfvsjjZYH6cBnPEzSKVbw/VmXL4bSi1gvn6ZUrDJYXvCpfvRnWx3aTeKnMhogcUDTP1Bj1aP9Wfu59gdWUkYqrAuatBo_KNRLEdY5rzxrJZcAvLl9pvmP2Pkxvy7Av1vN_xS-4XMYrz9E_9gJc5cMwXuRDiZDw6B-bAl1EyoFplg/0c1SlEJ094pTd3fZh5wvfaS7xFRXnDN6wrWceDbSx6Q",
+                "width": 30,
+                "height": 36
+              },
+              "large": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/g6xnI2dG1iWX7sw59swM3w/huvCnFMRb2GmZ1fTmIrU5vgHPcJLu1Zyxo4Iqqxsw6431Dt5VkLbrl1VjYF5RDIRy8EU0mHq3-xiaWPeKeNjVlY0CSRhPMeQkfnTdMYpUYlZmynNeDmNQvMg460GDqrDnJ96twMY1hdsAB7TNbbm6Q/AC6l420D22TzJNoBBjcNc2ZygvW7m3Pix8nVUB0K-io",
+                "width": 181,
+                "height": 218
+              },
+              "full": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/u-KliwvXp6eOzQpR_Zp9GQ/Cdal8UOWMzRfWur0_iQRxtQF305nvolEvR6wAGLWeU_bxt0juT4tpXx2akbQTyHJNt_1LXlMDR2aj-iY1rT9vwz8impemOKGVholkhRIyEScewnia_OYDS0kqBYoBH3G8bSTssWs9hpKOBYFRkl9nA/K4rtTNE_hWBJ-al2dsAR0cprHJ4RvhMAR3Cif-fTfYk",
+                "width": 181,
+                "height": 218
+              }
+            }
+          }
+        ],
+        "Full Name": "Sunita Rao",
+        "Email Address": "lakshay@startupsquad.in",
+        "ID": 3,
+        "Open Whatsapp": {
+          "label": "Open Whatsapp",
+          "url": ""
+        },
+        "Created": "2025-10-23",
+        "Whatsapp Number": "+91"
+      },
+      "createdTime": "2025-10-23T11:16:13.000Z"
+    },
+    {
+      "id": "recd9bFV6P5UnaoKK",
+      "fields": {
+        "Lead ID": "LD-0027",
+        "Source": [
+          "Website"
+        ],
+        "Stage": "🟢 New Lead",
+        "Created On": "2025-10-29T12:14:14.000Z",
+        "Lead Age (Days)": 1,
+        "Full Name": "fghjkl",
+        "Phone Number": "(981) 285-2757",
+        "WhatsApp": "https://wa.me/9812852757",
+        "ID": 27,
+        "Open Whatsapp": {
+          "label": "Open Whatsapp",
+          "url": "https://wa.me/9812852757"
+        },
+        "Created": "2025-10-29",
+        "Whatsapp Number": "+919812852757",
+        "Welcome Message Status ": "Not Sent"
+      },
+      "createdTime": "2025-10-29T12:14:14.000Z"
+    },
+    {
+      "id": "recgNuruGGbD1OGL5",
+      "fields": {
+        "Lead ID": "LD-0031",
+        "Source": [
+          "Website"
+        ],
+        "Stage": "🟢 New Lead",
+        "Created On": "2025-10-29T14:40:36.000Z",
+        "Lead Age (Days)": 1,
+        "Full Name": "Rakib",
+        "Email Address": "rakibroy653@gmail.com",
+        "Phone Number": "(936) 533-3601",
+        "WhatsApp": "https://wa.me/9365333601",
+        "ID": 31,
+        "Product Inquiry": [
+          "3d Printer"
+        ],
+        "Quantity (Approx.)": 50,
+        "Open Whatsapp": {
+          "label": "Open Whatsapp",
+          "url": "https://wa.me/9365333601"
+        },
+        "Created": "2025-10-29",
+        "Whatsapp Number": "+919365333601",
+        "Welcome Message Status ": "Not Sent"
+      },
+      "createdTime": "2025-10-29T14:40:36.000Z"
+    },
+    {
+      "id": "recmQugrQMW3CbdP1",
+      "fields": {
+        "Lead ID": "LD-0015",
+        "Source": [
+          "Website"
+        ],
+        "Stage": "🟢 New Lead",
+        "Created On": "2025-10-28T06:54:57.000Z",
+        "Lead Age (Days)": 2,
+        "Full Name": "Abhijeet",
+        "Email Address": "abh@gmail.com",
+        "Phone Number": "(886) 000-0050",
+        "WhatsApp": "https://wa.me/8860000050",
+        "ID": 15,
+        "Product Inquiry": [
+          "Premium Massager Chair ( Trending🔥)"
+        ],
+        "Quantity (Approx.)": 1,
+        "Open Whatsapp": {
+          "label": "Open Whatsapp",
+          "url": "https://wa.me/8860000050"
+        },
+        "Created": "2025-10-28",
+        "Whatsapp Number": "+918860000050",
+        "Welcome Message Status ": "Sent "
+      },
+      "createdTime": "2025-10-28T06:54:57.000Z"
+    },
+    {
+      "id": "recrtk8wkDNk3o1Ht",
+      "fields": {
+        "Lead ID": "LD-0009",
+        "Source": [
+          "Website"
+        ],
+        "Stage": "🟢 New Lead",
+        "Created On": "2025-10-27T11:49:46.000Z",
+        "Quotations": [
+          "rec7KndRP8IbOGpFk",
+          "recVKLwp8Aryu1tcN",
+          "rec8U2f7W5FEDITX1",
+          "recRH5qlyJ1uh8BEi",
+          "recWuzrH4yxBEc7BP",
+          "rec7Lu8cSWD8zAXc2",
+          "recxtXH4Ahx8rdi3n",
+          "reci5YikN9Jainbyx",
+          "recDJAvB50yJFZ8iS",
+          "recyI8yrWHqiUtfHe",
+          "rec6DKG6XZpqeZ04O",
+          "rechZKdv2U6JrS6mH",
+          "rechRDfBH1lEPKZRu",
+          "recT54cZfuvFGBdIo",
+          "recyS2uXWbwBcu25f",
+          "rec7JDo0hIwub4sPU",
+          "recdwjGxBdl6proDk",
+          "recum5fTGi4HPMScY",
+          "recGhQOPGxhWsO4fa"
+        ],
+        "Latest Quotation Date": "2025-10-28",
+        "Lead Age (Days)": 3,
+        "Full Name": "Sahil",
+        "Email Address": "sahil@startupsquad.in",
+        "Phone Number": "(964) 390-6583",
+        "WhatsApp": "https://wa.me/9643906583",
+        "ID": 9,
+        "Product Inquiry": [
+          "3d Printer"
+        ],
+        "Quantity (Approx.)": 10,
+        "Open Whatsapp": {
+          "label": "Open Whatsapp",
+          "url": "https://wa.me/9643906583"
+        },
+        "Created": "2025-10-27",
+        "Whatsapp Number": "+919643906583",
+        "Welcome Message Status ": "Sent "
+      },
+      "createdTime": "2025-10-27T11:49:46.000Z"
+    },
+    {
+      "id": "recwxKkoDkbfTdkDB",
+      "fields": {
+        "Lead ID": "LD-0020",
+        "Source": [
+          "Website"
+        ],
+        "Stage": "🟢 New Lead",
+        "Created On": "2025-10-29T07:23:01.000Z",
+        "Lead Age (Days)": 1,
+        "Full Name": "dhiman",
+        "Email Address": "sahil@startupsquad.in",
+        "Phone Number": "(981) 285-2757",
+        "WhatsApp": "https://wa.me/9812852757",
+        "ID": 20,
+        "Product Inquiry": [
+          "3d Printer"
+        ],
+        "Quantity (Approx.)": 10,
+        "Open Whatsapp": {
+          "label": "Open Whatsapp",
+          "url": "https://wa.me/9812852757"
+        },
+        "Created": "2025-10-29",
+        "Whatsapp Number": "+919812852757",
+        "Welcome Message Status ": "Sent "
+      },
+      "createdTime": "2025-10-29T07:23:01.000Z"
+    }
+  ],
+  "fetchedAt": "2025-10-31T11:56:53.589Z"
+}

@@ -1,0 +1,63 @@
+{
+  "appId": "appx4nbOGbF7wkJ0V",
+  "tables": [
+    "Leads",
+    "Products",
+    "Quotations",
+    "Team",
+    "Message Templates",
+    "Clients",
+    "Resources/Assets",
+    "Orders",
+    "Transactions",
+    "Freight",
+    "Employee Client FAQ"
+  ],
+  "tableCounts": {
+    "Leads": {
+      "fields": 13,
+      "records": 18
+    },
+    "Products": {
+      "fields": 26,
+      "records": 21
+    },
+    "Quotations": {
+      "fields": 12,
+      "records": 69
+    },
+    "Team": {
+      "fields": 12,
+      "records": 6
+    },
+    "Message Templates": {
+      "fields": 6,
+      "records": 15
+    },
+    "Clients": {
+      "fields": 13,
+      "records": 6
+    },
+    "Resources/Assets": {
+      "fields": 3,
+      "records": 11
+    },
+    "Orders": {
+      "fields": 0,
+      "records": 0
+    },
+    "Transactions": {
+      "fields": 10,
+      "records": 6
+    },
+    "Freight": {
+      "fields": 11,
+      "records": 4
+    },
+    "Employee Client FAQ": {
+      "fields": 8,
+      "records": 25
+    }
+  },
+  "fetchedAt": "2025-10-31T11:57:11.594Z"
+}

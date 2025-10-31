@@ -5,6 +5,7 @@ const isPublicRoute = createRouteMatcher([
   '/',
   '/marketing(.*)',
   '/auth(.*)',
+  '/public(.*)', // Public lead forms and product pages
   '/api/webhooks(.*)',
 ])
 
@@ -16,6 +17,9 @@ export default clerkMiddleware(async (auth, req) => {
 
   // Protect all other routes - require authentication
   await auth.protect()
+
+  // Note: User syncing happens via webhook or on-demand
+  // No background sync in middleware to avoid cluttering logs
 })
 
 export const config = {

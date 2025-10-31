@@ -1,0 +1,369 @@
+{
+  "table": "Transactions",
+  "schema": {
+    "id": "tblxeIAJMNBBGQIkL",
+    "name": "Transactions",
+    "fields": [
+      {
+        "id": "Payment ID",
+        "name": "Payment ID",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Client",
+        "name": "Client",
+        "type": "multipleSelects"
+      },
+      {
+        "id": "Payment Date",
+        "name": "Payment Date",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Amount",
+        "name": "Amount",
+        "type": "number"
+      },
+      {
+        "id": "Payment Mode",
+        "name": "Payment Mode",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Payment Status",
+        "name": "Payment Status",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Proof of Payment",
+        "name": "Proof of Payment",
+        "type": "multipleRecordLinks"
+      },
+      {
+        "id": "Recorded By",
+        "name": "Recorded By",
+        "type": "multipleSelects"
+      },
+      {
+        "id": "Is Final Payment? (Formula)",
+        "name": "Is Final Payment? (Formula)",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Payment Risk Assessment (AI)",
+        "name": "Payment Risk Assessment (AI)",
+        "type": "unknown"
+      }
+    ],
+    "recordCount": 6
+  },
+  "records": [
+    {
+      "id": "recN44IK6ZSychDYX",
+      "fields": {
+        "Payment ID": "PAY-1004",
+        "Client": [
+          "recSYF2ZPIEa6tkPA"
+        ],
+        "Payment Date": "2025-10-22",
+        "Amount": 60000,
+        "Payment Mode": "Bank",
+        "Payment Status": "Pending",
+        "Proof of Payment": [
+          {
+            "id": "attJStT6oFZR8N6HJ",
+            "width": 600,
+            "height": 401,
+            "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/as_PpQEnbnZ_szH3Y9uMUg/FSppI4ec5L1ogds-C5rSAyeqLGDElpcv5GO6-xfpPtmc9YnOC4-0B0LTXq_VXqFnQyC0Rwf8sAKdNMfXcZZWu15QpbsUYvXtdRRqJj4fDX2jrismnnCmo5DVZ7K0u6yVdTJekA0jYisAObB3ZLPKvivMo0HyGSDrYHxJ3blFrKc/_vT0-h7msec5RklxgFSpGq_t7a2P6rOTKaV_4PxHpbY",
+            "filename": "abstract_39.png",
+            "size": 127071,
+            "type": "image/png",
+            "thumbnails": {
+              "small": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/jhkXT7IaU8uzsJhYHH9Ojw/dgKf3DYzBlqkrf1FnKreq2Eq2iDrb7hBTYOs1v2UTIYaJS_s1g0-L3rdGbuyiWXFwM4ZqQW6P-xhwCQ4iYG8SUYva1rblTXL3n2RSmTVlQuHDspBN3_glY9beziM8Q0UrNBEYpTjXl-UanXfFapGKg/Pt31H6gGQh9H7L90rcYpkft8GlwnpYTTLrbi1yR-XXk",
+                "width": 54,
+                "height": 36
+              },
+              "large": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/7a52Srds3B4ZEJBrne2jTg/leIGvZhtz6Q3w-CISpwWip0LNVd5K_SHYk8Xv1vCaaDHkZ2ZwGyIajz_NtnEbWg7WLO87RGZXrgBaNdUozPCt10C5Yw60cZ-jjmtkOPtQRuk5_33lxEyjtpXTehE4en91O1YQ9qC1Aazhr3jyi9jkA/iqLVnk0uC_5aSCZ2HTRW-m3B_apECdU_QmMlhPkwBIM",
+                "width": 600,
+                "height": 401
+              },
+              "full": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/Y111mN1NhZSE5fmSuIO8Rg/B-Krb9GpjMf-CZWd-6Wb2a01kqRl4TZDKMBelznX7nFwxhnEDBPUO7Kk8R4z-ktyTtzr14DgP3-5mzw_k6o1DtPcGy64Ms24zjvjAYZaba_YzN2MOYMxudWMWN5CqqPIYq7JUKcNvl0wlEciBJIXUg/QAFd1XZloS4527jH7lHzZWsmZU7VYx7D2Wv7BAbpra0",
+                "width": 600,
+                "height": 401
+              }
+            }
+          }
+        ],
+        "Recorded By": [
+          "recj2Y5qMJpkjnpjV"
+        ],
+        "Is Final Payment? (Formula)": "No",
+        "Payment Risk Assessment (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": "High risk. No funds received yet; urgent follow-up needed.",
+          "isStale": false
+        }
+      },
+      "createdTime": "2025-10-23T11:16:13.000Z"
+    },
+    {
+      "id": "reccx0TmgZaPuLgQO",
+      "fields": {
+        "Payment ID": "PAY-1003",
+        "Client": [
+          "rec2Q0rGpkrQJuVmP"
+        ],
+        "Payment Date": "2025-10-10",
+        "Amount": 80000,
+        "Payment Mode": "Alibaba",
+        "Payment Status": "Verified",
+        "Proof of Payment": [
+          {
+            "id": "attcJypZrVl08gEUI",
+            "width": 600,
+            "height": 401,
+            "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/-yr5tMgNF6RxEbmVrqtiUg/ElVna5dlPilrt4-mlqDCWWQkHTeTSuZ2k9rXA4A60yxvzg5c6tS-4O4OyuLsB3x3GyWp32YAdOwQaCH8vY5BC5oTmEQbCkkxF-VGhrdmRs5Np1SSHhl9txB5ejmwGzGBzdn0BITp6JBiJp9TukzpyhOQkg7d7SNntRemFFHnDlI/X-phhFgz4VlqEb_0nFffl3HGZtbN9nx_grFS8EkhLCs",
+            "filename": "abstract_35.png",
+            "size": 302330,
+            "type": "image/png",
+            "thumbnails": {
+              "small": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/wmCcoeGRP0_BQtqrnTMeAw/nYi2dH4Au-lKNHwy7WpUbWAqFxUPtB9mO-q2HsWn5wPad7KELDQjeCxxOWi-PxFT7gBiMEQmkHe4sJMZgXal_okQ56fI5X7U6Xt7VW6nDbAN_kzRWLLYzyxOpr2PB9gc8_oxSbXGR0jVeWnQwFcLUw/iYEJ2M8a8rheVKpNA8GZ_dystSlLvMIO7udyShmQ_M8",
+                "width": 54,
+                "height": 36
+              },
+              "large": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/V5ov979dM4XLgFvBvlGkkQ/x1I-6RfyK2uiTVlvdEVBoYj9WG8VFBYXlZH_l_tD5RpC6e3oJ0OCG0CJ85ijSnHji-Vt2wq6AJX-uU4539D8iM9NQFfMzmOE9yczX5Vw70UvcMLUBm1JU_QBiyDxUKpz8EbIJih1KJXSS0v90TeO5g/PPjt1ms0eFSsjpqQvFMeoIyvlLZvAvy13iZdxrTHMfs",
+                "width": 600,
+                "height": 401
+              },
+              "full": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/91ASeZsvVdHHOHnC50cHJg/ktxlNseXR9-6xkPRZUbr3eRCayR4eIkIEq-usAh23F5oA8tsl5iTYGOBXbsWcMaKea0msvyL8ACuvfFUlujiNg3109840XKyPgq_KcnKYuKJh7BrTn6b1e15t9soeo1i5grBx90XO40vLQggR_Nqvg/H8CUALxpdn--3nD4O1vst0rJFbMi-K-mnQWzN8mYNIc",
+                "width": 600,
+                "height": 401
+              }
+            }
+          }
+        ],
+        "Recorded By": [
+          "rechb21zGsrnPN2CP"
+        ],
+        "Is Final Payment? (Formula)": "No",
+        "Payment Risk Assessment (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": "No risk. Payment confirmed by Alibaba and matches invoice.",
+          "isStale": false
+        }
+      },
+      "createdTime": "2025-10-23T11:16:13.000Z"
+    },
+    {
+      "id": "recgAdMglrIAeWDnT",
+      "fields": {
+        "Payment ID": "PAY-1005",
+        "Client": [
+          "recPVuiNC9wZrQhuv"
+        ],
+        "Payment Date": "2025-10-18",
+        "Amount": 120000,
+        "Payment Mode": "UPI",
+        "Payment Status": "Full",
+        "Proof of Payment": [
+          {
+            "id": "attZ0J8DPIly3rmnd",
+            "width": 600,
+            "height": 401,
+            "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/Wl4tf7r48LqhmvomAx8mwQ/U3i2KLrbix68eAnZZiTklYPkYoM4jl1R2fwkUaDsk1BynNb0vbu3K_qzHg-rY4jL2GtflgsjJKY9epuD-VIMhVXyNcOkxAzjCUsbwetOMhYV5GXAaG-1RiB8QrwUrLAAUKhOA1C0I5ExUYCACIyPVT9MfLdvCKs_rMk0ozfksEg/TCQqm7Oa3_zFVq7lTg0RA6SEyPX92klweIJbqMHRbV8",
+            "filename": "abstract_6.png",
+            "size": 242658,
+            "type": "image/png",
+            "thumbnails": {
+              "small": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/PbTVkuzpb-943Ca3esHbvw/07ztlR6U7tPZIA9qvM5uGlQ8hadZLt21QQKraIiE-IHOEmnPLFA1ByFu0fvk27ID3LcEKjOnKDg6In4RgKWljqFcNwiZBS_fxjZO4ET_VrkTTd7L9wDyUrzrJq8MATy-YQ39KRRMSA51T9TWx4qFVg/68qkdeIlv2QYN5fNuhzSDgES5w_ZHx-4lug-sS9Kw5M",
+                "width": 54,
+                "height": 36
+              },
+              "large": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/SC4olkLZCYlHitajwv2hzA/wL1_GsQCeO6xCa70Qtz1Zvc3-9mQQgCSoxmDFSr2sOkxPQ5ztIh3btIT7zsJi9jjriHePbHiAThXwXybE4diFIQ-yWMzb_untPtAaYw0mxtR9AFXbByhzVLDa6gLm5sECOeMMOKLxRXQoo45uEr9iw/_mkMYI4hdUFmXdRBMaO3PEOfFsxHCiF91QwT92CBHl0",
+                "width": 600,
+                "height": 401
+              },
+              "full": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/vI9VdmJ6jNr1dFFJrz6tQA/pFL_EXlf0bsW52nIVJKEqGT9rsvnh3uw5ilzHpkQGGlaykowbm6vh7SbkilM5-5QyVHgeLUHFzFuc7lzBxiksEnw7-8g2v-47k-tCaNZWRy8vU9kTUxWNdz6fH6gb7vUHVYK7cI2wen070RLxsnR_A/-Iohb5biwN7WDPukGhDvjZkrPlfLzoY8Zr_hP3UNFL8",
+                "width": 600,
+                "height": 401
+              }
+            }
+          }
+        ],
+        "Is Final Payment? (Formula)": "Yes",
+        "Payment Risk Assessment (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": "No risk. Payment and order status both confirmed.",
+          "isStale": false
+        }
+      },
+      "createdTime": "2025-10-23T11:16:13.000Z"
+    },
+    {
+      "id": "recosBq0hI9CG59o2",
+      "fields": {
+        "Payment ID": "PAY-1001",
+        "Client": [
+          "recPVuiNC9wZrQhuv"
+        ],
+        "Payment Date": "2025-10-21",
+        "Amount": 125000,
+        "Payment Mode": "Bank",
+        "Payment Status": "Full",
+        "Proof of Payment": [
+          {
+            "id": "attb6SQ5l3PepxIf4",
+            "width": 600,
+            "height": 401,
+            "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/lUaQnk-zfBHC3cvR1FRtOQ/HlQOo5e7fWut8GWkXoEXMA_qyRRZMIfebBMpr9ggwzzeIRe4VWKOSl20POXE0oqgQpVadaamPrp3UMh0_Wlh2tAgPGkikA-77vctkWHvZ02zaEfECWKqIDzQDGUF7QXCO9dHnbAvxHbPt3O9TL4X8ofhBvU_JF197tqUP6xac1M/nrT3PDzWsj4sHpFV_53Ht99uYGipi6pDe2LSw8QPzSY",
+            "filename": "abstract_13.png",
+            "size": 375049,
+            "type": "image/png",
+            "thumbnails": {
+              "small": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/R-ECVGMbrZnvxYAA16cODA/bkUvEr7164fwJZYKjr-Aida6nk75SXh3sKuamBxdM5ggoDKoHEzDWdU4xvJcHx0FDK1XN14bab5OSuChXFd6ggd95cGS4ikmND0LsE1JaLBBCYGt1d5FUkNa2V0xDOlndO1yaAOYVD83ZfcDihsOmw/C4AVlCxVIGalQSEzmfP22oGNepmFw9B-qOQTtNDzjPQ",
+                "width": 54,
+                "height": 36
+              },
+              "large": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/i9jRIxZsUnoLpcks7RgMJQ/gZOVrXsRnh6l_zppeJEL0_sd3ko60AuK_T6_CxRZi6-rSOhwCpW8oDm-ysrMON0Y2P8RXsA4cVbCar3yvMUYAXOvX1l0rzqTxV1GzD8Qn3iGIe8fxT86J6U4zGSNe4ADa1PVudKaOR0DMhXntOIH2g/rDMxrJgn2ZA0C5mzq45DX3cKajt6pr_7K_A6s5MXBnM",
+                "width": 600,
+                "height": 401
+              },
+              "full": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/clBd2Ai8yXVbgnHjfnkS_A/d7Ztq7XEGI_wqAmBxkcRZrQZcLm1r3xOfC3rd4vKF92RythA6gz77eX3X_eVRbGW1Js4sNF1YhExUKoMXD06_OcTKeOqisSEnpb5Q7q7ARxIwcG-gef9WExiVv9569eWY4V2pQ0EsaBuPo8phnaKRQ/_OpLxJ6DrBi340rGf6LFPSDqOAnAdYxr7gr_p56uxYo",
+                "width": 600,
+                "height": 401
+              }
+            }
+          }
+        ],
+        "Recorded By": [
+          "recCHD1UPKlasGpTY"
+        ],
+        "Is Final Payment? (Formula)": "Yes",
+        "Payment Risk Assessment (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": "No risk detected. Payment verified and matches order value.",
+          "isStale": false
+        }
+      },
+      "createdTime": "2025-10-23T11:16:13.000Z"
+    },
+    {
+      "id": "recwHdbnh3mtodQT7",
+      "fields": {
+        "Payment ID": "PAY-1006",
+        "Client": [
+          "rec3M1SiXk4D8HzI3"
+        ],
+        "Payment Date": "2025-10-20",
+        "Amount": 30000,
+        "Payment Mode": "Bank",
+        "Payment Status": "Partial",
+        "Proof of Payment": [
+          {
+            "id": "attYxqxCgPmk05vgR",
+            "width": 600,
+            "height": 401,
+            "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/TzdB6Zfmhlz8C44PRQeUjg/DkrTtzqUsNWxdbo06SmGXwnCyjz46dk9bCxX-3BVBv4Y2O4K38f2J5Bi61SfD6dptpix6fakxD7ahDvlIyuM688I3CvbvVwQs67wziWbvq3glETlWXJyH1vNjB0RLRc1UkgOKWfopZbse2k1eez8JVMxrELwM556N1aRJyarKIA/Znu8b7-L_grGcY2jTQRNTudz7kwY4Otuu45qLpvhof8",
+            "filename": "abstract_24.png",
+            "size": 307297,
+            "type": "image/png",
+            "thumbnails": {
+              "small": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/A71bE10T-12gKxbOBTeW0A/VWUlYDJoNZhkRszxeLkffPdJFh1JjtvM_riYB4WSLEq0dvtW8NDfHk3WGtEO0BL4Iz6EazWRHRDRgjCJtYSC9GsRWLfpQcQBqI1lVz6aOcuwqrNpYGT5BhOZGslXywkHHMd9SbiOuPE8bOi6SppqKg/bLCb5T_5LoAaNAgrbvxvQA-tKV91LUIyKe0q__SyQl4",
+                "width": 54,
+                "height": 36
+              },
+              "large": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/M5g7wl56foG2IMLm96KkvA/Yy5E9y6Q1hF2bhzVuQGwyNpIk059YZ2-r7-pot6JonnJS06KhyY1W0uWp9VJHwPgDOm7lbBOAqALq8jZ4aHBY1cc-jn2VrZ0DGz72W8XahrHwwV_D5xLT-mybarXrd87QXpa0Mzon-pRFsA_PNWQyw/g3JOYf6CAtdtpxuLHZx9dBmSNgV7s-u5L4qwb4chqtE",
+                "width": 600,
+                "height": 401
+              },
+              "full": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/7O_EuFI6oVD_MA0va8LFJQ/4njpcmph5iGXNEN3-zPNNX37J6RZp4RlRbRkQUmWd9muZDTxh3oSm46CGx1czspY6GGrbS2CMGTbSYoN_B1igI9qWpHTIYu16e7GxVkcsjkCBk9XatyUWtDdpaVvhOMCsSquOC2Ot_5JQyymrHNq_A/0-t2ksC-r59wtd5quvMdp_qCZI8zya7D7GPNFV-W_xY",
+                "width": 600,
+                "height": 401
+              }
+            }
+          }
+        ],
+        "Is Final Payment? (Formula)": "No",
+        "Payment Risk Assessment (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": "Low risk. Standard advance, awaiting further installments.",
+          "isStale": false
+        }
+      },
+      "createdTime": "2025-10-23T11:16:13.000Z"
+    },
+    {
+      "id": "recxdIYTvVcxnX0SA",
+      "fields": {
+        "Payment ID": "PAY-1002",
+        "Client": [
+          "rec3M1SiXk4D8HzI3"
+        ],
+        "Payment Date": "2025-10-15",
+        "Amount": 50000,
+        "Payment Mode": "UPI",
+        "Payment Status": "Partial",
+        "Proof of Payment": [
+          {
+            "id": "attXXK0G0sAaj7Prl",
+            "width": 600,
+            "height": 401,
+            "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/EaMGypLqitmrSJ-OFnTX2g/M4kOrx5t33CW4VFByCsMe8_VrCjhmipsuoMgOZeCMUIqXc6h1qnuvuge8me1ELX5mzYtUYu_tDlClsUN8HnDkc378ikiCaN57Je-bS2N6ARATjRfga5J3jj5IZLdP--gFENKPRfGzr1otLgrqaGI6PvCwm73-SmWm8F4zo2-1B8/z6_JCT6atnF1-lPZOq7wmqHyYE_NWUINFOivpKoNGNI",
+            "filename": "abstract_22.png",
+            "size": 61895,
+            "type": "image/png",
+            "thumbnails": {
+              "small": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/K_Uwjvf-04oEu2x1tvFUQg/TSsgoPzXeMeQ0v3KI_soGeIbDkrJi3XDeePhpYSIKPe6g7PTNb5HgBS04MMP7XRQU2vh0cf7aj2fYmQr897CDtecWGHookWR7Rs8YFRfoymZwJRzZPeJLsZL-P8NrXkh5WM4IwAOmWObYW89EwvkRg/cHca-C90O54yzIbgrmD-NyrTcu_ucPckpHpAIKM_wWY",
+                "width": 54,
+                "height": 36
+              },
+              "large": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/CyHACfvS-of7v5IKej4dTA/0D3d99YNr1XD7Qea8wEd_UBJb042-TjLE-gW2WavcmKMpc2rUIYLGZkuUwNiPf22Um4WdRwO43TMneK41710GrO0NstABB8itwzUMMiOBZ3dFdeUI-TFE0aNv8pD4Yfi6bK2q36pV27LGnmsPwJyeQ/1mVUpuXwAUAO8kv8Rghl8cDJLS4q-XSWqo_fHuW5ExM",
+                "width": 600,
+                "height": 401
+              },
+              "full": {
+                "url": "https://v5.airtableusercontent.com/v3/u/46/46/1761919200000/czoyYC7FBSkmt9Xha7WtBA/G3hiwIl-fq8McaGilrOJBvFbquGKoSzXzgYVu6Omg9F83s9NHk9OFQCRCG7doXNWMR6A6ckVsFcpxCKkEXVFPrB4XFzLv7wNI6M5Tp9bBEqEBHU932F277s2yDimK10S95x1utwwKWJ18Sdocz88pw/6U7HYwhFtN8MG6Bymz5TCHElht5EpDk9Fc_qROdYDVk",
+                "width": 600,
+                "height": 401
+              }
+            }
+          }
+        ],
+        "Recorded By": [
+          "rec9cmKq4XZ6Y6BGb"
+        ],
+        "Is Final Payment? (Formula)": "No",
+        "Payment Risk Assessment (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": "Moderate risk. Follow up required for remaining amount.",
+          "isStale": false
+        }
+      },
+      "createdTime": "2025-10-23T11:16:13.000Z"
+    }
+  ],
+  "fetchedAt": "2025-10-31T11:57:07.778Z"
+}

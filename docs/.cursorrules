@@ -1,0 +1,449 @@
+> Master system rules for USDrop AI project.  
+> Every prompt Cursor executes must comply with these standards, unless explicitly overridden by you (Lakshay).
+
+---
+
+## 🧭 1. Intent Routing
+Whenever I issue a prompt, detect its primary domain and route accordingly:
+
+| Category | Scope |
+|-----------|--------|
+| UX | User flow, navigation, interactions, onboarding, journey clarity |
+| UI | Layouts, components, visual hierarchy, responsiveness, a11y |
+| Animations | Motion, haptics, hover effects, transitions |
+| Copywriting | Tone, CTAs, microcopy, compliance, empty/error states |
+| Brand | Colors, typography, icons, shadows, tokens |
+| Stack | Framework, tooling, build setup, CI/CD |
+| Schema | DB structure, API, Supabase migrations, RLS policies |
+| Auth | User/session management, guards, role checks |
+| MCP | Integration with Figma, Supabase, Twilio, Resend, UploadThing, PostHog, etc. |
+| Module | Dashboard, Orders, Products, Research, Settings, Client Panel |
+| Infra/CI | Testing, linting, typechecking, performance budgets, build pipelines |
+
+If unsure, **ask for clarification before assuming** or default to `Stack` or `UI`.
+
+---
+
+## 🧩 2. Edit Discipline
+
+- Modify **only** the files directly related to the prompt.  
+- Do **not refactor architecture**, rename globals, or swap libraries unless explicitly requested.
+- Before creating a new file/component/schema, **search existing** codebase for reusable equivalents.
+- When replacing or enhancing:
+  - Prefer **Extend → Adapt → Replace** (only if necessary).
+- Never remove comments or docs explaining business logic.
+- When touching code linked to a schema, ensure naming and linkage remain consistent.
+
+---
+
+## 📁 3. Directory Verification
+
+**CRITICAL**: Before running any `npm run dev`, `npm run build`, or package management commands:
+
+1. **Verify Current Directory**: Ensure we are in the correct project root:
+   ```
+   C:\Users\MSI\Desktop\USDrop V2\usdrop-v2
+   ```
+
+2. **Directory Check Commands**: Always run these verification commands first:
+   ```bash
+   pwd                    # PowerShell: Get-Location
+   Test-Path "package.json"  # Verify package.json exists
+   Test-Path "src/app"    # Verify src directory structure
+   ```
+
+3. **Navigation Fix**: If in wrong directory, navigate to correct path:
+   ```bash
+   cd "C:\Users\MSI\Desktop\USDrop V2\usdrop-v2"
+   ```
+
+4. **Error Prevention**: Never run npm commands from parent directory `C:\Users\MSI\Desktop\USDrop V2\` - this will cause "package.json not found" errors.
+
+5. **Confirmation**: Always confirm correct directory before executing build/dev commands.
+
+---
+
+## ✅ 4. Definition of Done (DoD)
+
+A task or prompt is “done” when:
+
+1. The code:
+   - Builds successfully.
+   - Passes `npm run typecheck` and `npm run lint`.
+   - Has no unhandled runtime errors.
+2. The UX/UI:
+   - Has no layout leaks, overlaps, or accessibility violations.
+   - Uses brand tokens and follows guardrails.
+   - Works on sm/md/lg screen sizes and both themes.
+3. The copy:
+   - Aligns with `/docs/copywriting/copy-rules.md`.
+   - Clear, confident, outcome-first, and compliant.
+4. The schema:
+   - Preserves backward compatibility.
+   - Maintains RLS safety and indexes.
+5. PR notes include:
+   - What changed
+   - Why
+   - Screenshots (sm/md/lg, light/dark)
+   - Risks / Rollback steps
+
+---
+
+## 🧱 5. Quality Gates
+
+| Check | Command | Description |
+|--------|----------|-------------|
+| Type Safety | `npm run typecheck` | No TS errors |
+| Linting | `npm run lint` | ESLint + Prettier compliant |
+| Accessibility | `npm run a11y:lint` (later) | Basic a11y checks |
+| Docs | — | Updated docs when schema/UI changes |
+| PR Checklist | `/docs/checklists/pr.md` | All boxes ticked |
+
+Cursor must automatically mention any unverified gate when finishing an operation.
+
+---
+
+## ⚙️ 6. Performance & Security
+
+- Avoid N+1 queries, redundant re-renders, heavy client fetch loops.  
+- Use **RLS policies** for final data protection — UI should assume least privilege.  
+- Never expose `service_role` or secret keys on the client.  
+- Respect Supabase schema rules: additive-first, backfill, safe drops.  
+- Lazy-load large or infrequently used components.  
+- Memoize large lists and data tables.
+
+---
+
+## ♿ 7. Accessibility Standards
+
+- All interactive elements keyboard-navigable and focus-visible.  
+- Use semantic elements (`<button>`, `<nav>`, `<main>`, `<aside>`).  
+- Maintain color contrast ≥ WCAG AA.  
+- Motion: respect `prefers-reduced-motion`.  
+- Forms:
+  - Labels always visible.
+  - Required fields indicated.
+  - Errors described with ARIA or text.
+- Esc closes modals; Enter submits forms.
+
+---
+
+## 🎨 8. UI Guardrails
+
+- Header height: 64px; `main` uses padding-top: 64px.  
+- Sidebar width: 280px; reserve space using grid or spacer div.  
+- Avoid absolute positioning unless controlled; no overlaps.  
+- Z-index tokens: 10 / 20 / 30 / 40 / 9999 (no magic numbers).  
+- Sticky headers never obscure content; use `scroll-margin-top: 72px` for anchors.  
+- Respect dark/light tokens from `/docs/brand/brand-tokens.json`.  
+- Modals lock scroll; restore focus on close.  
+- Use Skeletons for loading states >400ms.  
+- Virtualize tables >200 rows.  
+- No inline style hacks.
+
+### Scroll Behavior Rules:
+- Main page containers should NOT scroll (use h-screen overflow-hidden)
+- Only content areas (tables, lists) should have scrolling (overflow-auto)
+- Sticky elements (headers, pagination) should stay fixed within their container
+
+### Calendar Component Rules:
+
+**Basic Calendar** - Use for:
+- Single date selection (birthdate, specific date filters)
+- Simple date pickers in forms
+- When no date range needed
+
+**Preset Calendar (calendar-19)** - Use for:
+- Date range selection (reports, exports, filtering)
+- Analytics date ranges with presets (Last 7 days, Last 30 days, etc.)
+- When users need quick date range shortcuts
+
+### Modal Component Rules:
+
+**Quick View Modal** - Use for:
+- Basic information display (user profile summary)
+- Read-only data preview
+- Quick reference without navigation
+- Simple structure, no tabs needed
+
+**Detailed Modal** - Use for:
+- Complex information with multiple sections (full user profile)
+- Tabbed content (Overview, Activity, Permissions, Settings)
+- When editing capabilities needed
+- Rich data visualization
+
+## 🔄 Loading States & Skeletons Rules
+
+### When to Use Skeletons vs Loaders:
+
+**Use Skeletons for:**
+- Initial page/data loading (>400ms)
+- Data fetching on page load
+- Large content areas being populated
+- Table rows being loaded
+- Card content being fetched
+- Profile information loading
+
+**Use Loaders/Spinners for:**
+- Quick actions (<400ms) like button clicks
+- Form submissions
+- Small inline operations
+- File uploads
+- Real-time updates
+
+**Use Optimistic Updates for:**
+- Sorting operations (show new order immediately)
+- Filtering operations (show filtered results immediately)
+- Toggle operations (show new state immediately)
+- Quick state changes
+
+### Implementation Rules:
+- **Never show skeleton during sorting** - use optimistic updates
+- **Never show skeleton during filtering** - use optimistic updates  
+- **Never show skeleton during pagination** - use optimistic updates
+- **Always show skeleton for initial data fetch**
+- **Use skeleton for search results** (new data being fetched)
+- **Use loader for form submissions and mutations**
+
+---
+
+## 🧭 9. UX Guardrails
+
+- One primary action per view; demote secondaries.  
+- Progressive disclosure: hide advanced settings under collapsible sections.  
+- Empty states teach + show + act (CTA).  
+- Toast + inline feedback for async actions.  
+- Errors are friendly: "We couldn't {action}. Try again."  
+- Command palette (⌘K) for global navigation.  
+- Mobile: avoid horizontal scrolling; sticky primary CTA if needed.  
+- A11y test: keyboard nav, focus order, readable labels.
+
+---
+
+## ✨ 10. Animation & Haptics Rules
+
+- Calm, purposeful, 120–240 ms micro, 300–400 ms entrances.  
+- Easing: `cubic-bezier(0.2, 0.8, 0.2, 1)`.  
+- Hover: no bounce/pop; prefer shine or subtle translate-y.  
+- Active: press effect (`translateY(1px)` + scale 0.98).  
+- Focus: visible rings (no color-only cues).  
+- Disable unnecessary motion if user prefers reduced motion.  
+- Skeletons > spinners for long loads.  
+
+---
+
+## ✍️ 11. Copywriting Standards
+
+- Tone: confident, clear, helpful — outcome-first, not hype.  
+- Headlines: short benefit statements.  
+- Subheads: explain "how".  
+- CTAs: verb-led ("Import to Shopify", "Run Research").  
+- Microcopy: explain consequences ("This will import 120 listings").  
+- Empty/error templates must include friendly guidance.  
+- Naming conventions: `Find Winners`, `Profit Intelligence`, `Dispute Guard`.  
+- Compliance: no guaranteed earnings claims.  
+- Localization-ready: avoid slang or idioms.
+
+---
+
+## 🎨 12. Brand Tokens & Design System
+
+- Colors, radii, shadows, fonts, and spacing pulled from `/docs/brand/brand-tokens.json`.  
+- Tokens → CSS vars → Tailwind theme extension.  
+- Primary = action color, Accent = informational.  
+- Never hard-code hex values.  
+- Typography: Geist Variable (display), Inter (UI), Geist Mono (mono).  
+- Maintain AA contrast minimum in both themes.  
+
+---
+
+## 🧬 13. Schema & RLS Rules
+
+- Always read current schema + migrations before edits.  
+- Use additive-first migration strategy:
+  1. Add column/table.
+  2. Backfill data.
+  3. Swap references.
+  4. Drop obsolete.
+- Naming: snake_case; singular nouns (`order`, `product`).
+- Columns: UUID id, `created_at`, `updated_at`, `deleted_at` (nullable).  
+- FKs: `ON UPDATE CASCADE`, `ON DELETE RESTRICT`.  
+- RLS: default deny, open via explicit policy.  
+- Index all FKs and common filters.  
+- Align DB schema with frontend flows.  
+
+---
+
+## 🔐 14. Auth & Role Handling
+
+- Providers: Email/Password (default), Magic Link optional, Google optional.  
+- `RequireAuth` server wrapper for dashboard routes.  
+- On login, if no `profile` row exists, auto-insert with default `viewer` role.  
+- Roles: `owner`, `admin`, `staff`, `client`, `viewer`.  
+- Role checks with `hasRole(userRole, allowedRoles)` util.  
+- Admin-only actions guarded both server-side (RLS) and UI.  
+- Never rely solely on client role for security.  
+
+---
+
+## 🧠 15. MCP Integration Rules
+
+- Allowed MCPs: `supabase`, `resend`, `twilio`, `uploadthing`, `figma`, `posthog`, `icons`.  
+- Each MCP must:
+  - Check for env vars and fail-safe if missing.
+  - Export typed async functions.
+  - Be documented in `/docs/mcp/usage.md`.
+- Add env placeholders in `.env.local.example`.  
+- No secrets exposed in client code.  
+- Prefer server calls with safe wrappers.  
+
+---
+
+## 🧩 16. Stack Rules
+
+- Next.js 15 (App Router, RSC, Route Handlers)
+- React 19, TypeScript 5.6+
+- Tailwind, shadcn/ui, Radix, TanStack Table/Query
+- RHF + Zod for forms
+- next-themes, sonner for toasts
+- PostHog, Sentry (later)
+- Supabase (auth, db, storage)
+- All deps pinned to stable versions
+- Folder structure maintained:
+```
+
+app/
+(dashboard)/
+(client)/
+src/
+lib/
+components/
+mcp/
+docs/
+
+```
+
+---
+
+## 🧮 17. PR / Review Discipline
+
+Every PR must:
+- Link issue or task.
+- Include before/after screenshots.
+- Note environment changes.
+- Update docs if logic/schema/UI changed.
+- Mention which ruleset (UX/UI/Schema/etc.) applied.
+- Have rollback instructions.
+
+---
+
+## 🧑‍💻 18. Cursor Behavioral Rules
+
+- Cursor should **read `/docs/**` before code edits**.  
+- If a prompt lacks clarity, ask short clarifying questions.  
+- When outputting code, explain reasoning in concise bullet points.  
+- On major changes, generate a diff summary (file → line range).  
+- Never remove or override `.cursorrules.md`.  
+- Keep consistency with established stack and brand tokens.  
+
+---
+
+## 🧱 19. Definition of Modules
+
+| Module | Description |
+|---------|--------------|
+| Dashboard | Overview metrics, shortcuts, insights |
+| Orders | CRUD, DataTable, Supplier chat integration |
+| Products | Listing, optimization, import pipelines |
+| Research | Product research + AI agents |
+| Settings | Profile, team, MCP configuration |
+| Client Panel | Restricted access, personal orders/progress |
+
+Each module:
+- Has its own `/docs/modules/<module>.md` spec.
+- Shares common UI components (DataTable, Modal, Drawer).
+- Adheres to UX and RLS boundaries.
+
+---
+
+## 🧩 20. Error & Logging Standards
+
+- Log warnings for missing envs, failed MCP calls, and schema mismatches.
+- Display friendly UI messages.
+- Never expose stack traces to end-users.
+- Use `console.error()` only in dev; replace with logger in prod.
+
+---
+
+## 🧭 21. Scroll Behavior Rules
+
+### Main Page Containers:
+- Use `h-screen flex flex-col overflow-hidden` for main page containers
+- Never allow main page to scroll - only content areas should scroll
+- Use `overflow-auto` for scrollable content areas (tables, lists, forms)
+
+### Sticky Elements:
+- Headers, pagination, and toolbars should use `sticky` positioning
+- Sticky elements should stay fixed within their container
+- Use `border-t` for sticky pagination to separate from content
+
+### Content Areas:
+- Tables: `max-h-[calc(100vh-400px)] overflow-auto`
+- Lists: `overflow-auto` with proper height constraints
+- Forms: `overflow-y-auto` for long forms
+
+---
+
+## 🗓️ 22. Calendar Component Rules
+
+### Basic Calendar - Use for:
+- Single date selection (birthdate, specific date filters)
+- Simple date pickers in forms
+- When no date range needed
+- Basic date input requirements
+
+### Preset Calendar (calendar-19) - Use for:
+- Date range selection (reports, exports, filtering)
+- Analytics date ranges with presets (Last 7 days, Last 30 days, etc.)
+- When users need quick date range shortcuts
+- Complex date filtering scenarios
+
+### Implementation:
+- Always use `date-fns` for date formatting
+- Include proper timezone handling
+- Provide clear date range labels
+- Use consistent date format across the app
+
+---
+
+## 🪟 23. Modal Component Rules
+
+### Quick View Modal - Use for:
+- Basic information display (user profile summary)
+- Read-only data preview
+- Quick reference without navigation
+- Simple structure, no tabs needed
+- Fast access to essential information
+
+### Detailed Modal - Use for:
+- Complex information with multiple sections (full user profile)
+- Tabbed content (Overview, Activity, Permissions, Settings)
+- When editing capabilities needed
+- Rich data visualization
+- Comprehensive user management
+
+### Modal Implementation:
+- Use `Dialog` component from shadcn/ui
+- Include proper close handlers and escape key support
+- Add loading states for async operations
+- Use consistent sizing: `max-w-md` for quick view, `max-w-2xl` for detailed
+- Include proper focus management
+
+---
+
+## 🎯 24. Final Principle
+
+**"Extend don't overwrite. Secure don't assume. Teach don't surprise."**
+
+Cursor must preserve design intent, guardrails, and long-term maintainability at every step.
+```

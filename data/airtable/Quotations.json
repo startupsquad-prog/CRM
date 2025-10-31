@@ -1,0 +1,2414 @@
+{
+  "table": "Quotations",
+  "schema": {
+    "id": "tbl3imcRaJth1KlaS",
+    "name": "Quotations",
+    "fields": [
+      {
+        "id": "Quotation ID",
+        "name": "Quotation ID",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Client",
+        "name": "Client",
+        "type": "multipleSelects"
+      },
+      {
+        "id": "Total Cost",
+        "name": "Total Cost",
+        "type": "number"
+      },
+      {
+        "id": "Status",
+        "name": "Status",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Quotation Date",
+        "name": "Quotation Date",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Expiry Date",
+        "name": "Expiry Date",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Client City",
+        "name": "Client City",
+        "type": "multipleSelects"
+      },
+      {
+        "id": "Days Until Expiry",
+        "name": "Days Until Expiry",
+        "type": "number"
+      },
+      {
+        "id": "Is Expired?",
+        "name": "Is Expired?",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Quotation Summary (AI)",
+        "name": "Quotation Summary (AI)",
+        "type": "unknown"
+      },
+      {
+        "id": "Deal Win Probability (AI)",
+        "name": "Deal Win Probability (AI)",
+        "type": "unknown"
+      },
+      {
+        "id": "GST",
+        "name": "GST",
+        "type": "number"
+      }
+    ],
+    "recordCount": 69
+  },
+  "records": [
+    {
+      "id": "rec0ouYHpxG9hiZDz",
+      "fields": {
+        "Quotation ID": "Q-00026",
+        "Client": [
+          "recPVuiNC9wZrQhuv"
+        ],
+        "Total Cost": 294998.81999999995,
+        "Status": "Expired",
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Client City": [
+          "Mumbai"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 44999.82
+      },
+      "createdTime": "2025-10-30T10:56:53.000Z"
+    },
+    {
+      "id": "rec2zHAZ7w12r2gcX",
+      "fields": {
+        "Quotation ID": "Q-00035",
+        "Total Cost": 0,
+        "Status": "Draft",
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 0
+      },
+      "createdTime": "2025-10-30T11:59:45.000Z"
+    },
+    {
+      "id": "rec3MesWZUIc2VyRf",
+      "fields": {
+        "Quotation ID": "Q-00021",
+        "Status": "Rejected",
+        "Quotation Date": "2025-10-29",
+        "Expiry Date": "2025-10-31",
+        "Notes": "--- Terms ---\n\n                            Payment Terms: 50% advance, 50% on completion.\n                            Warranty: All services are provided \"as-is\" without warranty.\n                            Delivery: Project completion date is an estimate.\n                            Cancellation: Client may cancel within 3 days for a full refund of the advance.\n                        \n\n\n\n--- JSON DATA BACKUP ---\n\nInfo:\n{\n  \"quotationNo\": \"Q-00021\",\n  \"quotationDate\": \"2025-10-29\",\n  \"dueDate\": \"2025-10-31\",\n  \"customFields\": []\n}\n\nBilled To:\n{}\n\nShipped To:\n{\n  \"name\": \"\",\n  \"address\": \"\",\n  \"city\": \"\",\n  \"state\": \"\",\n  \"zip\": \"\"\n}\n\nItems:\n[]\n\nTotals:\n{}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"bankName\": \"Your Company Name\",\n  \"bankAcc\": \"1234567890\",\n  \"bankBank\": \"HDFC Bank\",\n  \"bankIfsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityStateZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Warehouse Name\",\n  \"address\": \"456 Warehouse Ave\",\n  \"cityState\": \"Warehouse City, State\",\n  \"zip\": \"WH-ZIP\"\n}",
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        }
+      },
+      "createdTime": "2025-10-30T07:04:41.000Z"
+    },
+    {
+      "id": "rec4J206GLSe84BcC",
+      "fields": {
+        "Quotation ID": "Q-00051",
+        "Client": [
+          "rec2Q0rGpkrQJuVmP"
+        ],
+        "Product": [
+          "recOTDodxiiE1fgC9"
+        ],
+        "Total Cost": 252.6852,
+        "Status": "Draft",
+        "Created By": [
+          "recCYfMsG7hViVm4W"
+        ],
+        "Quotation Date": "2025-10-31",
+        "Expiry Date": "2025-11-02",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Product Category": [
+          "Health"
+        ],
+        "Client City": [
+          "Bangalore"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "empty",
+          "value": null,
+          "isStale": true
+        },
+        "GST": 38.545199999999994
+      },
+      "createdTime": "2025-10-30T20:56:10.000Z"
+    },
+    {
+      "id": "rec4ZPcAsxwvO5aCq",
+      "fields": {
+        "Quotation ID": "Q-00054",
+        "Product": [
+          "recBludaKgqARmo7W"
+        ],
+        "Total Cost": 29499.88199999999,
+        "Status": "Draft",
+        "Created By": [
+          "recCYfMsG7hViVm4W"
+        ],
+        "Quotation Date": "2025-10-31",
+        "Expiry Date": "2025-11-02",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Product Category": [
+          "Health"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 4499.981999999999
+      },
+      "createdTime": "2025-10-30T21:15:14.000Z"
+    },
+    {
+      "id": "rec6DKG6XZpqeZ04O",
+      "fields": {
+        "Quotation ID": "Q-00010",
+        "Lead": [
+          "recrtk8wkDNk3o1Ht"
+        ],
+        "Status": "Accepted",
+        "Quotation Date": "2025-10-28",
+        "Expiry Date": "2025-10-30",
+        "Notes": "--- Terms ---\nPayment Terms: 50% advance, 50% on completion.\n\nWarranty: All services are provided \"as-is\" without warranty.\n\nDelivery: Project completion date is an estimate.\n\nCancellation: Client may cancel within 3 days for a full refund of the advance.\n\n\n\n--- JSON DATA BACKUP ---\n\nInfo:\n{\n  \"quotationNo\": \"Q-00010\",\n  \"quotationDate\": \"2025-10-28\",\n  \"dueDate\": \"2025-10-30\",\n  \"customFields\": []\n}\n\nBilled To:\n{}\n\nShipped To:\n{\n  \"name\": \"\",\n  \"address\": \"\",\n  \"city\": \"\",\n  \"state\": \"\",\n  \"zip\": \"\"\n}\n\nItems:\n[]\n\nTotals:\n{}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"bankName\": \"Your Company Name\",\n  \"bankAcc\": \"1234567890\",\n  \"bankBank\": \"HDFC Bank\",\n  \"bankIfsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityStateZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Warehouse Name\",\n  \"address\": \"456 Warehouse Ave\",\n  \"cityState\": \"Warehouse City, State\",\n  \"zip\": \"WH-ZIP\"\n}",
+        "Days Until Expiry": 2,
+        "Is Expired?": "Yes",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        }
+      },
+      "createdTime": "2025-10-28T09:51:31.000Z"
+    },
+    {
+      "id": "rec6GSoP42VQ1vebG",
+      "fields": {
+        "Quotation ID": "Q-00047",
+        "Client": [
+          "recAx8Xt2Y9188zoo"
+        ],
+        "Total Cost": 0,
+        "Status": "Draft",
+        "Created By": [
+          "recCYfMsG7hViVm4W"
+        ],
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Client City": [
+          "panipat"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 0
+      },
+      "createdTime": "2025-10-30T19:37:29.000Z"
+    },
+    {
+      "id": "rec7JDo0hIwub4sPU",
+      "fields": {
+        "Quotation ID": "Q-00014",
+        "Lead": [
+          "recrtk8wkDNk3o1Ht"
+        ],
+        "Client": [
+          "recSYF2ZPIEa6tkPA"
+        ],
+        "Product": [
+          "recbOz2sXwn1QU5Ml"
+        ],
+        "Total Cost": 292048.83180000004,
+        "Status": "Accepted",
+        "Quotation Date": "2025-10-28",
+        "Expiry Date": "2025-10-30",
+        "Notes": "--- Terms ---\nPayment Terms: 50% advance, 50% on completion.\n\nWarranty: All services are provided \"as-is\" without warranty.\n\nDelivery: Project completion date is an estimate.\n\nCancellation: Client may cancel within 3 days for a full refund of the advance.\n\n\n\n--- JSON DATA BACKUP ---\n\nInfo:\n{\n  \"quotationNo\": \"Q-00014\",\n  \"quotationDate\": \"2025-10-28\",\n  \"dueDate\": \"2025-10-30\",\n  \"customFields\": []\n}\n\nBilled To:\n{\n  \"id\": \"recSYF2ZPIEa6tkPA\",\n  \"Client Name\": \"Elegant Homes\",\n  \"Contact Details\": \"Simran Kaur, +91-9001122334, simran@eleganthomes.com\",\n  \"City\": \"Chandigarh\",\n  \"Client Type\": \"Retail\",\n  \"GST Number\": \"04AACDE1234D4ZE\"\n}\n\nShipped To:\n{\n  \"name\": \"\",\n  \"address\": \"\",\n  \"city\": \"\",\n  \"state\": \"\",\n  \"zip\": \"\"\n}\n\nItems:\n[\n  {\n    \"id\": \"recbOz2sXwn1QU5Ml\",\n    \"name\": \"Aura Comfort Recliner Massage Chair\",\n    \"gstRate\": 18,\n    \"qty\": 1,\n    \"rate\": 249999,\n    \"amount\": 249999,\n    \"cgst\": 22499.91,\n    \"sgst\": 22499.91,\n    \"total\": 294998.81999999995\n  }\n]\n\nTotals:\n{\n  \"subtotal\": 249999,\n  \"discountPercent\": 1,\n  \"discountAmount\": 2499.9900000000002,\n  \"taxableAmount\": 247499.01,\n  \"sgst\": 22274.9109,\n  \"cgst\": 22274.9109,\n  \"total\": 292048.83180000004,\n  \"totalInWords\": \"Two Lakh Ninety Two Thousand and Forty Eight Rupees Only\"\n}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"bankName\": \"Your Company Name\",\n  \"bankAcc\": \"1234567890\",\n  \"bankBank\": \"HDFC Bank\",\n  \"bankIfsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityStateZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Warehouse Name\",\n  \"address\": \"456 Warehouse Ave\",\n  \"cityState\": \"Warehouse City, State\",\n  \"zip\": \"WH-ZIP\"\n}",
+        "Product Category": [
+          "Health"
+        ],
+        "Client City": [
+          "Chandigarh"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "Yes",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "empty",
+          "value": null,
+          "isStale": true
+        },
+        "GST": 44549.8218
+      },
+      "createdTime": "2025-10-28T10:22:31.000Z"
+    },
+    {
+      "id": "rec7KndRP8IbOGpFk",
+      "fields": {
+        "Quotation ID": "Q-00001",
+        "Lead": [
+          "recrtk8wkDNk3o1Ht"
+        ],
+        "Client": [
+          "recPVuiNC9wZrQhuv"
+        ],
+        "Product": [
+          "recOTDodxiiE1fgC9"
+        ],
+        "Total Cost": 293.82000000000005,
+        "Status": "Sent",
+        "Quotation Date": "2025-10-28",
+        "Expiry Date": "2025-10-28",
+        "Notes": "--- Terms ---\nPayment Terms: 50% advance, 50% on completion.\n\nWarranty: All services are provided \"as-is\" without warranty.\n\nDelivery: Project completion date is an estimate.\n\nCancellation: Client may cancel within 3 days for a full refund of the advance.\n\n--- Contact Details ---\nFor any questions, please contact:\nJohn Doe\njohn.doe@yourcompany.com\n+91 98765 43210\n\n\n\n--- JSON DATA BACKUP ---\n\nBilled To:\n{\n  \"id\": \"recPVuiNC9wZrQhuv\",\n  \"Client Name\": \"Sunrise Traders\",\n  \"Contact Details\": \"Amit Shah, +91-9876543210, amit@sunrisetraders.in\",\n  \"City\": \"Mumbai\",\n  \"GST Number\": \"27AAACS1234A1ZB\"\n}\n\nShipped To:\n{\n  \"name\": \"\",\n  \"address\": \"\",\n  \"city\": \"\",\n  \"state\": \"\",\n  \"zip\": \"\"\n}\n\nItems:\n[\n  {\n    \"name\": \"recOTDodxiiE1fgC9\",\n    \"gstRate\": 18,\n    \"qty\": 1,\n    \"rate\": 249,\n    \"amount\": 249,\n    \"cgst\": 22.41,\n    \"sgst\": 22.41,\n    \"total\": 293.82000000000005\n  }\n]\n\nTotals:\n{\n  \"subtotal\": 249,\n  \"discountPercent\": 0,\n  \"discountAmount\": 0,\n  \"taxableAmount\": 249,\n  \"sgst\": 22.41,\n  \"cgst\": 22.41,\n  \"total\": 293.82000000000005,\n  \"totalInWords\": \"Two Hundred and Ninety Three Rupees Only\"\n}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"accountName\": \"Your Company Name\",\n  \"accountNo\": \"1234567890\",\n  \"bankName\": \"HDFC Bank\",\n  \"ifsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\"\n}",
+        "Product Category": [
+          "Health"
+        ],
+        "Client City": [
+          "Mumbai"
+        ],
+        "Days Until Expiry": 0,
+        "Is Expired?": "Yes",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "empty",
+          "value": null,
+          "isStale": true
+        },
+        "GST": 44.82
+      },
+      "createdTime": "2025-10-28T07:25:28.000Z"
+    },
+    {
+      "id": "rec7Lu8cSWD8zAXc2",
+      "fields": {
+        "Quotation ID": "Q-00005",
+        "Lead": [
+          "recrtk8wkDNk3o1Ht"
+        ],
+        "Client": [
+          "rec3M1SiXk4D8HzI3"
+        ],
+        "Product": [
+          "recOTDodxiiE1fgC9"
+        ],
+        "Total Cost": 249.74699999999999,
+        "Status": "Sent",
+        "Quotation Date": "2025-10-28",
+        "Expiry Date": "2025-10-28",
+        "Notes": "--- Terms ---\nPayment Terms: 50% advance, 50% on completion.\n\nWarranty: All services are provided \"as-is\" without warranty.\n\nDelivery: Project completion date is an estimate.\n\nCancellation: Client may cancel within 3 days for a full refund of the advance.\n\n--- Contact Details ---\nFor any questions, please contact:\nJohn Doe\njohn.doe@yourcompany.com\n+91 98765 43210\n\n\n\n--- JSON DATA BACKUP ---\n\nBilled To:\n{\n  \"id\": \"rec3M1SiXk4D8HzI3\",\n  \"Client Name\": \"GreenLeaf Distributors\",\n  \"Contact Details\": \"Priya Verma, +91-9988776655, priya@greenleafdist.com\",\n  \"City\": \"Delhi\",\n  \"GST Number\": \"07AACCG4567B2ZC\"\n}\n\nShipped To:\n{\n  \"name\": \"\",\n  \"address\": \"\",\n  \"city\": \"\",\n  \"state\": \"\",\n  \"zip\": \"\"\n}\n\nItems:\n[\n  {\n    \"name\": \"recOTDodxiiE1fgC9\",\n    \"gstRate\": 18,\n    \"qty\": 1,\n    \"rate\": 249,\n    \"amount\": 249,\n    \"cgst\": 19.0485,\n    \"sgst\": 19.0485,\n    \"total\": 249.74699999999999\n  }\n]\n\nTotals:\n{\n  \"subtotal\": 249,\n  \"discountPercent\": 15,\n  \"discountAmount\": 37.35,\n  \"taxableAmount\": 211.65,\n  \"sgst\": 19.0485,\n  \"cgst\": 19.0485,\n  \"total\": 249.74699999999999,\n  \"totalInWords\": \"Two Hundred and Forty Nine Rupees Only\"\n}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"accountName\": \"Your Company Name\",\n  \"accountNo\": \"1234567890\",\n  \"bankName\": \"HDFC Bank\",\n  \"ifsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\"\n}",
+        "Product Category": [
+          "Health"
+        ],
+        "Client City": [
+          "Delhi"
+        ],
+        "Days Until Expiry": 0,
+        "Is Expired?": "Yes",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "empty",
+          "value": null,
+          "isStale": true
+        },
+        "GST": 38.097
+      },
+      "createdTime": "2025-10-28T07:57:48.000Z"
+    },
+    {
+      "id": "rec7THKrxbJyxhnXz",
+      "fields": {
+        "Quotation ID": "Q-00024",
+        "Client": [
+          "recSYF2ZPIEa6tkPA"
+        ],
+        "Total Cost": 0,
+        "Status": "Expired",
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Client City": [
+          "Chandigarh"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 0
+      },
+      "createdTime": "2025-10-30T10:50:22.000Z"
+    },
+    {
+      "id": "rec88bkk0aB8IcR3c",
+      "fields": {
+        "Quotation ID": "Q-00020",
+        "Client": [
+          "rec2Q0rGpkrQJuVmP"
+        ],
+        "Product": [
+          "recOTDodxiiE1fgC9"
+        ],
+        "Total Cost": 252.6852,
+        "Status": "Rejected",
+        "Quotation Date": "2025-10-29",
+        "Expiry Date": "2025-10-31",
+        "Notes": "--- Terms ---\nPayment Terms: 50% advance, 50% on completion.\n\nWarranty: All services are provided \"as-is\" without warranty.\n\nDelivery: Project completion date is an estimate.\n\nCancellation: Client may cancel within 3 days for a full refund of the advance.\n\n\n\n--- JSON DATA BACKUP ---\n\nInfo:\n{\n  \"quotationNo\": \"Q-00020\",\n  \"quotationDate\": \"2025-10-29\",\n  \"dueDate\": \"2025-10-31\",\n  \"customFields\": []\n}\n\nBilled To:\n{\n  \"id\": \"rec2Q0rGpkrQJuVmP\",\n  \"Client Name\": \"TechnoMart\",\n  \"Contact Details\": \"Rakesh Mehta, +91-9123456789, rakesh@technomart.co.in\",\n  \"City\": \"Bangalore\",\n  \"Client Type\": \"Reseller\",\n  \"GST Number\": \"29AAACT7890C3ZD\"\n}\n\nShipped To:\n{\n  \"name\": \"rdag\",\n  \"address\": \"sdgh\",\n  \"city\": \"fdhs\",\n  \"state\": \"sdfh\",\n  \"zip\": \"sfh\"\n}\n\nItems:\n[\n  {\n    \"id\": \"recOTDodxiiE1fgC9\",\n    \"name\": \"Aura 4D Full Body Massage Chair\",\n    \"gstRate\": 18,\n    \"qty\": 1,\n    \"rate\": 249,\n    \"amount\": 249,\n    \"cgst\": 22.41,\n    \"sgst\": 22.41,\n    \"total\": 293.82000000000005\n  }\n]\n\nTotals:\n{\n  \"subtotal\": 249,\n  \"discountPercent\": 14,\n  \"discountAmount\": 34.86000000000001,\n  \"taxableAmount\": 214.14,\n  \"sgst\": 19.272599999999997,\n  \"cgst\": 19.272599999999997,\n  \"total\": 252.6852,\n  \"totalInWords\": \"Two Hundred and Fifty Two Rupees Only\"\n}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"bankName\": \"Your Company Name\",\n  \"bankAcc\": \"1234567890\",\n  \"bankBank\": \"HDFC Bank\",\n  \"bankIfsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityStateZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Warehouse Name\",\n  \"address\": \"456 Warehouse Ave\",\n  \"cityState\": \"Warehouse City, State\",\n  \"zip\": \"WH-ZIP\"\n}",
+        "Product Category": [
+          "Health"
+        ],
+        "Client City": [
+          "Bangalore"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "empty",
+          "value": null,
+          "isStale": true
+        },
+        "GST": 38.545199999999994
+      },
+      "createdTime": "2025-10-29T09:38:26.000Z"
+    },
+    {
+      "id": "rec8OQit4HTi1Xyhq",
+      "fields": {
+        "Quotation ID": "Q-00036",
+        "Total Cost": 0,
+        "Status": "Draft",
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 0
+      },
+      "createdTime": "2025-10-30T12:14:01.000Z"
+    },
+    {
+      "id": "rec8U2f7W5FEDITX1",
+      "fields": {
+        "Quotation ID": "Q-00002",
+        "Lead": [
+          "recrtk8wkDNk3o1Ht"
+        ],
+        "Product": [
+          "recOTDodxiiE1fgC9"
+        ],
+        "Total Cost": 293.82000000000005,
+        "Status": "Sent",
+        "Quotation Date": "2025-10-28",
+        "Expiry Date": "2025-10-28",
+        "Notes": "--- Terms ---\nPayment Terms: 50% advance, 50% on completion.\n\nWarranty: All services are provided \"as-is\" without warranty.\n\nDelivery: Project completion date is an estimate.\n\nCancellation: Client may cancel within 3 days for a full refund of the advance.\n\n--- Contact Details ---\nFor any questions, please contact:\nJohn Doe\njohn.doe@yourcompany.com\n+91 98765 43210\n\n\n\n--- JSON DATA BACKUP ---\n\nBilled To:\n{}\n\nShipped To:\n{\n  \"name\": \"\",\n  \"address\": \"\",\n  \"city\": \"\",\n  \"state\": \"\",\n  \"zip\": \"\"\n}\n\nItems:\n[\n  {\n    \"name\": \"recOTDodxiiE1fgC9\",\n    \"gstRate\": 18,\n    \"qty\": 1,\n    \"rate\": 249,\n    \"amount\": 249,\n    \"cgst\": 22.41,\n    \"sgst\": 22.41,\n    \"total\": 293.82000000000005\n  }\n]\n\nTotals:\n{\n  \"subtotal\": 249,\n  \"discountPercent\": 0,\n  \"discountAmount\": 0,\n  \"taxableAmount\": 249,\n  \"sgst\": 22.41,\n  \"cgst\": 22.41,\n  \"total\": 293.82000000000005,\n  \"totalInWords\": \"Two Hundred and Ninety Three Rupees Only\"\n}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"accountName\": \"Your Company Name\",\n  \"accountNo\": \"1234567890\",\n  \"bankName\": \"HDFC Bank\",\n  \"ifsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\"\n}",
+        "Product Category": [
+          "Health"
+        ],
+        "Days Until Expiry": 0,
+        "Is Expired?": "Yes",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 44.82
+      },
+      "createdTime": "2025-10-28T07:34:59.000Z"
+    },
+    {
+      "id": "rec8b9boygKAiDuy3",
+      "fields": {
+        "Quotation ID": "Q-00031",
+        "Total Cost": 2703.1440000000002,
+        "Status": "Draft",
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 412.344
+      },
+      "createdTime": "2025-10-30T11:33:43.000Z"
+    },
+    {
+      "id": "recDJAvB50yJFZ8iS",
+      "fields": {
+        "Quotation ID": "Q-00008",
+        "Lead": [
+          "recrtk8wkDNk3o1Ht"
+        ],
+        "Status": "Accepted",
+        "Quotation Date": "2025-10-28",
+        "Expiry Date": "2025-10-30",
+        "Notes": "--- Terms ---\nPayment Terms: 50% advance, 50% on completion.\n\nWarranty: All services are provided \"as-is\" without warranty.\n\nDelivery: Project completion date is an estimate.\n\nCancellation: Client may cancel within 3 days for a full refund of the advance.\n\n\n\n--- JSON DATA BACKUP ---\n\nInfo:\n{\n  \"quotationNo\": \"Q-00008\",\n  \"quotationDate\": \"2025-10-28\",\n  \"dueDate\": \"2025-10-30\",\n  \"customFields\": []\n}\n\nBilled To:\n{}\n\nShipped To:\n{\n  \"name\": \"\",\n  \"address\": \"\",\n  \"city\": \"\",\n  \"state\": \"\",\n  \"zip\": \"\"\n}\n\nItems:\n[]\n\nTotals:\n{}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"bankName\": \"Your Company Name\",\n  \"bankAcc\": \"1234567890\",\n  \"bankBank\": \"HDFC Bank\",\n  \"bankIfsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityStateZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Warehouse Name\",\n  \"address\": \"456 Warehouse Ave\",\n  \"cityState\": \"Warehouse City, State\",\n  \"zip\": \"WH-ZIP\"\n}",
+        "Days Until Expiry": 2,
+        "Is Expired?": "Yes",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        }
+      },
+      "createdTime": "2025-10-28T09:45:18.000Z"
+    },
+    {
+      "id": "recDSY70NmN0SQYP6",
+      "fields": {
+        "Quotation ID": "Q-00043",
+        "Product": [
+          "recOTDodxiiE1fgC9"
+        ],
+        "Total Cost": -146.91000000000003,
+        "Status": "Draft",
+        "Created By": [
+          "recCYfMsG7hViVm4W"
+        ],
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Product Category": [
+          "Health"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": -22.41
+      },
+      "createdTime": "2025-10-30T18:05:41.000Z"
+    },
+    {
+      "id": "recDtZvvTj8Yb9ebp",
+      "fields": {
+        "Quotation ID": "Q-00056",
+        "Total Cost": 0,
+        "Status": "Draft",
+        "Created By": [
+          "recCHD1UPKlasGpTY"
+        ],
+        "Quotation Date": "2025-10-31",
+        "Expiry Date": "2025-11-02",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 0
+      },
+      "createdTime": "2025-10-31T02:03:10.000Z"
+    },
+    {
+      "id": "recE6gglXPwHMatB7",
+      "fields": {
+        "Quotation ID": "Q-00049",
+        "Client": [
+          "rec2Q0rGpkrQJuVmP"
+        ],
+        "Product": [
+          "recOTDodxiiE1fgC9"
+        ],
+        "Total Cost": 252.6852,
+        "Status": "Draft",
+        "Created By": [
+          "recCYfMsG7hViVm4W"
+        ],
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Product Category": [
+          "Health"
+        ],
+        "Client City": [
+          "Bangalore"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "empty",
+          "value": null,
+          "isStale": true
+        },
+        "GST": 38.545199999999994
+      },
+      "createdTime": "2025-10-30T20:17:57.000Z"
+    },
+    {
+      "id": "recF0Z6hSVUHk55HC",
+      "fields": {
+        "Quotation ID": "Q-00052",
+        "Client": [
+          "recAx8Xt2Y9188zoo"
+        ],
+        "Product": [
+          "recOTDodxiiE1fgC9"
+        ],
+        "Total Cost": 0,
+        "Status": "Draft",
+        "Created By": [
+          "recCYfMsG7hViVm4W"
+        ],
+        "Quotation Date": "2025-10-31",
+        "Expiry Date": "2025-11-02",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Product Category": [
+          "Health"
+        ],
+        "Client City": [
+          "panipat"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "empty",
+          "value": null,
+          "isStale": true
+        },
+        "GST": 0
+      },
+      "createdTime": "2025-10-30T21:04:29.000Z"
+    },
+    {
+      "id": "recGhQOPGxhWsO4fa",
+      "fields": {
+        "Quotation ID": "Q-00017",
+        "Lead": [
+          "recrtk8wkDNk3o1Ht"
+        ],
+        "Client": [
+          "rec3M1SiXk4D8HzI3"
+        ],
+        "Product": [
+          "recbOz2sXwn1QU5Ml"
+        ],
+        "Total Cost": 294998.81999999995,
+        "Status": "Rejected",
+        "Quotation Date": "2025-10-28",
+        "Expiry Date": "2025-10-30",
+        "Notes": "--- Terms ---\nPayment Terms: 50% advance, 50% on completion.\n\nWarranty: All services are provided \"as-is\" without warranty.\n\nDelivery: Project completion date is an estimate.\n\nCancellation: Client may cancel within 3 days for a full refund of the advance.\n\n\n\n--- JSON DATA BACKUP ---\n\nInfo:\n{\n  \"quotationNo\": \"Q-00017\",\n  \"quotationDate\": \"2025-10-28\",\n  \"dueDate\": \"2025-10-30\",\n  \"customFields\": []\n}\n\nBilled To:\n{\n  \"id\": \"rec3M1SiXk4D8HzI3\",\n  \"Client Name\": \"GreenLeaf Distributors\",\n  \"Contact Details\": \"Priya Verma, +91-9988776655, priya@greenleafdist.com\",\n  \"City\": \"Delhi\",\n  \"Client Type\": \"Bulk\",\n  \"GST Number\": \"07AACCG4567B2ZC\"\n}\n\nShipped To:\n{\n  \"name\": \"wdnjefj\",\n  \"address\": \"Shiva Nagar,Kathua\",\n  \"city\": \"Kathua\",\n  \"state\": \"Jammu and Kashmir\",\n  \"zip\": \"184101\"\n}\n\nItems:\n[\n  {\n    \"id\": \"recbOz2sXwn1QU5Ml\",\n    \"name\": \"Aura Comfort Recliner Massage Chair\",\n    \"gstRate\": 18,\n    \"qty\": 1,\n    \"rate\": 249999,\n    \"amount\": 249999,\n    \"cgst\": 22499.91,\n    \"sgst\": 22499.91,\n    \"total\": 294998.81999999995\n  }\n]\n\nTotals:\n{\n  \"subtotal\": 249999,\n  \"discountPercent\": 0,\n  \"discountAmount\": 0,\n  \"taxableAmount\": 249999,\n  \"sgst\": 22499.91,\n  \"cgst\": 22499.91,\n  \"total\": 294998.81999999995,\n  \"totalInWords\": \"Two Lakh Ninety Four Thousand Nine Hundred and Ninety Eight Rupees Only\"\n}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"bankName\": \"Your Company Name\",\n  \"bankAcc\": \"1234567890\",\n  \"bankBank\": \"HDFC Bank\",\n  \"bankIfsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityStateZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Warehouse Name\",\n  \"address\": \"456 Warehouse Ave\",\n  \"cityState\": \"Warehouse City, State\",\n  \"zip\": \"WH-ZIP\"\n}",
+        "Product Category": [
+          "Health"
+        ],
+        "Client City": [
+          "Delhi"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "Yes",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "empty",
+          "value": null,
+          "isStale": true
+        },
+        "GST": 44999.82
+      },
+      "createdTime": "2025-10-28T10:49:19.000Z"
+    },
+    {
+      "id": "recGjMB35SvJfdskL",
+      "fields": {
+        "Quotation ID": "Q-00023",
+        "Total Cost": 1622493.5099999998,
+        "Status": "Rejected",
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 247499.00999999998
+      },
+      "createdTime": "2025-10-30T10:45:37.000Z"
+    },
+    {
+      "id": "recHH21uxnUbdmnmS",
+      "fields": {
+        "Quotation ID": "Q-00030",
+        "Client": [
+          "rec3M1SiXk4D8HzI3"
+        ],
+        "Total Cost": 293.82000000000005,
+        "Status": "Expired",
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Client City": [
+          "Delhi"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 44.82
+      },
+      "createdTime": "2025-10-30T11:30:07.000Z"
+    },
+    {
+      "id": "recMBGXvaITRjnrwL",
+      "fields": {
+        "Quotation ID": "Q-00055",
+        "Client": [
+          "recLJtiacFRsxO2rs"
+        ],
+        "Product": [
+          "recOTDodxiiE1fgC9"
+        ],
+        "Total Cost": 0,
+        "Status": "Draft",
+        "Created By": [
+          "rechb21zGsrnPN2CP"
+        ],
+        "Quotation Date": "2025-10-31",
+        "Expiry Date": "2025-11-02",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Product Category": [
+          "Health"
+        ],
+        "Client City": [
+          "gurugram"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "empty",
+          "value": null,
+          "isStale": true
+        },
+        "GST": 0
+      },
+      "createdTime": "2025-10-30T21:42:23.000Z"
+    },
+    {
+      "id": "recNqelHwA3EymrIz",
+      "fields": {
+        "Quotation ID": "Q-00033",
+        "Client": [
+          "recPVuiNC9wZrQhuv"
+        ],
+        "Product": [
+          "recOTDodxiiE1fgC9"
+        ],
+        "Total Cost": 293.82000000000005,
+        "Status": "Draft",
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Product Category": [
+          "Health"
+        ],
+        "Client City": [
+          "Mumbai"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 44.82
+      },
+      "createdTime": "2025-10-30T11:47:24.000Z"
+    },
+    {
+      "id": "recOZYCEAuz4ttBlt",
+      "fields": {
+        "Quotation ID": "Q-00039",
+        "Client": [
+          "rec3M1SiXk4D8HzI3"
+        ],
+        "Product": [
+          "recOTDodxiiE1fgC9"
+        ],
+        "Total Cost": 161.601,
+        "Status": "Draft",
+        "Created By": [
+          "recj2Y5qMJpkjnpjV"
+        ],
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Product Category": [
+          "Health"
+        ],
+        "Client City": [
+          "Delhi"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "empty",
+          "value": null,
+          "isStale": true
+        },
+        "GST": 24.650999999999996
+      },
+      "createdTime": "2025-10-30T12:59:28.000Z"
+    },
+    {
+      "id": "recPrz6FmLDh3ETcw",
+      "fields": {
+        "Quotation ID": "Q-00038",
+        "Total Cost": 0,
+        "Status": "Draft",
+        "Created By": [
+          "recCYfMsG7hViVm4W"
+        ],
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 0
+      },
+      "createdTime": "2025-10-30T12:58:20.000Z"
+    },
+    {
+      "id": "recRH5qlyJ1uh8BEi",
+      "fields": {
+        "Quotation ID": "Q-00003",
+        "Lead": [
+          "recrtk8wkDNk3o1Ht"
+        ],
+        "Client": [
+          "recSYF2ZPIEa6tkPA"
+        ],
+        "Product": [
+          "recOTDodxiiE1fgC9"
+        ],
+        "Total Cost": 249.74699999999999,
+        "Status": "Sent",
+        "Quotation Date": "2025-10-28",
+        "Expiry Date": "2025-10-28",
+        "Notes": "--- Terms ---\nPayment Terms: 50% advance, 50% on completion.\n\nWarranty: All services are provided \"as-is\" without warranty.\n\nDelivery: Project completion date is an estimate.\n\nCancellation: Client may cancel within 3 days for a full refund of the advance.\n\n--- Contact Details ---\nFor any questions, please contact:\nJohn Doe\njohn.doe@yourcompany.com\n+91 98765 43210\n\n\n\n--- JSON DATA BACKUP ---\n\nBilled To:\n{\n  \"id\": \"recSYF2ZPIEa6tkPA\",\n  \"Client Name\": \"Elegant Homes\",\n  \"Contact Details\": \"Simran Kaur, +91-9001122334, simran@eleganthomes.com\",\n  \"City\": \"Chandigarh\",\n  \"GST Number\": \"04AACDE1234D4ZE\"\n}\n\nShipped To:\n{\n  \"name\": \"\",\n  \"address\": \"\",\n  \"city\": \"\",\n  \"state\": \"\",\n  \"zip\": \"\"\n}\n\nItems:\n[\n  {\n    \"name\": \"recOTDodxiiE1fgC9\",\n    \"gstRate\": 18,\n    \"qty\": 1,\n    \"rate\": 249,\n    \"amount\": 249,\n    \"cgst\": 19.0485,\n    \"sgst\": 19.0485,\n    \"total\": 249.74699999999999\n  }\n]\n\nTotals:\n{\n  \"subtotal\": 249,\n  \"discountPercent\": 15,\n  \"discountAmount\": 37.35,\n  \"taxableAmount\": 211.65,\n  \"sgst\": 19.0485,\n  \"cgst\": 19.0485,\n  \"total\": 249.74699999999999,\n  \"totalInWords\": \"Two Hundred and Forty Nine Rupees Only\"\n}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"accountName\": \"Your Company Name\",\n  \"accountNo\": \"1234567890\",\n  \"bankName\": \"HDFC Bank\",\n  \"ifsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\"\n}",
+        "Product Category": [
+          "Health"
+        ],
+        "Client City": [
+          "Chandigarh"
+        ],
+        "Days Until Expiry": 0,
+        "Is Expired?": "Yes",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "empty",
+          "value": null,
+          "isStale": true
+        },
+        "GST": 38.097
+      },
+      "createdTime": "2025-10-28T07:36:40.000Z"
+    },
+    {
+      "id": "recRhPeoT45tdsG0f",
+      "fields": {
+        "Quotation ID": "Q-00034",
+        "Client": [
+          "recSYF2ZPIEa6tkPA"
+        ],
+        "Product": [
+          "recOTDodxiiE1fgC9"
+        ],
+        "Total Cost": 293.82000000000005,
+        "Status": "Draft",
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Product Category": [
+          "Health"
+        ],
+        "Client City": [
+          "Chandigarh"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "empty",
+          "value": null,
+          "isStale": true
+        },
+        "GST": 44.82
+      },
+      "createdTime": "2025-10-30T11:54:12.000Z"
+    },
+    {
+      "id": "recT54cZfuvFGBdIo",
+      "fields": {
+        "Quotation ID": "Q-00013",
+        "Lead": [
+          "recrtk8wkDNk3o1Ht"
+        ],
+        "Client": [
+          "recSYF2ZPIEa6tkPA"
+        ],
+        "Status": "Accepted",
+        "Quotation Date": "2025-10-28",
+        "Expiry Date": "2025-10-30",
+        "Notes": "--- Terms ---\nPayment Terms: 50% advance, 50% on completion.\n\nWarranty: All services are provided \"as-is\" without warranty.\n\nDelivery: Project completion date is an estimate.\n\nCancellation: Client may cancel within 3 days for a full refund of the advance.\n\n\n\n--- JSON DATA BACKUP ---\n\nInfo:\n{\n  \"quotationNo\": \"Q-00013\",\n  \"quotationDate\": \"2025-10-28\",\n  \"dueDate\": \"2025-10-30\",\n  \"customFields\": []\n}\n\nBilled To:\n{\n  \"id\": \"recSYF2ZPIEa6tkPA\",\n  \"Client Name\": \"Elegant Homes\",\n  \"Contact Details\": \"Simran Kaur, +91-9001122334, simran@eleganthomes.com\",\n  \"City\": \"Chandigarh\",\n  \"Client Type\": \"Retail\",\n  \"GST Number\": \"04AACDE1234D4ZE\"\n}\n\nShipped To:\n{\n  \"name\": \"saf \",\n  \"address\": \"erew\",\n  \"city\": \" ew\",\n  \"state\": \"rewr\",\n  \"zip\": \" qerw\"\n}\n\nItems:\n[]\n\nTotals:\n{}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"bankName\": \"Your Company Name\",\n  \"bankAcc\": \"1234567890\",\n  \"bankBank\": \"HDFC Bank\",\n  \"bankIfsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityStateZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Warehouse Name\",\n  \"address\": \"456 Warehouse Ave\",\n  \"cityState\": \"Warehouse City, State\",\n  \"zip\": \"WH-ZIP\"\n}",
+        "Client City": [
+          "Chandigarh"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "Yes",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        }
+      },
+      "createdTime": "2025-10-28T10:20:51.000Z"
+    },
+    {
+      "id": "recVKLwp8Aryu1tcN",
+      "fields": {
+        "Quotation ID": "Q-00001",
+        "Lead": [
+          "recrtk8wkDNk3o1Ht"
+        ],
+        "Client": [
+          "rec3M1SiXk4D8HzI3"
+        ],
+        "Product": [
+          "rec3YZSrosiLWjO3h"
+        ],
+        "Total Cost": 958746.165,
+        "Status": "Sent",
+        "Quotation Date": "2025-10-28",
+        "Expiry Date": "2025-10-28",
+        "Notes": "--- Terms ---\nPayment Terms: 50% advance, 50% on completion.\n\nWarranty: All services are provided \"as-is\" without warranty.\n\nDelivery: Project completion date is an estimate.\n\nCancellation: Client may cancel within 3 days for a full refund of the advance.\n\n--- Contact Details ---\nFor any questions, please contact:\nJohn Doe\njohn.doe@yourcompany.com\n+91 98765 43210\n\n\n\n--- JSON DATA BACKUP ---\n\nBilled To:\n{\n  \"id\": \"rec3M1SiXk4D8HzI3\",\n  \"Client Name\": \"GreenLeaf Distributors\",\n  \"Contact Details\": \"Priya Verma, +91-9988776655, priya@greenleafdist.com\",\n  \"City\": \"Delhi\",\n  \"GST Number\": \"07AACCG4567B2ZC\"\n}\n\nShipped To:\n{\n  \"name\": \"\",\n  \"address\": \"\",\n  \"city\": \"\",\n  \"state\": \"\",\n  \"zip\": \"\"\n}\n\nItems:\n[\n  {\n    \"name\": \"rec3YZSrosiLWjO3h\",\n    \"gstRate\": 18,\n    \"qty\": 5,\n    \"rate\": 249999,\n    \"amount\": 1249995,\n    \"cgst\": 73124.7075,\n    \"sgst\": 73124.7075,\n    \"total\": 958746.165\n  }\n]\n\nTotals:\n{\n  \"subtotal\": 1249995,\n  \"discountPercent\": 35,\n  \"discountAmount\": 437498.25,\n  \"taxableAmount\": 812496.75,\n  \"sgst\": 73124.7075,\n  \"cgst\": 73124.7075,\n  \"total\": 958746.165,\n  \"totalInWords\": \"Nine Lakh Fifty Eight Thousand Seven Hundred and Forty Six Rupees Only\"\n}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"accountName\": \"Your Company Name\",\n  \"accountNo\": \"1234567890\",\n  \"bankName\": \"HDFC Bank\",\n  \"ifsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\"\n}",
+        "Product Category": [
+          "Health"
+        ],
+        "Client City": [
+          "Delhi"
+        ],
+        "Days Until Expiry": 0,
+        "Is Expired?": "Yes",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "empty",
+          "value": null,
+          "isStale": true
+        },
+        "GST": 146249.415
+      },
+      "createdTime": "2025-10-28T07:30:40.000Z"
+    },
+    {
+      "id": "recVjEl8Ec7SfqeIz",
+      "fields": {
+        "Quotation ID": "Q-00021",
+        "Client": [
+          "recSYF2ZPIEa6tkPA"
+        ],
+        "Status": "Rejected",
+        "Quotation Date": "2025-10-29",
+        "Expiry Date": "2025-10-31",
+        "Notes": "--- Terms ---\nPayment Terms: 50% advance, 50% on completion.\n\nWarranty: All services are provided \"as-is\" without warranty.\n\nDelivery: Project completion date is an estimate.\n\nCancellation: Client may cancel within 3 days for a full refund of the advance.\n\n\n\n--- JSON DATA BACKUP ---\n\nInfo:\n{\n  \"quotationNo\": \"Q-00021\",\n  \"quotationDate\": \"2025-10-29\",\n  \"dueDate\": \"2025-10-31\",\n  \"customFields\": []\n}\n\nBilled To:\n{\n  \"id\": \"recSYF2ZPIEa6tkPA\",\n  \"Client Name\": \"Elegant Homes\",\n  \"Contact Details\": \"Simran Kaur, +91-9001122334, simran@eleganthomes.com\",\n  \"City\": \"Chandigarh\",\n  \"Client Type\": \"Retail\",\n  \"GST Number\": \"04AACDE1234D4ZE\"\n}\n\nShipped To:\n{\n  \"name\": \"\",\n  \"address\": \"\",\n  \"city\": \"\",\n  \"state\": \"\",\n  \"zip\": \"\"\n}\n\nItems:\n[]\n\nTotals:\n{}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"bankName\": \"Your Company Name\",\n  \"bankAcc\": \"1234567890\",\n  \"bankBank\": \"HDFC Bank\",\n  \"bankIfsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityStateZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Warehouse Name\",\n  \"address\": \"456 Warehouse Ave\",\n  \"cityState\": \"Warehouse City, State\",\n  \"zip\": \"WH-ZIP\"\n}",
+        "Client City": [
+          "Chandigarh"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        }
+      },
+      "createdTime": "2025-10-29T17:59:48.000Z"
+    },
+    {
+      "id": "recWuzrH4yxBEc7BP",
+      "fields": {
+        "Quotation ID": "Q-00004",
+        "Lead": [
+          "recrtk8wkDNk3o1Ht"
+        ],
+        "Client": [
+          "recPVuiNC9wZrQhuv"
+        ],
+        "Product": [
+          "recOTDodxiiE1fgC9"
+        ],
+        "Total Cost": 293.82000000000005,
+        "Status": "Sent",
+        "Quotation Date": "2025-10-28",
+        "Expiry Date": "2025-10-28",
+        "Notes": "--- Terms ---\nPayment Terms: 50% advance, 50% on completion.\n\nWarranty: All services are provided \"as-is\" without warranty.\n\nDelivery: Project completion date is an estimate.\n\nCancellation: Client may cancel within 3 days for a full refund of the advance.\n\n--- Contact Details ---\nFor any questions, please contact:\nJohn Doe\njohn.doe@yourcompany.com\n+91 98765 43210\n\n\n\n--- JSON DATA BACKUP ---\n\nBilled To:\n{\n  \"id\": \"recPVuiNC9wZrQhuv\",\n  \"Client Name\": \"Sunrise Traders\",\n  \"Contact Details\": \"Amit Shah, +91-9876543210, amit@sunrisetraders.in\",\n  \"City\": \"Mumbai\",\n  \"GST Number\": \"27AAACS1234A1ZB\"\n}\n\nShipped To:\n{\n  \"name\": \"dasd\",\n  \"address\": \"das\",\n  \"city\": \"dasd\",\n  \"state\": \"asdasd\",\n  \"zip\": \"asdasd\"\n}\n\nItems:\n[\n  {\n    \"name\": \"recOTDodxiiE1fgC9\",\n    \"gstRate\": 18,\n    \"qty\": 1,\n    \"rate\": 249,\n    \"amount\": 249,\n    \"cgst\": 22.41,\n    \"sgst\": 22.41,\n    \"total\": 293.82000000000005\n  }\n]\n\nTotals:\n{\n  \"subtotal\": 249,\n  \"discountPercent\": 0,\n  \"discountAmount\": 0,\n  \"taxableAmount\": 249,\n  \"sgst\": 22.41,\n  \"cgst\": 22.41,\n  \"total\": 293.82000000000005,\n  \"totalInWords\": \"Two Hundred and Ninety Three Rupees Only\"\n}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"accountName\": \"Your Company Name\",\n  \"accountNo\": \"1234567890\",\n  \"bankName\": \"HDFC Bank\",\n  \"ifsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\"\n}",
+        "Product Category": [
+          "Health"
+        ],
+        "Client City": [
+          "Mumbai"
+        ],
+        "Days Until Expiry": 0,
+        "Is Expired?": "Yes",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "empty",
+          "value": null,
+          "isStale": true
+        },
+        "GST": 44.82
+      },
+      "createdTime": "2025-10-28T07:38:52.000Z"
+    },
+    {
+      "id": "recX2XLbzlftDcaRl",
+      "fields": {
+        "Quotation ID": "Q-00058",
+        "Total Cost": 0,
+        "Status": "Draft",
+        "Created By": [
+          "rec9cmKq4XZ6Y6BGb"
+        ],
+        "Quotation Date": "2025-10-31",
+        "Expiry Date": "2025-11-02",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 0
+      },
+      "createdTime": "2025-10-31T07:56:38.000Z"
+    },
+    {
+      "id": "recXEPzEK1RbVoLnU",
+      "fields": {
+        "Quotation ID": "Q-00039",
+        "Total Cost": 0,
+        "Status": "Draft",
+        "Created By": [
+          "recj2Y5qMJpkjnpjV"
+        ],
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 0
+      },
+      "createdTime": "2025-10-30T12:59:08.000Z"
+    },
+    {
+      "id": "recXpX7N3syQ1204o",
+      "fields": {
+        "Quotation ID": "Q-00029",
+        "Client": [
+          "rec2Q0rGpkrQJuVmP"
+        ],
+        "Total Cost": 293.82000000000005,
+        "Status": "Expired",
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Client City": [
+          "Bangalore"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 44.82
+      },
+      "createdTime": "2025-10-30T11:23:40.000Z"
+    },
+    {
+      "id": "recYAnxQDoX7bhhjN",
+      "fields": {
+        "Quotation ID": "Q-00037",
+        "Client": [
+          "rec3M1SiXk4D8HzI3"
+        ],
+        "Product": [
+          "recOTDodxiiE1fgC9",
+          "recDTyqBCB2tQa4Ak"
+        ],
+        "Total Cost": 253951.67039999997,
+        "Status": "Draft",
+        "Created By": [
+          "recCYfMsG7hViVm4W"
+        ],
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Product Category": [
+          "Health",
+          "Health"
+        ],
+        "Client City": [
+          "Delhi"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "empty",
+          "value": null,
+          "isStale": true
+        },
+        "GST": 38738.3904
+      },
+      "createdTime": "2025-10-30T12:34:39.000Z"
+    },
+    {
+      "id": "recZZuTlS0cEZ4PNg",
+      "fields": {
+        "Quotation ID": "Q-00045",
+        "Client": [
+          "rec2Q0rGpkrQJuVmP"
+        ],
+        "Product": [
+          "recOTDodxiiE1fgC9"
+        ],
+        "Total Cost": -3966.5699999999997,
+        "Status": "Draft",
+        "Created By": [
+          "recCYfMsG7hViVm4W"
+        ],
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Product Category": [
+          "Health"
+        ],
+        "Client City": [
+          "Bangalore"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "empty",
+          "value": null,
+          "isStale": true
+        },
+        "GST": -605.0699999999999
+      },
+      "createdTime": "2025-10-30T19:05:52.000Z"
+    },
+    {
+      "id": "recbtgSVAbolqor6Y",
+      "fields": {
+        "Quotation ID": "Q-00028",
+        "Client": [
+          "recPVuiNC9wZrQhuv"
+        ],
+        "Total Cost": 0,
+        "Status": "Expired",
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Client City": [
+          "Mumbai"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 0
+      },
+      "createdTime": "2025-10-30T11:06:47.000Z"
+    },
+    {
+      "id": "recdwjGxBdl6proDk",
+      "fields": {
+        "Quotation ID": "Q-00015",
+        "Lead": [
+          "recrtk8wkDNk3o1Ht"
+        ],
+        "Status": "Rejected",
+        "Quotation Date": "2025-10-28",
+        "Expiry Date": "2025-10-30",
+        "Notes": "--- Terms ---\nPayment Terms: 50% advance, 50% on completion.\n\nWarranty: All services are provided \"as-is\" without warranty.\n\nDelivery: Project completion date is an estimate.\n\nCancellation: Client may cancel within 3 days for a full refund of the advance.\n\n\n\n--- JSON DATA BACKUP ---\n\nInfo:\n{\n  \"quotationNo\": \"Q-00015\",\n  \"quotationDate\": \"2025-10-28\",\n  \"dueDate\": \"2025-10-30\",\n  \"customFields\": []\n}\n\nBilled To:\n{}\n\nShipped To:\n{\n  \"name\": \"\",\n  \"address\": \"\",\n  \"city\": \"\",\n  \"state\": \"\",\n  \"zip\": \"\"\n}\n\nItems:\n[]\n\nTotals:\n{}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"bankName\": \"Your Company Name\",\n  \"bankAcc\": \"1234567890\",\n  \"bankBank\": \"HDFC Bank\",\n  \"bankIfsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityStateZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Warehouse Name\",\n  \"address\": \"456 Warehouse Ave\",\n  \"cityState\": \"Warehouse City, State\",\n  \"zip\": \"WH-ZIP\"\n}",
+        "Days Until Expiry": 2,
+        "Is Expired?": "Yes",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        }
+      },
+      "createdTime": "2025-10-28T10:35:12.000Z"
+    },
+    {
+      "id": "recgjKe8GcdADiiSd",
+      "fields": {
+        "Quotation ID": "Q-00019",
+        "Status": "Rejected",
+        "Quotation Date": "2025-10-29",
+        "Expiry Date": "2025-10-31",
+        "Notes": "--- Terms ---\nPayment Terms: 50% advance, 50% on completion.\n\nWarranty: All services are provided \"as-is\" without warranty.\n\nDelivery: Project completion date is an estimate.\n\nCancellation: Client may cancel within 3 days for a full refund of the advance.\n\n\n\n--- JSON DATA BACKUP ---\n\nInfo:\n{\n  \"quotationNo\": \"Q-00019\",\n  \"quotationDate\": \"2025-10-29\",\n  \"dueDate\": \"2025-10-31\",\n  \"customFields\": []\n}\n\nBilled To:\n{}\n\nShipped To:\n{\n  \"name\": \"\",\n  \"address\": \"\",\n  \"city\": \"\",\n  \"state\": \"\",\n  \"zip\": \"\"\n}\n\nItems:\n[]\n\nTotals:\n{}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"bankName\": \"Your Company Name\",\n  \"bankAcc\": \"1234567890\",\n  \"bankBank\": \"HDFC Bank\",\n  \"bankIfsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityStateZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Warehouse Name\",\n  \"address\": \"456 Warehouse Ave\",\n  \"cityState\": \"Warehouse City, State\",\n  \"zip\": \"WH-ZIP\"\n}",
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        }
+      },
+      "createdTime": "2025-10-29T08:18:39.000Z"
+    },
+    {
+      "id": "rechRDfBH1lEPKZRu",
+      "fields": {
+        "Quotation ID": "Q-00012",
+        "Lead": [
+          "recrtk8wkDNk3o1Ht"
+        ],
+        "Status": "Accepted",
+        "Quotation Date": "2025-10-28",
+        "Expiry Date": "2025-10-30",
+        "Notes": "--- Terms ---\nPayment Terms: 50% advance, 50% on completion.\n\nWarranty: All services are provided \"as-is\" without warranty.\n\nDelivery: Project completion date is an estimate.\n\nCancellation: Client may cancel within 3 days for a full refund of the advance.\n\n\n\n--- JSON DATA BACKUP ---\n\nInfo:\n{\n  \"quotationNo\": \"Q-00012\",\n  \"quotationDate\": \"2025-10-28\",\n  \"dueDate\": \"2025-10-30\",\n  \"customFields\": []\n}\n\nBilled To:\n{}\n\nShipped To:\n{\n  \"name\": \"\",\n  \"address\": \"\",\n  \"city\": \"\",\n  \"state\": \"\",\n  \"zip\": \"\"\n}\n\nItems:\n[]\n\nTotals:\n{}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"bankName\": \"Your Company Name\",\n  \"bankAcc\": \"1234567890\",\n  \"bankBank\": \"HDFC Bank\",\n  \"bankIfsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityStateZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Warehouse Name\",\n  \"address\": \"456 Warehouse Ave\",\n  \"cityState\": \"Warehouse City, State\",\n  \"zip\": \"WH-ZIP\"\n}",
+        "Days Until Expiry": 2,
+        "Is Expired?": "Yes",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        }
+      },
+      "createdTime": "2025-10-28T09:55:29.000Z"
+    },
+    {
+      "id": "rechW9cfu1SVOO1MV",
+      "fields": {
+        "Quotation ID": "Q-00022",
+        "Status": "Rejected",
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Notes": "--- Terms ---\nPayment Terms: 50% advance, 50% on completion.\n\nWarranty: All services are provided \"as-is\" without warranty.\n\nDelivery: Project completion date is an estimate.\n\nCancellation: Client may cancel within 3 days for a full refund of the advance.\n\n\n\n--- JSON DATA BACKUP ---\n\nInfo:\n{\n  \"quotationNo\": \"Q-00022\",\n  \"quotationDate\": \"2025-10-30\",\n  \"dueDate\": \"2025-11-01\",\n  \"customFields\": []\n}\n\nBilled To:\n{}\n\nShipped To:\n{\n  \"name\": \"\",\n  \"address\": \"\",\n  \"city\": \"\",\n  \"state\": \"\",\n  \"zip\": \"\"\n}\n\nItems:\n[]\n\nTotals:\n{}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"bankName\": \"Your Company Name\",\n  \"bankAcc\": \"1234567890\",\n  \"bankBank\": \"HDFC Bank\",\n  \"bankIfsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityStateZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Warehouse Name\",\n  \"address\": \"456 Warehouse Ave\",\n  \"cityState\": \"Warehouse City, State\",\n  \"zip\": \"WH-ZIP\"\n}",
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        }
+      },
+      "createdTime": "2025-10-30T07:05:32.000Z"
+    },
+    {
+      "id": "rechZKdv2U6JrS6mH",
+      "fields": {
+        "Quotation ID": "Q-00011",
+        "Lead": [
+          "recrtk8wkDNk3o1Ht"
+        ],
+        "Status": "Accepted",
+        "Quotation Date": "2025-10-28",
+        "Expiry Date": "2025-10-30",
+        "Notes": "--- Terms ---\nPayment Terms: 50% advance, 50% on completion.\n\nWarranty: All services are provided \"as-is\" without warranty.\n\nDelivery: Project completion date is an estimate.\n\nCancellation: Client may cancel within 3 days for a full refund of the advance.\n\n\n\n--- JSON DATA BACKUP ---\n\nInfo:\n{\n  \"quotationNo\": \"Q-00011\",\n  \"quotationDate\": \"2025-10-28\",\n  \"dueDate\": \"2025-10-30\",\n  \"customFields\": []\n}\n\nBilled To:\n{}\n\nShipped To:\n{\n  \"name\": \"\",\n  \"address\": \"\",\n  \"city\": \"\",\n  \"state\": \"\",\n  \"zip\": \"\"\n}\n\nItems:\n[]\n\nTotals:\n{}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"bankName\": \"Your Company Name\",\n  \"bankAcc\": \"1234567890\",\n  \"bankBank\": \"HDFC Bank\",\n  \"bankIfsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityStateZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Warehouse Name\",\n  \"address\": \"456 Warehouse Ave\",\n  \"cityState\": \"Warehouse City, State\",\n  \"zip\": \"WH-ZIP\"\n}",
+        "Days Until Expiry": 2,
+        "Is Expired?": "Yes",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        }
+      },
+      "createdTime": "2025-10-28T09:54:55.000Z"
+    },
+    {
+      "id": "reci5YikN9Jainbyx",
+      "fields": {
+        "Quotation ID": "Q-00007",
+        "Lead": [
+          "recrtk8wkDNk3o1Ht"
+        ],
+        "Status": "Sent",
+        "Quotation Date": "2025-10-28",
+        "Expiry Date": "2025-10-30",
+        "Notes": "--- Terms ---\nPayment Terms: 50% advance, 50% on completion.\n\nWarranty: All services are provided \"as-is\" without warranty.\n\nDelivery: Project completion date is an estimate.\n\nCancellation: Client may cancel within 3 days for a full refund of the advance.\n\n\n\n--- JSON DATA BACKUP ---\n\nInfo:\n{\n  \"quotationNo\": \"Q-00007\",\n  \"quotationDate\": \"2025-10-28\",\n  \"dueDate\": \"2025-10-30\",\n  \"customFields\": []\n}\n\nBilled To:\n{}\n\nShipped To:\n{\n  \"name\": \"\",\n  \"address\": \"\",\n  \"city\": \"\",\n  \"state\": \"\",\n  \"zip\": \"\"\n}\n\nItems:\n[]\n\nTotals:\n{}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"bankName\": \"Your Company Name\",\n  \"bankAcc\": \"1234567890\",\n  \"bankBank\": \"HDFC Bank\",\n  \"bankIfsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityStateZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Warehouse Name\",\n  \"address\": \"456 Warehouse Ave\",\n  \"cityState\": \"Warehouse City, State\",\n  \"zip\": \"WH-ZIP\"\n}",
+        "Days Until Expiry": 2,
+        "Is Expired?": "Yes",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        }
+      },
+      "createdTime": "2025-10-28T09:41:28.000Z"
+    },
+    {
+      "id": "recivb8ImVCbwhOf7",
+      "fields": {
+        "Quotation ID": "Q-00026",
+        "Client": [
+          "recPVuiNC9wZrQhuv"
+        ],
+        "Total Cost": 294998.81999999995,
+        "Status": "Expired",
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Client City": [
+          "Mumbai"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 44999.82
+      },
+      "createdTime": "2025-10-30T10:54:19.000Z"
+    },
+    {
+      "id": "recj7i7lEjEi4nEgX",
+      "fields": {
+        "Quotation ID": "Q-00042",
+        "Client": [
+          "recPVuiNC9wZrQhuv"
+        ],
+        "Total Cost": 0,
+        "Status": "Draft",
+        "Created By": [
+          "rechb21zGsrnPN2CP"
+        ],
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Client City": [
+          "Mumbai"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 0
+      },
+      "createdTime": "2025-10-30T13:05:12.000Z"
+    },
+    {
+      "id": "reclMFBPO869GAHqQ",
+      "fields": {
+        "Quotation ID": "Q-00028",
+        "Client": [
+          "recPVuiNC9wZrQhuv"
+        ],
+        "Total Cost": 0,
+        "Status": "Expired",
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Client City": [
+          "Mumbai"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 0
+      },
+      "createdTime": "2025-10-30T11:20:52.000Z"
+    },
+    {
+      "id": "reclzcdmUiDks79gC",
+      "fields": {
+        "Quotation ID": "Q-00044",
+        "Client": [
+          "rec3M1SiXk4D8HzI3"
+        ],
+        "Product": [
+          "recOTDodxiiE1fgC9"
+        ],
+        "Total Cost": -143.97179999999997,
+        "Status": "Draft",
+        "Created By": [
+          "reca9RJfT1GtKPeMO"
+        ],
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Product Category": [
+          "Health"
+        ],
+        "Client City": [
+          "Delhi"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "empty",
+          "value": null,
+          "isStale": true
+        },
+        "GST": -21.961799999999997
+      },
+      "createdTime": "2025-10-30T18:07:01.000Z"
+    },
+    {
+      "id": "recmNXZbpJAMXRLeh",
+      "fields": {
+        "Quotation ID": "Q-00050",
+        "Client": [
+          "rec2Q0rGpkrQJuVmP"
+        ],
+        "Total Cost": 0,
+        "Status": "Draft",
+        "Created By": [
+          "recCYfMsG7hViVm4W"
+        ],
+        "Quotation Date": "2025-10-31",
+        "Expiry Date": "2025-11-02",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Client City": [
+          "Bangalore"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 0
+      },
+      "createdTime": "2025-10-30T20:20:28.000Z"
+    },
+    {
+      "id": "recmn7w6TkdUqqwM9",
+      "fields": {
+        "Quotation ID": "Q-00041",
+        "Total Cost": 0,
+        "Status": "Draft",
+        "Created By": [
+          "recCYfMsG7hViVm4W"
+        ],
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 0
+      },
+      "createdTime": "2025-10-30T13:04:50.000Z"
+    },
+    {
+      "id": "recmqnZb3VRIAP9hi",
+      "fields": {
+        "Quotation ID": "Q-00025",
+        "Total Cost": 0,
+        "Status": "Expired",
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 0
+      },
+      "createdTime": "2025-10-30T10:51:49.000Z"
+    },
+    {
+      "id": "recnVfs2yGVVluwHp",
+      "fields": {
+        "Quotation ID": "Q-00032",
+        "Client": [
+          "recPVuiNC9wZrQhuv"
+        ],
+        "Total Cost": 293.82000000000005,
+        "Status": "Draft",
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Client City": [
+          "Mumbai"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 44.82
+      },
+      "createdTime": "2025-10-30T11:40:39.000Z"
+    },
+    {
+      "id": "recnyfnOolHXY0bxy",
+      "fields": {
+        "Quotation ID": "Q-00037",
+        "Client": [
+          "rec3M1SiXk4D8HzI3"
+        ],
+        "Product": [
+          "recOTDodxiiE1fgC9",
+          "recDTyqBCB2tQa4Ak"
+        ],
+        "Total Cost": 253951.67039999997,
+        "Status": "Draft",
+        "Created By": [
+          "rec9cmKq4XZ6Y6BGb"
+        ],
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Product Category": [
+          "Health",
+          "Health"
+        ],
+        "Client City": [
+          "Delhi"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "empty",
+          "value": null,
+          "isStale": true
+        },
+        "GST": 38738.3904
+      },
+      "createdTime": "2025-10-30T12:35:46.000Z"
+    },
+    {
+      "id": "recpDmGutWcK0VNgj",
+      "fields": {
+        "Quotation ID": "Q-00046",
+        "Client": [
+          "rec2Q0rGpkrQJuVmP"
+        ],
+        "Product": [
+          "recOTDodxiiE1fgC9"
+        ],
+        "Total Cost": 161.601,
+        "Status": "Draft",
+        "Created By": [
+          "recCYfMsG7hViVm4W"
+        ],
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Product Category": [
+          "Health"
+        ],
+        "Client City": [
+          "Bangalore"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "empty",
+          "value": null,
+          "isStale": true
+        },
+        "GST": 24.650999999999996
+      },
+      "createdTime": "2025-10-30T19:08:35.000Z"
+    },
+    {
+      "id": "recpdiq0Czkr5nBvH",
+      "fields": {
+        "Quotation ID": "Q-00029",
+        "Client": [
+          "rec2Q0rGpkrQJuVmP"
+        ],
+        "Total Cost": 293.82000000000005,
+        "Status": "Expired",
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Client City": [
+          "Bangalore"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 44.82
+      },
+      "createdTime": "2025-10-30T11:27:56.000Z"
+    },
+    {
+      "id": "recq55gUZzSmZud0n",
+      "fields": {
+        "Quotation ID": "Q-00018",
+        "Product": [
+          "recOTDodxiiE1fgC9"
+        ],
+        "Total Cost": 249.74699999999999,
+        "Status": "Rejected",
+        "Quotation Date": "2025-10-29",
+        "Expiry Date": "2025-10-31",
+        "Notes": "--- Terms ---\nPayment Terms: 50% advance, 50% on completion.\n\nWarranty: All services are provided \"as-is\" without warranty.\n\nDelivery: Project completion date is an estimate.\n\nCancellation: Client may cancel within 3 days for a full refund of the advance.\n\n\n\n--- JSON DATA BACKUP ---\n\nInfo:\n{\n  \"quotationNo\": \"Q-00018\",\n  \"quotationDate\": \"2025-10-29\",\n  \"dueDate\": \"2025-10-31\",\n  \"customFields\": []\n}\n\nBilled To:\n{}\n\nShipped To:\n{\n  \"name\": \"\",\n  \"address\": \"\",\n  \"city\": \"\",\n  \"state\": \"\",\n  \"zip\": \"\"\n}\n\nItems:\n[\n  {\n    \"id\": \"recOTDodxiiE1fgC9\",\n    \"name\": \"Aura 4D Full Body Massage Chair\",\n    \"gstRate\": 18,\n    \"qty\": 1,\n    \"rate\": 249,\n    \"amount\": 249,\n    \"cgst\": 22.41,\n    \"sgst\": 22.41,\n    \"total\": 293.82000000000005\n  }\n]\n\nTotals:\n{\n  \"subtotal\": 249,\n  \"discountPercent\": 15,\n  \"discountAmount\": 37.35,\n  \"taxableAmount\": 211.65,\n  \"sgst\": 19.0485,\n  \"cgst\": 19.0485,\n  \"total\": 249.74699999999999,\n  \"totalInWords\": \"Two Hundred and Forty Nine Rupees Only\"\n}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"bankName\": \"Your Company Name\",\n  \"bankAcc\": \"1234567890\",\n  \"bankBank\": \"HDFC Bank\",\n  \"bankIfsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityStateZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Warehouse Name\",\n  \"address\": \"456 Warehouse Ave\",\n  \"cityState\": \"Warehouse City, State\",\n  \"zip\": \"WH-ZIP\"\n}",
+        "Product Category": [
+          "Health"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 38.097
+      },
+      "createdTime": "2025-10-29T08:18:15.000Z"
+    },
+    {
+      "id": "rectTUlFKCwSOFtOR",
+      "fields": {
+        "Quotation ID": "Q-00026",
+        "Client": [
+          "rec3M1SiXk4D8HzI3"
+        ],
+        "Total Cost": 294998.81999999995,
+        "Status": "Expired",
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Client City": [
+          "Delhi"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 44999.82
+      },
+      "createdTime": "2025-10-30T10:57:29.000Z"
+    },
+    {
+      "id": "recu55G1KlcMQFYlT",
+      "fields": {
+        "Quotation ID": "Q-00057",
+        "Client": [
+          "rec3M1SiXk4D8HzI3"
+        ],
+        "Product": [
+          "rec2DIvoMXdN2koyn"
+        ],
+        "Total Cost": 294998.81999999995,
+        "Status": "Draft",
+        "Created By": [
+          "rechb21zGsrnPN2CP"
+        ],
+        "Quotation Date": "2025-10-31",
+        "Expiry Date": "2025-11-02",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Product Category": [
+          "Health"
+        ],
+        "Client City": [
+          "Delhi"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "empty",
+          "value": null,
+          "isStale": true
+        },
+        "GST": 44999.82
+      },
+      "createdTime": "2025-10-31T07:36:04.000Z"
+    },
+    {
+      "id": "recum5fTGi4HPMScY",
+      "fields": {
+        "Quotation ID": "Q-00016",
+        "Lead": [
+          "recrtk8wkDNk3o1Ht"
+        ],
+        "Client": [
+          "recSYF2ZPIEa6tkPA"
+        ],
+        "Product": [
+          "rec2DIvoMXdN2koyn"
+        ],
+        "Total Cost": 280248.879,
+        "Status": "Rejected",
+        "Quotation Date": "2025-10-28",
+        "Expiry Date": "2025-10-30",
+        "Notes": "--- Terms ---\nPayment Terms: 50% advance, 50% on completion.\n\nWarranty: All services are provided \"as-is\" without warranty.\n\nDelivery: Project completion date is an estimate.\n\nCancellation: Client may cancel within 3 days for a full refund of the advance.\n\n\n\n--- JSON DATA BACKUP ---\n\nInfo:\n{\n  \"quotationNo\": \"Q-00016\",\n  \"quotationDate\": \"2025-10-28\",\n  \"dueDate\": \"2025-10-30\",\n  \"customFields\": []\n}\n\nBilled To:\n{\n  \"id\": \"recSYF2ZPIEa6tkPA\",\n  \"Client Name\": \"Elegant Homes\",\n  \"Contact Details\": \"Simran Kaur, +91-9001122334, simran@eleganthomes.com\",\n  \"City\": \"Chandigarh\",\n  \"Client Type\": \"Retail\",\n  \"GST Number\": \"04AACDE1234D4ZE\"\n}\n\nShipped To:\n{\n  \"name\": \"wdnjefj\",\n  \"address\": \"dewjfgeugf\",\n  \"city\": \"dbewjfgw\",\n  \"state\": \"dewjfghw\",\n  \"zip\": \"webhfgeh\"\n}\n\nItems:\n[\n  {\n    \"id\": \"rec2DIvoMXdN2koyn\",\n    \"name\": \"Aura 4D Full Body Massage Chair\",\n    \"gstRate\": 18,\n    \"qty\": 1,\n    \"rate\": 249999,\n    \"amount\": 249999,\n    \"cgst\": 22499.91,\n    \"sgst\": 22499.91,\n    \"total\": 294998.81999999995\n  }\n]\n\nTotals:\n{\n  \"subtotal\": 249999,\n  \"discountPercent\": 5,\n  \"discountAmount\": 12499.95,\n  \"taxableAmount\": 237499.05,\n  \"sgst\": 21374.9145,\n  \"cgst\": 21374.9145,\n  \"total\": 280248.879,\n  \"totalInWords\": \"Two Lakh Eighty Thousand Two Hundred and Forty Eight Rupees Only\"\n}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"bankName\": \"Your Company Name\",\n  \"bankAcc\": \"1234567890\",\n  \"bankBank\": \"HDFC Bank\",\n  \"bankIfsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityStateZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Warehouse Name\",\n  \"address\": \"456 Warehouse Ave\",\n  \"cityState\": \"Warehouse City, State\",\n  \"zip\": \"WH-ZIP\"\n}",
+        "Product Category": [
+          "Health"
+        ],
+        "Client City": [
+          "Chandigarh"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "Yes",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "empty",
+          "value": null,
+          "isStale": true
+        },
+        "GST": 42749.829
+      },
+      "createdTime": "2025-10-28T10:39:10.000Z"
+    },
+    {
+      "id": "recus70hAdI6nYoUs",
+      "fields": {
+        "Quotation ID": "Q-00027",
+        "Total Cost": 0,
+        "Status": "Expired",
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 0
+      },
+      "createdTime": "2025-10-30T11:04:52.000Z"
+    },
+    {
+      "id": "recvDtDljJKxUgdF7",
+      "fields": {
+        "Quotation ID": "Q-00053",
+        "Client": [
+          "rec2Q0rGpkrQJuVmP"
+        ],
+        "Product": [
+          "recDTyqBCB2tQa4Ak"
+        ],
+        "Total Cost": 247799.00879999998,
+        "Status": "Draft",
+        "Created By": [
+          "recCYfMsG7hViVm4W"
+        ],
+        "Quotation Date": "2025-10-31",
+        "Expiry Date": "2025-11-02",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Product Category": [
+          "Health"
+        ],
+        "Client City": [
+          "Bangalore"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "empty",
+          "value": null,
+          "isStale": true
+        },
+        "GST": 37799.8488
+      },
+      "createdTime": "2025-10-30T21:09:26.000Z"
+    },
+    {
+      "id": "recwH0kqWE3oFj3L2",
+      "fields": {
+        "Quotation ID": "Q-00021",
+        "Status": "Rejected",
+        "Quotation Date": "2025-10-29",
+        "Expiry Date": "2025-10-31",
+        "Notes": "--- Terms ---\n\n                            Payment Terms: 50% advance, 50% on completion.\n                            Warranty: All services are provided \"as-is\" without warranty.\n                            Delivery: Project completion date is an estimate.\n                            Cancellation: Client may cancel within 3 days for a full refund of the advance.\n                        \n\n\n\n--- JSON DATA BACKUP ---\n\nInfo:\n{\n  \"quotationNo\": \"Q-00021\",\n  \"quotationDate\": \"2025-10-29\",\n  \"dueDate\": \"2025-10-31\",\n  \"customFields\": []\n}\n\nBilled To:\n{}\n\nShipped To:\n{\n  \"name\": \"\",\n  \"address\": \"\",\n  \"city\": \"\",\n  \"state\": \"\",\n  \"zip\": \"\"\n}\n\nItems:\n[]\n\nTotals:\n{}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"bankName\": \"Your Company Name\",\n  \"bankAcc\": \"1234567890\",\n  \"bankBank\": \"HDFC Bank\",\n  \"bankIfsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityStateZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Warehouse Name\",\n  \"address\": \"456 Warehouse Ave\",\n  \"cityState\": \"Warehouse City, State\",\n  \"zip\": \"WH-ZIP\"\n}",
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        }
+      },
+      "createdTime": "2025-10-30T07:04:21.000Z"
+    },
+    {
+      "id": "recxtXH4Ahx8rdi3n",
+      "fields": {
+        "Quotation ID": "Q-00006",
+        "Lead": [
+          "recrtk8wkDNk3o1Ht"
+        ],
+        "Product": [
+          "recOTDodxiiE1fgC9"
+        ],
+        "Total Cost": 249.74699999999999,
+        "Status": "Sent",
+        "Quotation Date": "2025-10-28",
+        "Expiry Date": "2025-10-30",
+        "Notes": "--- Terms ---\nPayment Terms: 50% advance, 50% on completion.\n\nWarranty: All services are provided \"as-is\" without warranty.\n\nDelivery: Project completion date is an estimate.\n\nCancellation: Client may cancel within 3 days for a full refund of the advance.\n\n\n\n--- JSON DATA BACKUP ---\n\nInfo:\n{\n  \"quotationNo\": \"Q-00006\",\n  \"quotationDate\": \"2025-10-28\",\n  \"dueDate\": \"2025-10-30\",\n  \"customFields\": []\n}\n\nBilled To:\n{}\n\nShipped To:\n{\n  \"name\": \"\",\n  \"address\": \"\",\n  \"city\": \"\",\n  \"state\": \"\",\n  \"zip\": \"\"\n}\n\nItems:\n[\n  {\n    \"id\": \"recOTDodxiiE1fgC9\",\n    \"name\": \"Aura 4D Full Body Massage Chair\",\n    \"gstRate\": 18,\n    \"qty\": 1,\n    \"rate\": 249,\n    \"amount\": 249,\n    \"cgst\": 22.41,\n    \"sgst\": 22.41,\n    \"total\": 293.82000000000005\n  }\n]\n\nTotals:\n{\n  \"subtotal\": 249,\n  \"discountPercent\": 15,\n  \"discountAmount\": 37.35,\n  \"taxableAmount\": 211.65,\n  \"sgst\": 19.0485,\n  \"cgst\": 19.0485,\n  \"total\": 249.74699999999999,\n  \"totalInWords\": \"Two Hundred and Forty Nine Rupees Only\"\n}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"bankName\": \"Your Company Name\",\n  \"bankAcc\": \"1234567890\",\n  \"bankBank\": \"HDFC Bank\",\n  \"bankIfsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityStateZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Warehouse Name\",\n  \"address\": \"456 Warehouse Ave\",\n  \"cityState\": \"Warehouse City, State\",\n  \"zip\": \"WH-ZIP\"\n}",
+        "Product Category": [
+          "Health"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "Yes",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 38.097
+      },
+      "createdTime": "2025-10-28T09:35:55.000Z"
+    },
+    {
+      "id": "recxzq97vEyFRmGAq",
+      "fields": {
+        "Quotation ID": "Q-00040",
+        "Client": [
+          "recPVuiNC9wZrQhuv"
+        ],
+        "Product": [
+          "recOTDodxiiE1fgC9"
+        ],
+        "Total Cost": 293.82000000000005,
+        "Status": "Draft",
+        "Created By": [
+          "recCYfMsG7hViVm4W"
+        ],
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Product Category": [
+          "Health"
+        ],
+        "Client City": [
+          "Mumbai"
+        ],
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "empty",
+          "value": null,
+          "isStale": true
+        },
+        "GST": 44.82
+      },
+      "createdTime": "2025-10-30T13:02:24.000Z"
+    },
+    {
+      "id": "recyI8yrWHqiUtfHe",
+      "fields": {
+        "Quotation ID": "Q-00009",
+        "Lead": [
+          "recrtk8wkDNk3o1Ht"
+        ],
+        "Status": "Accepted",
+        "Quotation Date": "2025-10-28",
+        "Expiry Date": "2025-10-30",
+        "Notes": "--- Terms ---\nPayment Terms: 50% advance, 50% on completion.\n\nWarranty: All services are provided \"as-is\" without warranty.\n\nDelivery: Project completion date is an estimate.\n\nCancellation: Client may cancel within 3 days for a full refund of the advance.\n\n\n\n--- JSON DATA BACKUP ---\n\nInfo:\n{\n  \"quotationNo\": \"Q-00009\",\n  \"quotationDate\": \"2025-10-28\",\n  \"dueDate\": \"2025-10-30\",\n  \"customFields\": []\n}\n\nBilled To:\n{}\n\nShipped To:\n{\n  \"name\": \"\",\n  \"address\": \"\",\n  \"city\": \"\",\n  \"state\": \"\",\n  \"zip\": \"\"\n}\n\nItems:\n[]\n\nTotals:\n{}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"bankName\": \"Your Company Name\",\n  \"bankAcc\": \"1234567890\",\n  \"bankBank\": \"HDFC Bank\",\n  \"bankIfsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityStateZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Warehouse Name\",\n  \"address\": \"456 Warehouse Ave\",\n  \"cityState\": \"Warehouse City, State\",\n  \"zip\": \"WH-ZIP\"\n}",
+        "Days Until Expiry": 2,
+        "Is Expired?": "Yes",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        }
+      },
+      "createdTime": "2025-10-28T09:50:19.000Z"
+    },
+    {
+      "id": "recyKErsBragOgYNj",
+      "fields": {
+        "Quotation ID": "Q-00039",
+        "Total Cost": 0,
+        "Status": "Draft",
+        "Created By": [
+          "reca9RJfT1GtKPeMO"
+        ],
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 0
+      },
+      "createdTime": "2025-10-30T12:58:41.000Z"
+    },
+    {
+      "id": "recyS2uXWbwBcu25f",
+      "fields": {
+        "Quotation ID": "Q-00014",
+        "Lead": [
+          "recrtk8wkDNk3o1Ht"
+        ],
+        "Status": "Accepted",
+        "Quotation Date": "2025-10-28",
+        "Expiry Date": "2025-10-30",
+        "Notes": "--- Terms ---\nPayment Terms: 50% advance, 50% on completion.\n\nWarranty: All services are provided \"as-is\" without warranty.\n\nDelivery: Project completion date is an estimate.\n\nCancellation: Client may cancel within 3 days for a full refund of the advance.\n\n\n\n--- JSON DATA BACKUP ---\n\nInfo:\n{\n  \"quotationNo\": \"Q-00014\",\n  \"quotationDate\": \"2025-10-28\",\n  \"dueDate\": \"2025-10-30\",\n  \"customFields\": []\n}\n\nBilled To:\n{}\n\nShipped To:\n{\n  \"name\": \"\",\n  \"address\": \"\",\n  \"city\": \"\",\n  \"state\": \"\",\n  \"zip\": \"\"\n}\n\nItems:\n[]\n\nTotals:\n{}\n\nPayment Details:\n{\n  \"upiId\": \"your-upi-id@okhdfcbank\",\n  \"qrCodeUrl\": \"https://placehold.co/128x128/e2e8f0/e2e8f0?text=QR\",\n  \"bankName\": \"Your Company Name\",\n  \"bankAcc\": \"1234567890\",\n  \"bankBank\": \"HDFC Bank\",\n  \"bankIfsc\": \"HDFC0000123\"\n}\n\nBilled From:\n{\n  \"name\": \"Your Company Name\",\n  \"address\": \"123 Your Street\",\n  \"cityStateZip\": \"Your City, State, ZIP\",\n  \"email\": \"contact@yourcompany.com\",\n  \"pan\": \"YOURPANNO\",\n  \"gstin\": \"YOURGSTIN\"\n}\n\nShipped From:\n{\n  \"name\": \"Your Warehouse Name\",\n  \"address\": \"456 Warehouse Ave\",\n  \"cityState\": \"Warehouse City, State\",\n  \"zip\": \"WH-ZIP\"\n}",
+        "Days Until Expiry": 2,
+        "Is Expired?": "Yes",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        }
+      },
+      "createdTime": "2025-10-28T10:22:02.000Z"
+    },
+    {
+      "id": "reczLXbBATJ019FVv",
+      "fields": {
+        "Quotation ID": "Q-00048",
+        "Total Cost": 0,
+        "Status": "Draft",
+        "Created By": [
+          "rechb21zGsrnPN2CP"
+        ],
+        "Quotation Date": "2025-10-30",
+        "Expiry Date": "2025-11-01",
+        "Notes": "Payment Terms: 50% advance, 50% on completion.Warranty: All services are provided \"as-is\" without warranty.Delivery: Project completion date is an estimate.Cancellation: Client may cancel within 3 days for a full refund of the advance.",
+        "Days Until Expiry": 2,
+        "Is Expired?": "No",
+        "Quotation Summary (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "Deal Win Probability (AI)": {
+          "state": "error",
+          "errorType": "emptyDependency",
+          "value": null,
+          "isStale": false
+        },
+        "GST": 0
+      },
+      "createdTime": "2025-10-30T19:40:19.000Z"
+    }
+  ],
+  "fetchedAt": "2025-10-31T11:56:58.416Z"
+}

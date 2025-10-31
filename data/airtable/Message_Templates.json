@@ -1,0 +1,234 @@
+{
+  "table": "Message Templates",
+  "schema": {
+    "id": "tbl2TEQifkZFxuO0q",
+    "name": "Message Templates",
+    "fields": [
+      {
+        "id": "Title",
+        "name": "Title",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Type",
+        "name": "Type",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Body",
+        "name": "Body",
+        "type": "multipleLineText"
+      },
+      {
+        "id": "Category",
+        "name": "Category",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Body Word Count",
+        "name": "Body Word Count",
+        "type": "number"
+      },
+      {
+        "id": "Related Marketing Assets",
+        "name": "Related Marketing Assets",
+        "type": "multipleSelects"
+      }
+    ],
+    "recordCount": 15
+  },
+  "records": [
+    {
+      "id": "rec1j8JUD23fWx8kG",
+      "fields": {
+        "Title": "Festival Offer Broadcast",
+        "Type": "WhatsApp Template",
+        "Body": "Celebrate this festive season with Suprans! 🎊 Get exclusive offers on our premium massage chair range. Limited time only.",
+        "Category": "Marketing",
+        "Body Word Count": 19,
+        "Related Marketing Assets": [
+          "recwPg2fZn8o1Jj3C"
+        ]
+      },
+      "createdTime": "2025-10-27T07:59:39.000Z"
+    },
+    {
+      "id": "rec4ZpiuXvjXJP1G9",
+      "fields": {
+        "Title": "Post-Delivery Check",
+        "Type": "WhatsApp Template",
+        "Body": "Hi {{name}}, your {{product_name}} was recently delivered. Please confirm if everything arrived in good condition.",
+        "Category": "Support",
+        "Body Word Count": 15
+      },
+      "createdTime": "2025-10-27T07:59:39.000Z"
+    },
+    {
+      "id": "recIJDN4hm6xu94DX",
+      "fields": {
+        "Title": "Reconnect – Dormant Lead",
+        "Type": "WhatsApp Template",
+        "Body": "Hi {{name}}, it’s been a while since we last connected. We’ve got some exciting updates on new models and offers. Would you like a quick catalog?",
+        "Category": "Lead Nurturing",
+        "Body Word Count": 26,
+        "Related Marketing Assets": [
+          "recMYchaGkTTGUZXn"
+        ]
+      },
+      "createdTime": "2025-10-27T07:59:39.000Z"
+    },
+    {
+      "id": "recR2PboSawJjy8fI",
+      "fields": {
+        "Title": "Quotation for New Lead",
+        "Type": "Email Template",
+        "Body": "Hello {{name}}, please find attached the quotation for {{product_name}} under DDP Delhi pricing. GST (18%) extra. Let us know your quantity to finalize.",
+        "Category": "Sales",
+        "Body Word Count": 23,
+        "Related Marketing Assets": [
+          "recNhLHlK9Ltf62oN"
+        ]
+      },
+      "createdTime": "2025-10-27T07:59:39.000Z"
+    },
+    {
+      "id": "recVaM3auGESWzp09",
+      "fields": {
+        "Title": "Order Ready for Pickup",
+        "Type": "WhatsApp Template",
+        "Body": "Hi {{name}}, your {{product_name}} is ready for pickup from our Delhi warehouse. Please share your delivery contact or pickup time confirmation.",
+        "Category": "Logistics",
+        "Body Word Count": 21
+      },
+      "createdTime": "2025-10-27T07:59:39.000Z"
+    },
+    {
+      "id": "recWYad5SWrRfnPg6",
+      "fields": {
+        "Title": "Payment Reminder",
+        "Type": "WhatsApp Template",
+        "Body": "Hi {{name}}, gentle reminder to clear your payment for {{product_name}} so we can proceed with dispatch. Kindly confirm once paid.",
+        "Category": "Transactional",
+        "Body Word Count": 20,
+        "Related Marketing Assets": [
+          "recVj9ccKpKJzpD4t"
+        ]
+      },
+      "createdTime": "2025-10-27T07:59:39.000Z"
+    },
+    {
+      "id": "receoWepAEYEskGJJ",
+      "fields": {
+        "Title": "B2B Partnership Pitch",
+        "Type": "Email Template",
+        "Body": "Hello {{name}}, this is {{rep_name}} from Suprans. We’re expanding partnerships in the Indian market for premium wellness equipment. Let’s discuss possible collaboration.",
+        "Category": "Business Development",
+        "Body Word Count": 22,
+        "Related Marketing Assets": [
+          "recZEHTn0hIqyeZKQ"
+        ]
+      },
+      "createdTime": "2025-10-27T07:59:39.000Z"
+    },
+    {
+      "id": "receynfpWyM0SO8Jz",
+      "fields": {
+        "Title": "Internal Announcement – New Offer",
+        "Type": "Slack/Email Template",
+        "Body": "🚀 New Festive Offer Live! All Suprans massage chairs now with ₹5,000 off for October campaign. Please update pitch decks & ads.",
+        "Category": "Internal",
+        "Body Word Count": 22
+      },
+      "createdTime": "2025-10-27T07:59:39.000Z"
+    },
+    {
+      "id": "recgYu9NFg4ScedhF",
+      "fields": {
+        "Title": "Support Request Acknowledgement",
+        "Type": "WhatsApp Template",
+        "Body": "Hi {{name}}, thanks for contacting Suprans Support. Kindly share a short video/photo of the issue for our service team to help you faster.",
+        "Category": "Support",
+        "Body Word Count": 23,
+        "Related Marketing Assets": [
+          "rece19RR038vQD7Bp",
+          "rec9ntnSMsT27K4sN"
+        ]
+      },
+      "createdTime": "2025-10-27T07:59:39.000Z"
+    },
+    {
+      "id": "recgrfzS7Bo6wCkDt",
+      "fields": {
+        "Title": "Product Catalog Message",
+        "Type": "WhatsApp Template",
+        "Body": "Hi {{name}}, here’s the product catalog and specifications for {{product_name}}. Explore images, prices, and color variants curated by Suprans.",
+        "Category": "Product Info",
+        "Body Word Count": 19
+      },
+      "createdTime": "2025-10-27T07:59:39.000Z"
+    },
+    {
+      "id": "reclOtsBHAinlprEn",
+      "fields": {
+        "Title": "Welcome Message – New Client",
+        "Type": "WhatsApp Template",
+        "Body": "Hi {{name}}, welcome to Suprans! 🎉 We’re thrilled to have you onboard. Our team will connect soon with your onboarding details and next steps.",
+        "Category": "Onboarding",
+        "Body Word Count": 24,
+        "Related Marketing Assets": [
+          "recsImJXUJ70PzYwh",
+          "recYYtuTbozXmo8UX"
+        ]
+      },
+      "createdTime": "2025-10-27T07:59:32.000Z"
+    },
+    {
+      "id": "recoDmnv66oJso50d",
+      "fields": {
+        "Title": "Quotation Follow-Up",
+        "Type": "Email Template",
+        "Body": "Hello {{name}}, just checking in about the quotation shared for {{product_name}}. Let us know if you’d like to proceed — pricing is valid till {{date}}.",
+        "Category": "Sales Follow-up",
+        "Body Word Count": 25
+      },
+      "createdTime": "2025-10-27T07:59:39.000Z"
+    },
+    {
+      "id": "recpgtvUynu2emOCD",
+      "fields": {
+        "Title": "Payment Confirmation",
+        "Type": "WhatsApp Template",
+        "Body": "Hi {{name}}, we’ve received your payment for {{product_name}}. Thank you for choosing Suprans. Your order is now being processed with our team.",
+        "Category": "Transactional",
+        "Body Word Count": 22,
+        "Related Marketing Assets": [
+          "rec4bRqRAeL9BNyc9"
+        ]
+      },
+      "createdTime": "2025-10-27T07:59:39.000Z"
+    },
+    {
+      "id": "recxfcl2c2eYfoEim",
+      "fields": {
+        "Title": "Feedback Request",
+        "Type": "WhatsApp Template",
+        "Body": "Hi {{name}}, we hope you’re enjoying your {{product_name}}! Could you please share your feedback or review? It helps Suprans improve our service.",
+        "Category": "Retention",
+        "Body Word Count": 22
+      },
+      "createdTime": "2025-10-27T07:59:39.000Z"
+    },
+    {
+      "id": "reczsPnpZadHSV9KZ",
+      "fields": {
+        "Title": "Order Dispatch Update",
+        "Type": "WhatsApp Template",
+        "Body": "Hi {{name}}, great news! Your order for {{product_name}} has been dispatched from our supplier. Tracking number: {{tracking_no}}. ETA: {{date}}.",
+        "Category": "Logistics",
+        "Body Word Count": 19
+      },
+      "createdTime": "2025-10-27T07:59:39.000Z"
+    }
+  ],
+  "fetchedAt": "2025-10-31T11:57:01.235Z"
+}

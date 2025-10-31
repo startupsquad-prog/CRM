@@ -1,0 +1,468 @@
+{
+  "table": "Employee Client FAQ",
+  "schema": {
+    "id": "tblTBLBaly0kdAWtk",
+    "name": "Employee Client FAQ",
+    "fields": [
+      {
+        "id": "Client Question (Customer Puchega)",
+        "name": "Client Question (Customer Puchega)",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Category",
+        "name": "Category",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Employee Answer (Response Summary)",
+        "name": "Employee Answer (Response Summary)",
+        "type": "multipleLineText"
+      },
+      {
+        "id": "Language",
+        "name": "Language",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Priority / Relevance",
+        "name": "Priority / Relevance",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Last Updated",
+        "name": "Last Updated",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Tags",
+        "name": "Tags",
+        "type": "multipleSelects"
+      },
+      {
+        "id": "Status",
+        "name": "Status",
+        "type": "singleLineText"
+      }
+    ],
+    "recordCount": 25
+  },
+  "records": [
+    {
+      "id": "rec22xoolAId0GoqT",
+      "fields": {
+        "Client Question (Customer Puchega)": "Mujhe GST invoice milega kya?",
+        "Category": "Pricing",
+        "Employee Answer (Response Summary)": "Haan, Startup Squad Pvt. Ltd. se proper GST invoice milta hai jisse aap ITC claim kar sakte ho.",
+        "Language": "Hinglish",
+        "Priority / Relevance": "High",
+        "Last Updated": "2025-10-27T07:43:37.000Z",
+        "Tags": [
+          "Invoice",
+          "B2B Client"
+        ],
+        "Status": "Resolved"
+      },
+      "createdTime": "2025-10-27T07:43:37.000Z"
+    },
+    {
+      "id": "rec3y72AXsZO0ssgs",
+      "fields": {
+        "Client Question (Customer Puchega)": "Kya aap legal import proof de sakte ho?",
+        "Category": "Logistics",
+        "Employee Answer (Response Summary)": "Haan, agar client chahe to Bill of Entry aur DDP clearance proof share kiya ja sakta hai.",
+        "Language": "Hinglish",
+        "Priority / Relevance": "Medium",
+        "Last Updated": "2025-10-27T07:43:37.000Z",
+        "Tags": [
+          "Logistics",
+          "B2B Client"
+        ],
+        "Status": "Resolved"
+      },
+      "createdTime": "2025-10-27T07:43:37.000Z"
+    },
+    {
+      "id": "rec42Dxw5JKZF8onV",
+      "fields": {
+        "Client Question (Customer Puchega)": "Kya aap mere brand ke naam se product de sakte ho?",
+        "Category": "Business",
+        "Employee Answer (Response Summary)": "Haan, private label ya neutral packaging bulk quantity ke liye arrange ki ja sakti hai.",
+        "Language": "Hinglish",
+        "Priority / Relevance": "Medium",
+        "Last Updated": "2025-10-27T07:43:37.000Z",
+        "Tags": [
+          "Business",
+          "Branding"
+        ],
+        "Status": "Resolved"
+      },
+      "createdTime": "2025-10-27T07:43:37.000Z"
+    },
+    {
+      "id": "rec9LpLy9f4arIG1u",
+      "fields": {
+        "Client Question (Customer Puchega)": "Aap USD mein quote dete ho ya INR mein?",
+        "Category": "Pricing",
+        "Employee Answer (Response Summary)": "Supplier hume USD mein deta hai, par hum client ko INR mein hi final quotation dete hain including all import costs.",
+        "Language": "Hinglish",
+        "Priority / Relevance": "Medium",
+        "Last Updated": "2025-10-27T07:43:37.000Z",
+        "Tags": [
+          "Pricing Discussion"
+        ],
+        "Status": "Resolved"
+      },
+      "createdTime": "2025-10-27T07:43:37.000Z"
+    },
+    {
+      "id": "recIImpPHwgyEmjPz",
+      "fields": {
+        "Client Question (Customer Puchega)": "Distributor price ya resale margin mil sakta hai kya?",
+        "Category": "Business",
+        "Employee Answer (Response Summary)": "Haan, bulk aur recurring clients ke liye reseller pricing available hai.",
+        "Language": "Hinglish",
+        "Priority / Relevance": "High",
+        "Last Updated": "2025-10-27T07:43:37.000Z",
+        "Tags": [
+          "Business",
+          "Pricing"
+        ],
+        "Status": "Resolved"
+      },
+      "createdTime": "2025-10-27T07:43:37.000Z"
+    },
+    {
+      "id": "recMSuxlTlyyr2zs5",
+      "fields": {
+        "Client Question (Customer Puchega)": "Main Delhi se khud pickup kar sakta hoon kya?",
+        "Category": "Delivery",
+        "Employee Answer (Response Summary)": "Haan bilkul, NCR clients warehouse se directly pickup kar sakte hain.",
+        "Language": "Hinglish",
+        "Priority / Relevance": "Medium",
+        "Last Updated": "2025-10-27T07:43:37.000Z",
+        "Tags": [
+          "Delivery",
+          "Warehouse"
+        ],
+        "Status": "Resolved"
+      },
+      "createdTime": "2025-10-27T07:43:37.000Z"
+    },
+    {
+      "id": "recNAEbs8ad2Q9sUw",
+      "fields": {
+        "Client Question (Customer Puchega)": "Kya aap all India delivery karte ho?",
+        "Category": "Delivery",
+        "Employee Answer (Response Summary)": "Haan, Delhi se hum domestic courier arrange kar dete hain. Extra courier charge lagega city ke hisaab se.",
+        "Language": "Hinglish",
+        "Priority / Relevance": "High",
+        "Last Updated": "2025-10-27T07:43:37.000Z",
+        "Tags": [
+          "Delivery",
+          "WhatsApp"
+        ],
+        "Status": "Resolved"
+      },
+      "createdTime": "2025-10-27T07:43:37.000Z"
+    },
+    {
+      "id": "recPFh5SkL9k2VzMu",
+      "fields": {
+        "Client Question (Customer Puchega)": "Part payment allowed hai kya?",
+        "Category": "Payment",
+        "Employee Answer (Response Summary)": "Single piece orders ke liye full payment lena padta hai. Bulk clients ke liye part payment discuss hota hai.",
+        "Language": "Hinglish",
+        "Priority / Relevance": "Medium",
+        "Last Updated": "2025-10-27T07:43:37.000Z",
+        "Tags": [
+          "Payment",
+          "B2B Client"
+        ],
+        "Status": "Resolved"
+      },
+      "createdTime": "2025-10-27T07:43:37.000Z"
+    },
+    {
+      "id": "recQSCqs0CqAAOoPm",
+      "fields": {
+        "Client Question (Customer Puchega)": "Kya 1 piece order kar sakte hain ya bulk hi lena padta hai?",
+        "Category": "Product",
+        "Employee Answer (Response Summary)": "Aap single piece bhi le sakte ho, koi minimum quantity nahi hai. Bulk order pe better pricing milti hai.",
+        "Language": "Hinglish",
+        "Priority / Relevance": "High",
+        "Last Updated": "2025-10-27T07:43:37.000Z",
+        "Tags": [
+          "Call Script",
+          "WhatsApp"
+        ],
+        "Status": "Resolved"
+      },
+      "createdTime": "2025-10-27T07:43:37.000Z"
+    },
+    {
+      "id": "recQXcLxXiEnvs7NE",
+      "fields": {
+        "Client Question (Customer Puchega)": "Product kahaan se ship hota hai?",
+        "Category": "Delivery",
+        "Employee Answer (Response Summary)": "Shipment China warehouse se hota hai aur DDP Delhi tak hum handle karte hain. Customs aur clearance hum karte hain.",
+        "Language": "Hinglish",
+        "Priority / Relevance": "High",
+        "Last Updated": "2025-10-27T07:43:37.000Z",
+        "Tags": [
+          "Delivery",
+          "Product Info"
+        ],
+        "Status": "Resolved"
+      },
+      "createdTime": "2025-10-27T07:43:37.000Z"
+    },
+    {
+      "id": "recTO1CiNA2aSVTNW",
+      "fields": {
+        "Client Question (Customer Puchega)": "Payment kahan aur kaise karna hai?",
+        "Category": "Payment",
+        "Employee Answer (Response Summary)": "Payment company ke account mein hota hai – UPI, bank transfer ya Razorpay link se. Details quotation mein hoti hain.",
+        "Language": "Hinglish",
+        "Priority / Relevance": "High",
+        "Last Updated": "2025-10-27T07:43:37.000Z",
+        "Tags": [
+          "Payment",
+          "WhatsApp",
+          "Invoice"
+        ],
+        "Status": "Resolved"
+      },
+      "createdTime": "2025-10-27T07:43:37.000Z"
+    },
+    {
+      "id": "recTTY5XOVZshsV28",
+      "fields": {
+        "Client Question (Customer Puchega)": "Order ke baad mujhe kaunse documents milenge?",
+        "Category": "Paperwork",
+        "Employee Answer (Response Summary)": "Aapko milta hai – Proforma Invoice, Final Tax Invoice, Payment Receipt aur Shipment Tracking. Bulk order pe import proof bhi.",
+        "Language": "Hinglish",
+        "Priority / Relevance": "High",
+        "Last Updated": "2025-10-27T07:43:37.000Z",
+        "Tags": [
+          "Invoice",
+          "Documents"
+        ],
+        "Status": "Resolved"
+      },
+      "createdTime": "2025-10-27T07:43:37.000Z"
+    },
+    {
+      "id": "recUJQveeqbCZuhOf",
+      "fields": {
+        "Client Question (Customer Puchega)": "Kya mujhe customs duty alag se deni padegi?",
+        "Category": "Logistics",
+        "Employee Answer (Response Summary)": "Nahi, DDP mein sab customs aur import duties included hain. Aapko sirf invoice + GST pay karna hota hai.",
+        "Language": "Hinglish",
+        "Priority / Relevance": "High",
+        "Last Updated": "2025-10-27T07:43:37.000Z",
+        "Tags": [
+          "Logistics",
+          "Objection Handling"
+        ],
+        "Status": "Resolved"
+      },
+      "createdTime": "2025-10-27T07:43:37.000Z"
+    },
+    {
+      "id": "recUReffJmVERIECv",
+      "fields": {
+        "Client Question (Customer Puchega)": "Catalog ya brochure mil sakta hai kya?",
+        "Category": "Paperwork",
+        "Employee Answer (Response Summary)": "Haan, humare paas updated product catalog aur specification sheet available hai.",
+        "Language": "Hinglish",
+        "Priority / Relevance": "Medium",
+        "Last Updated": "2025-10-27T07:43:37.000Z",
+        "Tags": [
+          "Product Info",
+          "Marketing"
+        ],
+        "Status": "Resolved"
+      },
+      "createdTime": "2025-10-27T07:43:37.000Z"
+    },
+    {
+      "id": "recWXT1Ca8XDQLY57",
+      "fields": {
+        "Status": "Unresolved"
+      },
+      "createdTime": "2025-10-28T05:38:25.000Z"
+    },
+    {
+      "id": "recXN07hTJ64a6lHR",
+      "fields": {
+        "Client Question (Customer Puchega)": "Product pe koi warranty milti hai kya?",
+        "Category": "Warranty",
+        "Employee Answer (Response Summary)": "Haan, 1-year manufacturer warranty hoti hai (motor aur main board cover). Physical damage cover nahi hota.",
+        "Language": "Hinglish",
+        "Priority / Relevance": "High",
+        "Last Updated": "2025-10-27T07:43:37.000Z",
+        "Tags": [
+          "Warranty",
+          "Call Script"
+        ],
+        "Status": "Resolved"
+      },
+      "createdTime": "2025-10-27T07:43:37.000Z"
+    },
+    {
+      "id": "rechFXJCwHxBNl23U",
+      "fields": {
+        "Client Question (Customer Puchega)": "Agar product damaged aaya to kya hoga?",
+        "Category": "Warranty",
+        "Employee Answer (Response Summary)": "Product damaged aane pe hum replace ya repair karwa dete hain. Shipment insurance included hota hai.",
+        "Language": "Hinglish",
+        "Priority / Relevance": "High",
+        "Last Updated": "2025-10-27T07:43:37.000Z",
+        "Tags": [
+          "Warranty",
+          "Support"
+        ],
+        "Status": "Resolved"
+      },
+      "createdTime": "2025-10-27T07:43:37.000Z"
+    },
+    {
+      "id": "recn8RTZlOXOnbMuW",
+      "fields": {
+        "Client Question (Customer Puchega)": "Delivery kitne din mein milti hai?",
+        "Category": "Delivery",
+        "Employee Answer (Response Summary)": "Normally 18–25 din lagte hain China se Delhi tak. Hum tracking bhi share karte hain jab shipment dispatch hota hai.",
+        "Language": "Hinglish",
+        "Priority / Relevance": "High",
+        "Last Updated": "2025-10-27T07:43:37.000Z",
+        "Tags": [
+          "Delivery",
+          "Call Script"
+        ],
+        "Status": "Resolved"
+      },
+      "createdTime": "2025-10-27T07:43:37.000Z"
+    },
+    {
+      "id": "recuaxErucscqht27",
+      "fields": {
+        "Client Question (Customer Puchega)": "Jo price diya hai kya usme GST include hai?",
+        "Category": "Pricing",
+        "Employee Answer (Response Summary)": "Nahi, GST (18%) extra lagta hai. Price DDP Delhi basis pe hai – matlab customs clear hone ke baad ka cost.",
+        "Language": "Hinglish",
+        "Priority / Relevance": "High",
+        "Last Updated": "2025-10-27T07:43:37.000Z",
+        "Tags": [
+          "Pricing Discussion",
+          "Invoice"
+        ],
+        "Status": "Resolved"
+      },
+      "createdTime": "2025-10-27T07:43:37.000Z"
+    },
+    {
+      "id": "recveJrYaiErSM8Wf",
+      "fields": {
+        "Client Question (Customer Puchega)": "Sirf massagers ya aur products bhi supply karte ho?",
+        "Category": "Business",
+        "Employee Answer (Response Summary)": "Abhi focus massagers pe hai, lekin humare China supplier se aur bhi categories DDP basis pe supply kar sakte hain.",
+        "Language": "Hinglish",
+        "Priority / Relevance": "Medium",
+        "Last Updated": "2025-10-27T07:43:37.000Z",
+        "Tags": [
+          "Business",
+          "Product Range"
+        ],
+        "Status": "Resolved"
+      },
+      "createdTime": "2025-10-27T07:43:37.000Z"
+    },
+    {
+      "id": "recvhNQlCFHvg2Ddx",
+      "fields": {
+        "Client Question (Customer Puchega)": "DDP ka matlab kya hota hai?",
+        "Category": "Logistics",
+        "Employee Answer (Response Summary)": "DDP (Delivered Duty Paid) ka matlab hai supplier se India tak saara import aur customs hum handle karte hain – client ko sirf invoice pay karna hota hai.",
+        "Language": "Hinglish",
+        "Priority / Relevance": "High",
+        "Last Updated": "2025-10-27T07:43:37.000Z",
+        "Tags": [
+          "Logistics",
+          "Call Script"
+        ],
+        "Status": "Resolved"
+      },
+      "createdTime": "2025-10-27T07:43:37.000Z"
+    },
+    {
+      "id": "recwcxVWsqiUsNCxe",
+      "fields": {
+        "Client Question (Customer Puchega)": "Kya mujhe quotation pehle milega?",
+        "Category": "Paperwork",
+        "Employee Answer (Response Summary)": "Haan, har order ke liye Proforma Quotation send hota hai jisme sab cost clear likha hota hai (DDP + GST).",
+        "Language": "Hinglish",
+        "Priority / Relevance": "High",
+        "Last Updated": "2025-10-27T07:43:37.000Z",
+        "Tags": [
+          "Quotation",
+          "Pre-Order"
+        ],
+        "Status": "Resolved"
+      },
+      "createdTime": "2025-10-27T07:43:37.000Z"
+    },
+    {
+      "id": "recwl9UH5vw46ENRd",
+      "fields": {
+        "Client Question (Customer Puchega)": "Warranty service India mein milti hai kya?",
+        "Category": "Warranty",
+        "Employee Answer (Response Summary)": "Haan, Delhi service partner handle karta hai saare warranty aur repair cases.",
+        "Language": "Hinglish",
+        "Priority / Relevance": "Medium",
+        "Last Updated": "2025-10-27T07:43:37.000Z",
+        "Tags": [
+          "Warranty",
+          "Support"
+        ],
+        "Status": "Resolved"
+      },
+      "createdTime": "2025-10-27T07:43:37.000Z"
+    },
+    {
+      "id": "recxpNs9WCFZH8vfR",
+      "fields": {
+        "Client Question (Customer Puchega)": "Ye same model Alibaba ya dusre sites pe bhi milta hai kya?",
+        "Category": "Product",
+        "Employee Answer (Response Summary)": "Haan, same manufacturer ka product hai. Hum DDP delivery aur warranty ke saath India mein available karte hain.",
+        "Language": "Hinglish",
+        "Priority / Relevance": "High",
+        "Last Updated": "2025-10-27T07:43:37.000Z",
+        "Tags": [
+          "Product Info",
+          "Objection Handling"
+        ],
+        "Status": "Resolved"
+      },
+      "createdTime": "2025-10-27T07:43:37.000Z"
+    },
+    {
+      "id": "reczrw4qiz3bUnwYD",
+      "fields": {
+        "Client Question (Customer Puchega)": "Ye product India mein banta hai ya import hota hai?",
+        "Category": "Product",
+        "Employee Answer (Response Summary)": "Ye product directly China factory se import hota hai DDP Delhi basis pe. Saare customs aur duties included hote hain.",
+        "Language": "Hinglish",
+        "Priority / Relevance": "High",
+        "Last Updated": "2025-10-27T07:43:37.000Z",
+        "Tags": [
+          "Call Script",
+          "Product Info"
+        ],
+        "Status": "Resolved"
+      },
+      "createdTime": "2025-10-27T07:43:37.000Z"
+    }
+  ],
+  "fetchedAt": "2025-10-31T11:57:11.588Z"
+}

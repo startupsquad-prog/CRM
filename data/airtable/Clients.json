@@ -1,0 +1,240 @@
+{
+  "table": "Clients",
+  "schema": {
+    "id": "tblmP2WYWkbSmllAK",
+    "name": "Clients",
+    "fields": [
+      {
+        "id": "Client ID",
+        "name": "Client ID",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Client Name",
+        "name": "Client Name",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Contact Details",
+        "name": "Contact Details",
+        "type": "singleLineText"
+      },
+      {
+        "id": "City",
+        "name": "City",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Client Type",
+        "name": "Client Type",
+        "type": "singleLineText"
+      },
+      {
+        "id": "GST Number",
+        "name": "GST Number",
+        "type": "singleLineText"
+      },
+      {
+        "id": "Quotations",
+        "name": "Quotations",
+        "type": "multipleSelects"
+      },
+      {
+        "id": "Total Order Value",
+        "name": "Total Order Value",
+        "type": "number"
+      },
+      {
+        "id": "Number of Leads",
+        "name": "Number of Leads",
+        "type": "number"
+      },
+      {
+        "id": "Number of Quotations",
+        "name": "Number of Quotations",
+        "type": "number"
+      },
+      {
+        "id": "Number of Orders",
+        "name": "Number of Orders",
+        "type": "number"
+      },
+      {
+        "id": "Payments",
+        "name": "Payments",
+        "type": "multipleSelects"
+      },
+      {
+        "id": "Shipping Address",
+        "name": "Shipping Address",
+        "type": "singleLineText"
+      }
+    ],
+    "recordCount": 6
+  },
+  "records": [
+    {
+      "id": "rec2Q0rGpkrQJuVmP",
+      "fields": {
+        "Client ID": "CL-003",
+        "Client Name": "TechnoMart",
+        "Contact Details": "Rakesh Mehta, +91-9123456789, rakesh@technomart.co.in",
+        "City": "Bangalore",
+        "Client Type": "Reseller",
+        "GST Number": "29AAACT7890C3ZD",
+        "Quotations": [
+          "rec88bkk0aB8IcR3c",
+          "recXpX7N3syQ1204o",
+          "recpdiq0Czkr5nBvH",
+          "recZZuTlS0cEZ4PNg",
+          "recpDmGutWcK0VNgj",
+          "recE6gglXPwHMatB7",
+          "recmNXZbpJAMXRLeh",
+          "rec4J206GLSe84BcC",
+          "recvDtDljJKxUgdF7"
+        ],
+        "Total Order Value": 95000,
+        "Number of Leads": 0,
+        "Number of Quotations": 9,
+        "Number of Orders": 0,
+        "Payments": [
+          "reccx0TmgZaPuLgQO"
+        ],
+        "Shipping Address": "pataudi, gurugram, haryana, 122505"
+      },
+      "createdTime": "2025-10-23T11:16:13.000Z"
+    },
+    {
+      "id": "rec3M1SiXk4D8HzI3",
+      "fields": {
+        "Client ID": "CL-002",
+        "Client Name": "GreenLeaf Distributors",
+        "Contact Details": "Priya Verma, +91-9988776655, priya@greenleafdist.com",
+        "City": "Delhi",
+        "Client Type": "Bulk",
+        "GST Number": "07AACCG4567B2ZC",
+        "Quotations": [
+          "recVKLwp8Aryu1tcN",
+          "rec7Lu8cSWD8zAXc2",
+          "recGhQOPGxhWsO4fa",
+          "rectTUlFKCwSOFtOR",
+          "recHH21uxnUbdmnmS",
+          "recYAnxQDoX7bhhjN",
+          "recnyfnOolHXY0bxy",
+          "recOZYCEAuz4ttBlt",
+          "reclzcdmUiDks79gC",
+          "recu55G1KlcMQFYlT"
+        ],
+        "Total Order Value": 720000,
+        "Number of Leads": 0,
+        "Number of Quotations": 10,
+        "Number of Orders": 0,
+        "Payments": [
+          "recxdIYTvVcxnX0SA",
+          "recwHdbnh3mtodQT7"
+        ]
+      },
+      "createdTime": "2025-10-23T11:16:13.000Z"
+    },
+    {
+      "id": "recAx8Xt2Y9188zoo",
+      "fields": {
+        "Client ID": "CL-1761853018020",
+        "Client Name": "Sahil",
+        "Contact Details": "sahil 9812852757",
+        "City": "panipat",
+        "Client Type": "Retail",
+        "GST Number": "123456789",
+        "Quotations": [
+          "rec6GSoP42VQ1vebG",
+          "recF0Z6hSVUHk55HC"
+        ],
+        "Number of Leads": 0,
+        "Number of Quotations": 2,
+        "Number of Orders": 0,
+        "Shipping Address": "ett, fgdfgrtet, fgd, fdgdg"
+      },
+      "createdTime": "2025-10-30T19:37:00.000Z"
+    },
+    {
+      "id": "recLJtiacFRsxO2rs",
+      "fields": {
+        "Client ID": "CL-1761860512991",
+        "Client Name": "adiii",
+        "Contact Details": "9812852757",
+        "City": "gurugram",
+        "Client Type": "Retail",
+        "GST Number": "122332321",
+        "Quotations": [
+          "recMBGXvaITRjnrwL"
+        ],
+        "Number of Leads": 0,
+        "Number of Quotations": 1,
+        "Number of Orders": 0,
+        "Shipping Address": "pataudi, gurugram, haryana, 122505"
+      },
+      "createdTime": "2025-10-30T21:41:55.000Z"
+    },
+    {
+      "id": "recPVuiNC9wZrQhuv",
+      "fields": {
+        "Client ID": "CL-001",
+        "Client Name": "Sunrise Traders",
+        "Contact Details": "Amit Shah, +91-9876543210, amit@sunrisetraders.in",
+        "City": "Mumbai",
+        "Client Type": "Retail",
+        "GST Number": "27AAACS1234A1ZB",
+        "Quotations": [
+          "rec7KndRP8IbOGpFk",
+          "recWuzrH4yxBEc7BP",
+          "recivb8ImVCbwhOf7",
+          "rec0ouYHpxG9hiZDz",
+          "recbtgSVAbolqor6Y",
+          "reclMFBPO869GAHqQ",
+          "recnVfs2yGVVluwHp",
+          "recNqelHwA3EymrIz",
+          "recxzq97vEyFRmGAq",
+          "recj7i7lEjEi4nEgX"
+        ],
+        "Total Order Value": 185000,
+        "Number of Leads": 0,
+        "Number of Quotations": 10,
+        "Number of Orders": 0,
+        "Payments": [
+          "recosBq0hI9CG59o2",
+          "recgAdMglrIAeWDnT"
+        ]
+      },
+      "createdTime": "2025-10-23T11:16:13.000Z"
+    },
+    {
+      "id": "recSYF2ZPIEa6tkPA",
+      "fields": {
+        "Client ID": "CL-004",
+        "Client Name": "Elegant Homes",
+        "Contact Details": "Simran Kaur, +91-9001122334, simran@eleganthomes.com",
+        "City": "Chandigarh",
+        "Client Type": "Retail",
+        "GST Number": "04AACDE1234D4ZE",
+        "Quotations": [
+          "recRH5qlyJ1uh8BEi",
+          "recT54cZfuvFGBdIo",
+          "rec7JDo0hIwub4sPU",
+          "recum5fTGi4HPMScY",
+          "recVjEl8Ec7SfqeIz",
+          "rec7THKrxbJyxhnXz",
+          "recRhPeoT45tdsG0f"
+        ],
+        "Total Order Value": 32000,
+        "Number of Leads": 0,
+        "Number of Quotations": 7,
+        "Number of Orders": 0,
+        "Payments": [
+          "recN44IK6ZSychDYX"
+        ]
+      },
+      "createdTime": "2025-10-23T11:16:13.000Z"
+    }
+  ],
+  "fetchedAt": "2025-10-31T11:57:03.473Z"
+}
