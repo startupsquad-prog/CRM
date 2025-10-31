@@ -1,6 +1,7 @@
-import { SignInButton, SignUpButton } from "@clerk/nextjs"
+import { SignInButton, SignUpButton, SignedIn } from "@clerk/nextjs"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { QuickLoginWidget } from "@/components/quick-login-widget"
 import {
   BarChart3,
   Users,
@@ -113,7 +114,7 @@ export default function MarketingPage() {
 
       {/* CTA Section */}
       <section className="container mx-auto px-4 py-20">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto space-y-8">
           <Card className="border-primary/50 bg-primary/5">
             <CardHeader className="text-center">
               <CardTitle className="text-3xl mb-2">Ready to Get Started?</CardTitle>
@@ -134,6 +135,11 @@ export default function MarketingPage() {
               </SignInButton>
             </CardContent>
           </Card>
+
+          {/* Quick Login Widget - Only shown when signed in */}
+          <SignedIn>
+            <QuickLoginWidget />
+          </SignedIn>
         </div>
       </section>
     </main>

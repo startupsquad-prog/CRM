@@ -233,19 +233,23 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   
   const navSecondary = React.useMemo(() => getNavSecondary(role), [role])
 
-  const userData = React.useMemo(() => {
+  const userData: {
+    name: string
+    email: string
+    avatar: string | null
+  } = React.useMemo(() => {
     if (!user) {
       return {
         name: "Guest",
         email: "",
-        avatar: "",
+        avatar: null,
       }
     }
     
     return {
       name: user.fullName || user.firstName || user.emailAddresses[0]?.emailAddress || "User",
       email: user.emailAddresses[0]?.emailAddress || "",
-      avatar: user.imageUrl || "",
+      avatar: user.imageUrl || null,
     }
   }, [user])
 

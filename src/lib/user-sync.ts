@@ -1,6 +1,14 @@
 import { currentUser, clerkClient } from '@clerk/nextjs/server'
 import { createServerSupabaseClient } from './supabase/server'
 
+// Helper to safely get clerkClient
+function getClerkClient() {
+  if (!clerkClient || !clerkClient.users) {
+    throw new Error('clerkClient is not properly initialized. Make sure CLERK_SECRET_KEY is set in environment variables.')
+  }
+  return clerkClient
+}
+
 export interface UserProfile {
   clerk_user_id: string
   email: string
@@ -13,12 +21,65 @@ export interface UserProfile {
 }
 
 /**
+ * Helper function to sync user_roles table
+ */
+async function syncUserRole(
+  userId: string, 
+  roleName: 'admin' | 'employee', 
+  supabase: any
+): Promise<void> {
+  try {
+    // Get the role_id for the role name
+    const { data: role } = await supabase
+      .from('roles')
+      .select('id')
+      .eq('name', roleName)
+      .single()
+
+    if (!role) {
+      console.error(`Role not found: ${roleName}`)
+      return
+    }
+
+    // Delete existing user_roles for this user
+    await supabase
+      .from('user_roles')
+      .delete()
+      .eq('user_id', userId)
+
+    // Insert the new role as primary
+    const { error: insertError } = await supabase
+      .from('user_roles')
+      .insert({
+        user_id: userId,
+        role_id: role.id,
+        is_primary: true,
+      })
+
+    if (insertError) {
+      console.error('Error syncing user role:', insertError)
+    }
+  } catch (error) {
+    console.error('Error in syncUserRole:', error)
+    // Don't throw - this is a secondary sync operation
+  }
+}
+
+/**
  * Sync Clerk user to Supabase users table
  * This is called automatically via webhook and can also be called manually
  */
 export async function syncUserToSupabase(clerkUserId: string): Promise<void> {
   try {
-    const clerkUser = await clerkClient.users.getUser(clerkUserId)
+    // Try to use currentUser first if it's the same user
+    const current = await currentUser()
+    let clerkUser = current?.id === clerkUserId ? current : null
+    
+    // If not the current user or current user doesn't match, use clerkClient
+    if (!clerkUser) {
+      const client = getClerkClient()
+      clerkUser = await client.users.getUser(clerkUserId)
+    }
     
     if (!clerkUser) {
       throw new Error(`Clerk user not found: ${clerkUserId}`)
@@ -61,21 +122,31 @@ export async function syncUserToSupabase(clerkUserId: string): Promise<void> {
         console.error('Error updating user in Supabase:', error)
         throw error
       }
+
+      // Sync user_roles table
+      await syncUserRole(existingUser.id, role, supabase)
     } else {
       // Create new user
       // Note: We're using Clerk for auth, so we don't need auth.users
       // We generate a UUID for the Supabase users table
       
-      const { error } = await supabase
+      const { data: newUser, error } = await supabase
         .from('users')
         .insert({
           ...userData,
           id: crypto.randomUUID(),
         })
+        .select()
+        .single()
 
       if (error) {
         console.error('Error creating user in Supabase:', error)
         throw error
+      }
+
+      // Sync user_roles table for new user
+      if (newUser) {
+        await syncUserRole(newUser.id, role, supabase)
       }
     }
   } catch (error) {

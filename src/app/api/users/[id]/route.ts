@@ -121,6 +121,38 @@ export async function PATCH(
       }
     }
 
+    // Sync user_roles table if role changed
+    if (role !== undefined) {
+      try {
+        // Get the role_id for the role name
+        const { data: roleData } = await supabase
+          .from('roles')
+          .select('id')
+          .eq('name', role)
+          .single()
+
+        if (roleData) {
+          // Delete existing roles
+          await supabase
+            .from('user_roles')
+            .delete()
+            .eq('user_id', params.id)
+
+          // Insert new role as primary
+          await supabase
+            .from('user_roles')
+            .insert({
+              user_id: params.id,
+              role_id: roleData.id,
+              is_primary: true,
+            })
+        }
+      } catch (syncError) {
+        console.error('Error syncing user_roles:', syncError)
+        // Don't fail the entire request if role sync fails
+      }
+    }
+
     // Update user roles if provided
     if (userRoles !== undefined && Array.isArray(userRoles)) {
       // Delete existing roles

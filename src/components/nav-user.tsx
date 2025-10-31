@@ -18,7 +18,7 @@ export function NavUser({
   user: {
     name: string
     email: string
-    avatar: string
+    avatar: string | null
   }
 }) {
   const initials = user.name
@@ -34,7 +34,7 @@ export function NavUser({
         <div className="flex items-center gap-2 px-2 py-1.5 w-full relative group/item">
           <div className="flex flex-1 items-center gap-2 min-w-0 group-data-[collapsible=icon]:justify-center">
             <Avatar className="h-8 w-8 rounded-lg flex-shrink-0">
-              <AvatarImage src={user.avatar} alt={user.name} />
+              <AvatarImage src={user.avatar || undefined} alt={user.name} />
               <AvatarFallback className="rounded-lg">{initials}</AvatarFallback>
             </Avatar>
             <div className="grid flex-1 text-left text-sm leading-tight min-w-0 group-data-[collapsible=icon]:hidden">

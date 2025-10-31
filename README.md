@@ -30,6 +30,11 @@ A comprehensive, industry-grade user management system similar to Softr's capabi
 - ✅ Softr-style user management interface
 - ✅ Complete integration with Clerk authentication
 
+### Development Tools 🛠️
+- **Quick Login Widget**: Instantly switch between user roles for testing (development only)
+- **Test User Creation**: One-click creation of test users (admin, employee, manager) via web interface
+- **User Sync Analysis**: Comprehensive analysis of Clerk-Supabase synchronization (see `CLERK_SYNC_ANALYSIS.md`)
+
 ## Quick Start
 
 1. **Install dependencies**
@@ -56,6 +61,11 @@ A comprehensive, industry-grade user management system similar to Softr's capabi
    npm run dev
    ```
 
+6. **Create test users (optional)**
+   - Navigate to `http://localhost:3000/create-test-users.html`
+   - Click "Create Test Users" to create admin, employee, and manager test accounts
+   - See `CREATE_TEST_USERS.md` for details
+
 ## Documentation
 
 - **Setup Guide**: `docs/SETUP.md` - Complete setup instructions
@@ -63,6 +73,8 @@ A comprehensive, industry-grade user management system similar to Softr's capabi
 - **RLS Guide**: `docs/rls-implementation-guide.md` - Row Level Security implementation
 - **Webhook Setup**: `docs/clerk-webhook-setup.md` - Clerk webhook configuration
 - **User Management System**: `docs/USER_MANAGEMENT_SYSTEM.md` - Comprehensive user management guide 🆕
+- **Test User Creation**: `CREATE_TEST_USERS.md` - Guide for creating test users 🆕
+- **Sync Analysis**: `CLERK_SYNC_ANALYSIS.md` - Clerk-Supabase synchronization analysis and fixes 🆕
 
 ## Project Structure
 

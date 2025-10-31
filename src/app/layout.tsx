@@ -12,6 +12,7 @@ import {
   UserButton,
 } from "@clerk/nextjs";
 import { TabTitleCounter } from "@/components/tab-title-counter";
+import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,6 +41,7 @@ export default function RootLayout({
           <ThemeProvider>
             <TabTitleCounter />
             {children}
+            <Toaster />
           </ThemeProvider>
         </body>
       </html>
